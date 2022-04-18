@@ -1,0 +1,1572 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Web.UI.HtmlControls;
+using DevExpress.Web;
+using DevExpress.Web.ASPxGridView;
+using DevExpress.Web.ASPxPager;
+using DevExpress.Web.ASPxEditors;
+
+using Advtek.Utility;
+using FET.POS.Model.Common;
+using FET.POS.Model.DTO;
+using FET.POS.Model.Facade;
+using FET.POS.Model.Facade.FacadeStub;
+using FET.POS.Model.Facade.FacadeImpl;
+
+
+public partial class VSS_OPT_OPT03 : BasePage
+{
+    #region Class Variables
+
+    private OPT03_Facade _OPT03_Facade;
+    private OPT03_CreditCardInstallment_DTO _OPT03_CreditCardInstallment_DTO;
+
+    #endregion
+
+    public static string ed_status = "Select";
+    public List<string> UseList = new List<string>();
+    public string EmployeeId = string.Empty;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        EmployeeId = logMsg.CREATE_USER;
+
+        ASPxDateEdit1.ClientInstanceName = "ASPxDateEdit1";
+        ASPxDateEdit2.ClientInstanceName = "ASPxDateEdit2";
+        ASPxDateEdit3.ClientInstanceName = "ASPxDateEdit3";
+        ASPxDateEdit4.ClientInstanceName = "ASPxDateEdit4";
+
+        if (!Page.IsPostBack)
+        {
+            bindDdlValTxt(ddlCardBank, OPT03_PageHelper.GetBankNameId(true, "Select"), "BANK_ID", "BANK_NAME");
+            bindDdlValTxt(ddlCostCenter, OPT03_PageHelper.GetCostCenterNameNo(true, "Select"), "COST_CENTER_NO", "COST_CENTER_NAME");
+            aspComboBoxDefaultSetting();
+
+            gvMaster.DataSource = GetEmptyDataTable1();
+            gvMaster.DataBind();
+
+            gvDetail.DataSource = GetEmptyDataTable2();
+            gvDetail.DataBind();
+        }
+    }
+
+    #region GridView DataBind
+    protected void bindMasterData()
+    {
+
+        if (Session["Master"] != null)
+        {
+            gvMaster.DataSource = Session["Master"];
+        }
+        else
+        {
+            gvMaster.DataSource = getMasterData();
+        }
+        gvMaster.DataBind();
+    }
+
+    protected void bindDetailData()
+    {
+        if (Session["Detail"] != null)
+        {
+            DataTable dt = new DataTable();
+            dt = (DataTable)Session["Detail"];
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                dt.Rows[i]["LINE_NO"] = i + 1;
+                dt.Rows[i]["ITEMNO"] = i + 1;
+            }
+            dt.AcceptChanges();
+
+            Session["Detail"] = dt;
+            gvDetail.DataSource = Session["Detail"];
+        }
+        else
+        {
+            gvDetail.DataSource = getDetailData();
+        }
+
+        gvDetail.DataBind();
+    }
+    #endregion
+
+    #region Bind Default Load
+    protected void bindDdlValTxt(ASPxComboBox AspCB, object dataSrc, string valCol, string txtCol)
+    {
+        AspCB.DataSource = dataSrc;
+        AspCB.ValueField = valCol;
+        AspCB.TextField = txtCol;
+        AspCB.DataBind();
+    }
+    #endregion
+
+    #region PageLoad Default Process
+    protected void aspComboBoxDefaultSetting()
+    {
+        //若都沒選,將Index設為0
+        //判斷下拉式選單預設值-999,並替換為空字串""
+        if (ddlCardBank.SelectedIndex == -1)
+        {
+            ddlCardBank.SelectedIndex = 0;
+            ddlCardBank.SelectedItem.Value = "";
+            //設定值完後,SelectedItem會變Null,要再次指定SelectedIndex,超機車XD!
+            ddlCardBank.SelectedIndex = 0;
+        }
+        if (ddlCostCenter.SelectedIndex == -1)
+        {
+            ddlCostCenter.SelectedIndex = 0;
+            ddlCostCenter.SelectedItem.Value = "";
+            //設定值完後,SelectedItem會變Null,要再次指定SelectedIndex,超機車XD!
+            ddlCostCenter.SelectedIndex = 0;
+        }
+    }
+
+    #endregion
+
+    private DataTable GetEmptyDataTable1()
+    {
+        DataTable dt = new DataTable();
+        dt.Columns.Add("項次", typeof(string));
+        dt.Columns.Add("狀態", typeof(string));
+        dt.Columns.Add("發卡銀行", typeof(string));
+        dt.Columns.Add("分期期數", typeof(string));
+        dt.Columns.Add("分期利率", typeof(string));
+        dt.Columns.Add("成本中心", typeof(string));
+        dt.Columns.Add("成本中心拆帳比率", typeof(string));
+        dt.Columns.Add("開始日期", typeof(string));
+        dt.Columns.Add("結束日期", typeof(string));
+        dt.Columns.Add("更新日期", typeof(string));
+        dt.Columns.Add("更新人員", typeof(string));
+        return dt;
+    }
+
+    private DataTable getDBMasterDate()
+    {
+        DataTable dtMaster = new DataTable();
+        try
+        {
+            _OPT03_Facade = new OPT03_Facade();
+
+            dtMaster = _OPT03_Facade.Query_CreditCardInstallment("",
+                                                             "",
+                                                             "",
+                                                             "",
+                                                             "",
+                                                             "",
+                                                             "",
+                                                             "");
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT03_Facade = null;
+        }
+        return dtMaster;
+    }
+
+    private DataTable getMasterData()
+    {
+        DataTable dtMaster = new DataTable();
+
+        try
+        {
+            _OPT03_Facade = new OPT03_Facade();
+
+            dtMaster = _OPT03_Facade.Query_CreditCardInstallment(ddlCardBank.SelectedItem.Value.ToString(),
+                                                             ddlCostCenter.SelectedItem.Value.ToString(),
+                                                             txtPaySeqment.Text,
+                                                             ddlStatus.SelectedItem.Value.ToString(),
+                                                             ASPxDateEdit1.Text.ToString(),
+                                                             ASPxDateEdit2.Text.ToString(),
+                                                             ASPxDateEdit3.Text.ToString(),
+                                                             ASPxDateEdit4.Text.ToString());
+
+            dtMaster.Columns.Add("Tag");
+
+            foreach (DataRow r in dtMaster.Rows)
+                r["Tag"] = "Q";
+
+            Session.Add("Master", dtMaster);
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT03_Facade = null;
+        }
+
+        return dtMaster;
+    }
+
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        bindMasterData();
+
+        gvMaster.FocusedRowIndex = -1;
+        gvMaster.PageIndex = 0;
+        gvDetail.Visible = false;
+
+        if (gvMaster.VisibleRowCount > 0)
+            gvMaster.PageIndex = 0;
+    }
+
+    private DataTable GetEmptyDataTable2()
+    {
+        DataTable dt = new DataTable();
+        dt.Columns.Add("項次", typeof(string));
+        dt.Columns.Add("成本中心", typeof(string));
+        dt.Columns.Add("成本中心拆帳比率", typeof(string));
+
+        return dt;
+    }
+
+    private DataTable getDetailDateByInstellmentId(string InstellmentId)
+    {
+        try
+        {
+            _OPT03_Facade = new OPT03_Facade();
+            return _OPT03_Facade.Query_CreditCardSettlement(InstellmentId);
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT03_Facade = null;
+        }
+    }
+
+    private DataTable getDetailData()
+    {
+        try
+        {
+            _OPT03_Facade = new OPT03_Facade();
+            DataTable dt =_OPT03_Facade.Query_CreditCardSettlement(ViewState["InstellmentId"].ToString());
+
+            dt.Columns.Add("Tag");
+
+            foreach (DataRow r in dt.Rows)
+                r["Tag"] = "Q";
+
+            Session.Add("Detail", dt);
+
+            return dt;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT03_Facade = null;
+        }
+    }
+
+    protected void btnAdd1_Click(object sender, EventArgs e)
+    {
+        if (gvMaster.VisibleRowCount == 0)
+        {
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("ITEMNO", typeof(string));
+            dt.Columns.Add("STATUS", typeof(string));
+            dt.Columns.Add("BANK_ID", typeof(string));
+            dt.Columns.Add("PAY_SEQMENT", typeof(string));
+            dt.Columns.Add("SEQMENT_RATE", typeof(string));
+            dt.Columns.Add("MODI_DTM", typeof(DateTime));
+            dt.Columns.Add("MODI_USER", typeof(string));
+            dt.Columns.Add("S_DATE", typeof(DateTime));
+            dt.Columns.Add("E_DATE", typeof(DateTime));
+
+            gvMaster.DataSource = dt;
+            gvMaster.DataBind();
+        }
+
+        gvMaster.AddNewRow();
+    }
+
+<<<<<<< .mine
+    /// <summary>
+    /// 取消新增-隱藏Footer
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnCancel1_Click(object sender, EventArgs e)
+    {
+        //gvMaster.ShowFooterWhenEmpty = false;
+        //gvMaster.ShowFooter = false;
+        //if (gvMaster.Rows.Count == 0)
+        //{
+        //    gvMaster.DataSource = GetEmptyDataTable1();
+        //    gvMaster.DataBind();
+        //}
+        //else
+        //{
+        //    bindMasterData();gvMaster.FocusedRowIndex = -1;
+        //}
+    }
+
+    //protected void Card_Click(object sender, EventArgs e)
+    //{
+    //    gvDetail.Visible = true;
+    //    bindDetailData();
+
+    //}
+
+    /// <summary>
+    /// 新增-顯示Footer
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+=======
+>>>>>>> .r5711
+    protected void btnAdd2_Click(object sender, EventArgs e)
+    {
+        if (gvDetail.VisibleRowCount == 0)
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ITEMNO", typeof(string));
+            dt.Columns.Add("SEQMENT_RATE", typeof(string));
+            dt.Columns.Add("COST_CENTER_NAME", typeof(string));
+        }
+
+        gvDetail.AddNewRow();
+    }
+
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            OPT03_Facade facle = new OPT03_Facade();
+
+            _OPT03_CreditCardInstallment_DTO = new OPT03_CreditCardInstallment_DTO();
+
+            OPT03_CreditCardInstallment_DTO _OTP03UPD = new OPT03_CreditCardInstallment_DTO();
+
+            OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTDataTable dtCCI;
+            OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTRow drCCI;
+
+            OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTDataTable dtCCS;
+            OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTRow drCCS;
+
+            dtCCI = (OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTDataTable)_OPT03_CreditCardInstallment_DTO.Tables["CREDIT_CART_INSTELLMENT"];
+            dtCCS = (OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTDataTable)_OPT03_CreditCardInstallment_DTO.Tables["CREDIT_CARD_SETTLEMMENT"];
+
+            DataTable dtMaster = new DataTable();
+            DataTable dtDetail = new DataTable();
+
+            if (Session["Master"] != null)
+            {
+                dtMaster = (DataTable)Session["Master"];
+            }
+
+            if (Session["Detail"] != null)
+            {
+                dtDetail = (DataTable)Session["Detail"];
+            }
+
+            //驗證拆帳費率
+            string checkMsg = CheckDetailInportData();
+            if (checkMsg.Length > 0)
+            {
+                //彈跳視窗
+                ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertMessage", "alert('" + checkMsg + "');", true);
+                return;
+            }
+
+            foreach (DataRow row in dtMaster.Rows)
+            {
+                if (row["Tag"].ToString() == "I")
+                {
+                    dtCCI.Rows.Clear();
+                    drCCI = dtCCI.NewCREDIT_CART_INSTELLMENTRow();
+
+                    drCCI.INSTELLMENT_ID = row["INSTELLMENT_ID"].ToString();
+                    drCCI.BANK_ID = row["BANK_ID"].ToString();
+                    drCCI.PAY_SEQMENT = Convert.ToDecimal(row["PAY_SEQMENT"]);
+                    drCCI.SEQMENT_RATE = Convert.ToDecimal(row["SEQMENT_RATE"]);
+                    drCCI.S_DATE = Convert.ToDateTime(row["S_DATE"]);
+
+                    if (row["E_DATE"] != DBNull.Value)
+                        drCCI.E_DATE = Convert.ToDateTime(row["E_DATE"]);
+
+                    drCCI.MODI_DTM = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                    drCCI.MODI_USER = EmployeeId;
+                    drCCI.CREATE_DTM = Convert.ToDateTime(row["CREATE_DTM"]);
+                    drCCI.CREATE_USER = row["CREATE_USER"].ToString();
+
+                    dtCCI.AddCREDIT_CART_INSTELLMENTRow(drCCI);
+                    _OPT03_CreditCardInstallment_DTO.AcceptChanges();
+                    facle.AddNewOne_CreditCardInstallment(_OPT03_CreditCardInstallment_DTO);
+                }
+
+                if (row["Tag"].ToString() == "U")
+                {
+                    dtCCI.Rows.Clear();
+                    drCCI = dtCCI.NewCREDIT_CART_INSTELLMENTRow();
+
+                    drCCI.INSTELLMENT_ID = row["INSTELLMENT_ID"].ToString();
+                    drCCI.BANK_ID = row["BANK_ID"].ToString();
+                    drCCI.PAY_SEQMENT = Convert.ToDecimal(row["PAY_SEQMENT"]);
+                    drCCI.SEQMENT_RATE = Convert.ToDecimal(row["SEQMENT_RATE"]);
+                    drCCI.S_DATE = Convert.ToDateTime(row["S_DATE"]);
+
+                    if (row["E_DATE"] != DBNull.Value)
+                        drCCI.E_DATE = Convert.ToDateTime(row["E_DATE"]);
+
+                    drCCI.MODI_DTM = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                    drCCI.MODI_USER = EmployeeId;
+
+                    dtCCI.AddCREDIT_CART_INSTELLMENTRow(drCCI);
+                    _OPT03_CreditCardInstallment_DTO.AcceptChanges();
+                    facle.UpdateOne_CreditCardInstallment(_OPT03_CreditCardInstallment_DTO);
+                }
+            }
+
+            foreach (DataRow r in dtDetail.Rows)
+            {
+                if (r["Tag"].ToString() == "I")
+                {
+                    dtCCS.Rows.Clear();
+                    drCCS = dtCCS.NewCREDIT_CARD_SETTLEMMENTRow();
+
+                    drCCS.COST_CENTER_NO = r["COST_CENTER_NO"].ToString();
+                    drCCS.CREATE_DTM = Convert.ToDateTime(r["CREATE_DTM"]);
+                    drCCS.CREATE_USER = r["CREATE_USER"].ToString();
+                    drCCS.INSTELLMENT_ID = r["INSTELLMENT_ID"].ToString();
+                    drCCS.LINE_NO = Convert.ToDecimal(r["LINE_NO"]);
+                    drCCS.MODI_DTM = Convert.ToDateTime(r["MODI_DTM"]);
+                    drCCS.MODI_USER = r["MODI_USER"].ToString();
+                    drCCS.SETTLEMENT_ID = r["SETTLEMENT_ID"].ToString();
+                    drCCS.SETTLEMENT_RATE = Convert.ToDecimal(r["SETTLEMENT_RATE"]);
+
+                    dtCCS.AddCREDIT_CARD_SETTLEMMENTRow(drCCS);
+
+                    _OPT03_CreditCardInstallment_DTO.AcceptChanges();
+                    facle.AddNew_CreditCardSettlements(_OPT03_CreditCardInstallment_DTO);
+                }
+
+                if (r["Tag"].ToString() == "U")
+                {
+                    dtCCS.Rows.Clear();
+                    drCCS = dtCCS.NewCREDIT_CARD_SETTLEMMENTRow();
+
+                    drCCS.COST_CENTER_NO = r["COST_CENTER_NO"].ToString();
+                    drCCS.CREATE_DTM = Convert.ToDateTime(r["CREATE_DTM"]);
+                    drCCS.CREATE_USER = r["CREATE_USER"].ToString();
+                    drCCS.INSTELLMENT_ID = r["INSTELLMENT_ID"].ToString();
+                    drCCS.LINE_NO = Convert.ToDecimal(r["LINE_NO"]);
+                    drCCS.MODI_DTM = Convert.ToDateTime(r["MODI_DTM"]);
+                    drCCS.MODI_USER = r["MODI_USER"].ToString();
+                    drCCS.SETTLEMENT_ID = r["SETTLEMENT_ID"].ToString();
+                    drCCS.SETTLEMENT_RATE = Convert.ToDecimal(r["SETTLEMENT_RATE"]);
+
+                    dtCCS.AddCREDIT_CARD_SETTLEMMENTRow(drCCS);
+                    _OPT03_CreditCardInstallment_DTO.AcceptChanges();
+                    facle.Update_CreditCardSettlements(_OPT03_CreditCardInstallment_DTO);
+                }
+            }
+
+            bindMasterData();
+            bindDetailData();
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertMessage", "alert('儲存完成');", true);
+        }
+
+        catch (Exception ex)
+        {
+            Logger.Log.Error(ex.Message, ex);
+        }
+        finally
+        {
+            _OPT03_CreditCardInstallment_DTO = null;
+        }
+    }
+
+    protected void btnClear_Click(object sender, EventArgs e)
+    {
+        this.ddlCardBank.SelectedIndex = 0;
+        this.ddlCostCenter.SelectedIndex = 0;
+        this.ddlStatus.SelectedIndex = 0;
+        this.ASPxDateEdit1.Text = "";
+        this.ASPxDateEdit2.Text = "";
+        this.ASPxDateEdit3.Text = "";
+        this.ASPxDateEdit4.Text = "";
+        this.txtPaySeqment.Text = "";
+
+        //清空使用者的暫存資料
+        Session["Master"] = null;
+        Session["Detail"] = null;
+
+        gvMaster.DataSource = GetEmptyDataTable1();
+        gvMaster.DataBind();
+
+        gvDetail.DataSource = GetEmptyDataTable2();
+        gvDetail.DataBind();
+        gvDetail.Visible = false;
+    }
+
+    protected void grid_PageIndexChanged(object sender, EventArgs e)
+    {
+        ASPxGridView grid = sender as ASPxGridView;
+        bindMasterData();
+    }
+
+    protected void gvMaster_RowUpdating(object sender, DevExpress.Web.Data.ASPxDataUpdatingEventArgs e)
+    {
+        try
+        {
+            // DataTable dt;
+            ASPxComboBox cb = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["BANK_ID"], "ddlBankID") as ASPxComboBox;
+
+            ASPxDateEdit sdate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["S_DATE"], "txtSDATE") as ASPxDateEdit;
+            ASPxDateEdit edate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["E_DATE"], "txtEDATE") as ASPxDateEdit;
+
+            _OPT03_Facade = new OPT03_Facade();
+            _OPT03_CreditCardInstallment_DTO = new OPT03_CreditCardInstallment_DTO();
+
+            OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTDataTable dtCCI;
+            OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTRow drCCI;
+
+            dtCCI = _OPT03_CreditCardInstallment_DTO.Tables["CREDIT_CART_INSTELLMENT"] as OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTDataTable;
+            drCCI = dtCCI.NewCREDIT_CART_INSTELLMENTRow();
+
+            string INSTELLMENT_ID = e.Keys["INSTELLMENT_ID"].ToString();
+
+            DataRow dirtyDr = OPT03_PageHelper.GetCreditCardInstallmentByInstellmentId(INSTELLMENT_ID);
+
+            if (!dirtyDr.IsNull("INSTELLMENT_ID"))
+            {
+                //Update Columns
+                drCCI.INSTELLMENT_ID = INSTELLMENT_ID;
+                drCCI.PAY_SEQMENT = Convert.ToDecimal(e.NewValues["PAY_SEQMENT"].ToString());
+                drCCI.SEQMENT_RATE = Convert.ToDecimal(e.NewValues["SEQMENT_RATE"].ToString());
+
+                drCCI.S_DATE = Convert.ToDateTime((Convert.ToDateTime(sdate.Text.Trim()).ToString("yyyy/MM/dd")));
+
+                if (edate.Text != string.Empty)
+                    drCCI.E_DATE = Convert.ToDateTime((Convert.ToDateTime(edate.Text.Trim()).ToString("yyyy/MM/dd")));
+
+                drCCI.BANK_ID = dirtyDr["BANK_ID"].ToString();
+                drCCI.CREATE_DTM = Convert.ToDateTime(dirtyDr["CREATE_DTM"]);
+                drCCI.CREATE_USER = dirtyDr["CREATE_USER"].ToString();
+                drCCI.MODI_DTM = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                drCCI.MODI_USER = EmployeeId;
+                drCCI.CREDIT_CARD_TYPE_ID = dirtyDr["CREDIT_CARD_TYPE_ID"].ToString();
+
+                dtCCI.Rows.Add(drCCI);
+                _OPT03_CreditCardInstallment_DTO.AcceptChanges();
+
+                _OPT03_Facade.UpdateOne_CreditCardInstallment(_OPT03_CreditCardInstallment_DTO);
+            }
+            else
+            {
+                DataTable dt = new DataTable();
+                dt = (DataTable)Session["Master"];
+
+                DataRow []row = dt.Select(" INSTELLMENT_ID='" + INSTELLMENT_ID + "'");
+                DataRow r = row[0];
+
+                r["PAY_SEQMENT"] = Convert.ToDecimal(e.NewValues["PAY_SEQMENT"].ToString());
+                r["SEQMENT_RATE"] =  Convert.ToDecimal(e.NewValues["SEQMENT_RATE"].ToString());
+                r["S_DATE"] = Convert.ToDateTime((Convert.ToDateTime(sdate.Text.Trim()).ToString("yyyy/MM/dd")));
+
+                if (edate.Text != string.Empty)
+                    r["E_DATE"] = Convert.ToDateTime((Convert.ToDateTime(edate.Text.Trim()).ToString("yyyy/MM/dd")));
+
+                r["BANK_ID"] = cb.SelectedItem.Value;
+
+                r["MODI_DTM"] = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                r["MODI_USER"] = EmployeeId;
+                
+                r.AcceptChanges();
+                dt.AcceptChanges();
+
+                Session["Master"] = dt;
+            }
+
+            gvMaster.CancelEdit();
+            e.Cancel = true;
+
+            bindMasterData();
+
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+
+        finally
+        {
+            _OPT03_CreditCardInstallment_DTO = null;
+            _OPT03_CreditCardInstallment_DTO = null;
+        }
+    }
+
+    protected void gvMaster_RowInserting(object sender, DevExpress.Web.Data.ASPxDataInsertingEventArgs e)
+    {
+        try
+        {
+            DataTable dt = getMasterData();
+
+            ASPxComboBox cb = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["BANK_ID"], "ddlBankID") as ASPxComboBox;
+
+            ASPxDateEdit sdate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["S_DATE"], "txtSDATE") as ASPxDateEdit;
+            ASPxDateEdit edate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["E_DATE"], "txtEDATE") as ASPxDateEdit;
+
+            e.NewValues["BANK_ID"] = cb.SelectedItem.Value;
+
+            //異動的欄位
+            DataRow row = dt.NewRow();
+
+            row["INSTELLMENT_ID"] = GuidNo.getUUID();
+            row["BANK_ID"] = e.NewValues["BANK_ID"].ToString();
+            row["PAY_SEQMENT"] = int.Parse(e.NewValues["PAY_SEQMENT"].ToString());
+            row["SEQMENT_RATE"] = Convert.ToDecimal(e.NewValues["SEQMENT_RATE"].ToString());
+            row["S_DATE"] = Convert.ToDateTime(sdate.Text).ToString("yyyy/MM/dd");
+            row["BANK_NAME"] = cb.Text;
+
+            if (edate.Text != string.Empty)
+                row["E_DATE"] = Convert.ToDateTime(edate.Text).ToString("yyyy/MM/dd");
+
+            row["MODI_DTM"] = DateTime.Today.ToString("yyyy/MM/dd");
+            row["MODI_USER"] = EmployeeId;
+            row["CREATE_DTM"] = row["MODI_DTM"];
+            row["CREATE_USER"] = row["MODI_USER"];
+            row["STATUS"] = "尚未生效";
+            row["Tag"] = "I";
+
+            dt.Rows.Add(row);
+            dt.AcceptChanges();
+
+            if (Session["Master"] == null)
+                Session.Add("Master", dt);
+            else
+                Session["Master"] = dt;
+
+            bindMasterData();
+
+            //將資料指到最後新增的1筆,以利使用者輸入Detail資料
+            gvMaster.PageIndex = gvMaster.PageCount - 1;
+            gvMaster.FocusedRowIndex = gvMaster.VisibleRowCount - 1;
+
+            gvMaster.CancelEdit();
+            e.Cancel = true;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT03_CreditCardInstallment_DTO = null;
+            _OPT03_Facade = null;
+        }
+    }
+
+    protected void gvDetail_RowUpdating(object sender, DevExpress.Web.Data.ASPxDataUpdatingEventArgs e)
+    {
+        try
+        {
+            ASPxComboBox cb = gvDetail.FindEditRowCellTemplateControl((GridViewDataColumn)gvDetail.Columns["COST_CENTER_NAME"], "ddlCostCenterName") as ASPxComboBox;
+
+            string COST_CENTER_NO = cb.SelectedItem.Value.ToString();
+
+            DataTable dt = (DataTable)Session["Detail"];
+            DataRow[] rows = dt.Select("SETTLEMENT_ID='" + e.Keys[gvDetail.KeyFieldName].ToString() + "'");
+            DataRow row = rows[0];
+
+            row["SETTLEMENT_ID"] = e.Keys[gvDetail.KeyFieldName].ToString();
+            row["COST_CENTER_NO"] = COST_CENTER_NO;
+            row["CREATE_DTM"] = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+            row["CREATE_USER"] = EmployeeId;
+            row["MODI_DTM"] = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+            row["MODI_USER"] = EmployeeId;
+            row["SETTLEMENT_RATE"] = Convert.ToDecimal(e.NewValues["SETTLEMENT_RATE"]);
+            row["MODI_USER"] = EmployeeId;
+            row["COST_CENTER_NAME"] = cb.Text;
+
+            if (row["Tag"].ToString() == "Q")
+                row["Tag"] = "U";
+
+            dt.AcceptChanges();
+            Session["Detail"] = dt;
+
+            bindDetailData();
+            gvDetail.CancelEdit();
+            e.Cancel = true;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT03_CreditCardInstallment_DTO = null;
+            _OPT03_Facade = null;
+        }
+    }
+
+    protected void gvDetail_RowInserting(object sender, DevExpress.Web.Data.ASPxDataInsertingEventArgs e)
+    {
+        //若不使用DataSourceID時UPDATE INSERT 和DELPETE 都要自己控制 以下為UPDATE時需自行控制
+        ASPxGridView grid = (ASPxGridView)sender;
+
+        try
+        {
+            DataTable dt;
+            string SETTLEMENT_ID = GuidNo.getUUID();
+
+            ASPxComboBox cb = gvDetail.FindEditRowCellTemplateControl((GridViewDataColumn)gvDetail.Columns["COST_CENTER_NAME"], "ddlCostCenterName") as ASPxComboBox;
+
+            string COST_CENTER_NO = "";
+
+            if (cb.Text != string.Empty)
+                COST_CENTER_NO = cb.SelectedItem.Value.ToString();
+
+            if (Session["Detail"] == null)
+                dt = getDetailData();
+            else
+                dt = (DataTable)Session["Detail"];
+
+            DataRow row = dt.NewRow();
+            row["SETTLEMENT_ID"] = SETTLEMENT_ID;
+            row["INSTELLMENT_ID"] = ViewState["InstellmentId"].ToString();
+            row["COST_CENTER_NO"] = COST_CENTER_NO;
+            row["CREATE_DTM"] = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+            row["CREATE_USER"] = EmployeeId;
+            row["MODI_DTM"] = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+            row["MODI_USER"] = EmployeeId;
+            row["SETTLEMENT_RATE"] = Convert.ToDecimal(e.NewValues["SETTLEMENT_RATE"]);
+            row["LINE_NO"] = grid.VisibleRowCount + 1;
+            row["ITEMNO"] = grid.VisibleRowCount + 1;
+            row["MODI_USER"] = EmployeeId;
+            row["COST_CENTER_NAME"] = cb.Text;
+            row["Tag"] = "I";
+
+            dt.Rows.Add(row);
+            dt.AcceptChanges();
+
+            Session["Detail"] = dt;
+
+            grid.CancelEdit();
+            e.Cancel = true;
+
+            bindDetailData();
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT03_CreditCardInstallment_DTO = null;
+            _OPT03_Facade = null;
+        }
+    }
+
+    protected void gvMaster_FocusedRowChanged(object sender, EventArgs e)
+    {
+        int focusedRowIndex = gvMaster.FocusedRowIndex;
+
+        if (focusedRowIndex >= 0)
+        {
+            ViewState["InstellmentId"] = gvMaster.GetRowValues(focusedRowIndex, gvMaster.KeyFieldName);
+            ViewState["status1"] = gvMaster.GetRowValues(focusedRowIndex, "STATUS");
+
+            if (Session["BackDetail"] == null)
+                Session.Add("BackDetail", getDetailData());
+            else
+                Session["BackDetail"] = getDetailData();
+
+            if (Session["Detail"] != null)
+                Session["Detail"] = null;
+
+            bindMasterData();
+            gvDetail.Visible = true;
+            bindDetailData();
+
+            string statusl = ViewState["status1"].ToString();
+            ASPxButton btnSave = gvDetail.FindTitleTemplateControl("btnSave") as ASPxButton;
+            ASPxButton btnAdd1 = gvDetail.FindTitleTemplateControl("btnAdd2") as ASPxButton;
+            ASPxButton btnDelete = gvDetail.FindTitleTemplateControl("btnDelDetails") as ASPxButton;
+
+            switch (statusl)
+            {
+                case "有效":
+                    btnSave.Enabled = false;
+                    btnAdd1.Enabled = false;
+                    btnDelete.Enabled = false;
+                    break;
+                case "已過期":
+                    btnSave.Enabled = false;
+                    btnAdd1.Enabled = false;
+                    btnDelete.Enabled = false;
+                    break;
+                case "尚未生效":
+                    btnSave.Enabled = true;
+                    btnAdd1.Enabled = true;
+                    btnDelete.Enabled = true;
+                    break;
+            }
+        }
+    }
+
+    /// <summary>
+    /// 預設載入 button 狀態
+    /// </summary>
+    protected void gvMaster_CommandButtonInitialize(object sender, ASPxGridViewCommandButtonEventArgs e)
+    {
+        if (e.VisibleIndex > -1)
+        {
+            if (e.ButtonType == ColumnCommandButtonType.Edit)
+            {
+                string status1 = gvMaster.GetRowValues(e.VisibleIndex, "STATUS").ToString();
+
+                if (status1 == "已過期")
+                    e.Enabled = false;
+            }
+
+            if (e.ButtonType == ColumnCommandButtonType.SelectCheckbox)
+            {
+                string status1 = gvMaster.GetRowValues(e.VisibleIndex, "STATUS").ToString();
+
+                if (status1 == "尚未生效")
+                    e.Enabled = true;
+                else
+                    e.Enabled = false;
+            }
+        }
+    }
+
+    protected void gvMaster_InitNewRow(object sender, DevExpress.Web.Data.ASPxDataInitNewRowEventArgs e)
+    {
+        if (gvMaster.IsNewRowEditing)
+        {
+            foreach (GridViewColumn col in gvMaster.Columns)
+            {
+                if (col is GridViewDataColumn)
+                {
+                    GridViewDataColumn dataCol = (GridViewDataColumn)col;
+                    Type typeCol = dataCol.GetType();
+
+                    if (dataCol.FieldName == "PRODNO")
+                    {
+                        dataCol.ReadOnly = false;
+                        dataCol.PropertiesEdit.Style.Border.BorderStyle = System.Web.UI.WebControls.BorderStyle.Solid;
+                    }
+
+                    if (dataCol.FieldName == "S_DATE")
+                    {
+                        GridViewDataDateColumn col_S_DATE = (GridViewDataDateColumn)gvMaster.Columns["S_DATE"];
+                        col_S_DATE.ReadOnly = false;
+                        col_S_DATE.PropertiesDateEdit.ValidationSettings.RequiredField.IsRequired = false;
+                        col_S_DATE.PropertiesDateEdit.Style.Border.BorderStyle = System.Web.UI.WebControls.BorderStyle.Solid;
+                        col_S_DATE.PropertiesDateEdit.DropDownButton.Visible = true;
+                        col_S_DATE.PropertiesDateEdit.DropDownButton.Enabled = true;
+
+                    }
+
+                    if (dataCol.FieldName == "IS_POS_DEF_PRICE")
+                    {
+                        if (e.NewValues["IS_POS_DEF_PRICE"] == null)
+                            e.NewValues["IS_POS_DEF_PRICE"] = "True";
+                    }
+                }
+            }
+        }
+    }
+
+    #region gvmaster row validating
+    protected void gvMaster_RowValidating(object sender, DevExpress.Web.Data.ASPxDataValidationEventArgs e)
+    {
+        if (e.IsNewRow || gvMaster.IsEditing)
+        {
+            Label labItemNo = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["ITEMNO"], "LabITEMNO") as Label;
+            ASPxComboBox cb = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["BANK_ID"], "ddlBankID") as ASPxComboBox;
+            ASPxDateEdit sDate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["S_DATE"], "txtSDATE") as ASPxDateEdit;
+            ASPxDateEdit eDate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["E_DATE"], "txtEDATE") as ASPxDateEdit;
+            DateTime SDATE = Convert.ToDateTime("9999/12/31");
+            DateTime EDATE = Convert.ToDateTime("9999/12/31");
+            TextBox txtSeqmentRate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["SEQMENT_RATE"], "TextBox1")
+                as TextBox;
+
+            txtSeqmentRate.Text = SeqmentRateFormat(txtSeqmentRate.Text.Trim());
+
+            string PAY_SEQMENT = e.NewValues["PAY_SEQMENT"].ToString().Trim();
+            string SEQMENT_RATE = e.NewValues["SEQMENT_RATE"].ToString();
+
+            string status = "";
+
+            if (cb.Text.Length == 0)
+            {
+                e.RowError += "請輸入發卡銀行!";
+                return;
+            }
+            else
+            {
+                if (ViewState["BankID"] == null)
+                {
+                    ViewState.Add("BankID", cb.Value);
+                }
+                else
+                {
+                    ViewState["BankID"] = cb.Value;
+                }
+            }
+
+            if (PAY_SEQMENT.Trim().Length == 0)
+            {
+                e.RowError += "【分期期數】不可空白";
+                return;
+            }
+
+            if (SEQMENT_RATE.Trim().Length == 0)
+            {
+                e.RowError += "【分期利率】不可空白";
+                return;
+            }
+
+            char[] cPay = PAY_SEQMENT.Trim().ToCharArray();
+            char[] cRate = SEQMENT_RATE.Trim().ToCharArray();
+
+            foreach (char c in cPay)
+            {
+                if (!char.IsNumber(c))
+                {
+                    e.RowError += "【分期期數】需為數字格式!";
+                    return;
+                }
+            }
+
+            foreach (char c in cRate)
+            {
+                if (!char.IsNumber(c) && c != '.')
+                {
+                    e.RowError += "【分期利率】需為浮點數格式!";
+                    return;
+                }
+            }
+
+            if (e.NewValues["STATUS"] != null)
+                status = e.NewValues["STATUS"].ToString();
+
+            if (sDate.Text.Length == 0)
+            {
+                e.RowError += "請輸入【開始日期】!";
+                return;
+            }
+
+            if (sDate.Text != "")
+                SDATE = DateTime.Parse(sDate.Value.ToString());
+
+            if (eDate.Text != "")
+                EDATE = DateTime.Parse(eDate.Value.ToString());
+
+
+            if (SDATE.ToString("yyyy/MM/dd") == "9999/12/31")
+            {
+                e.RowError += "請輸入【開始日期】!";
+                return;
+            }
+
+            if (SDATE >= EDATE && EDATE.ToString("yyyy/MM/dd") != "9999/12/31")
+            {
+                e.RowError += "【結束日期】不可小於等於【開始日期】!";
+                return;
+            }
+            if (SDATE <= DateTime.Today && status != "有效" && status != "已過期")
+            {
+                e.RowError += "【開始日期】不可小於等於系統日!";
+                return;
+            }
+
+            if (PAY_SEQMENT.Trim() == "")
+            {
+                e.RowError += "請輸入【分期期數】!";
+                return;
+            }
+            if (SEQMENT_RATE.Trim() == "")
+            {
+                e.RowError += "請輸入【分期利率】!";
+                return;
+            }
+
+            if (Convert.ToDecimal(PAY_SEQMENT) <= 0)
+            {
+                e.RowError += "【分期期數】不得小於等於0!";
+                return;
+            }
+
+            if (Convert.ToDecimal(SEQMENT_RATE) <= 0)
+            {
+                e.RowError += "【分期利率】不得小於等於0!";
+                return;
+            }
+
+            GetUseList(); //取得有效資料的相關銀行代碼與分期期數
+            string check = "";
+
+            if (labItemNo.Text != string.Empty && status == "有效")
+            {
+                check = cb.SelectedItem.Value + "," + PAY_SEQMENT;
+
+                int index = Convert.ToInt32(labItemNo.Text) - 1;
+
+                for (int i = 0; i < UseList.Count; i++)
+                {
+                    if (i == index)
+                        continue;
+
+                    string[] array = UseList[i].Split(',');
+
+                    if (array[0].Trim().Equals(cb.SelectedItem.Value.ToString().Trim()) && array[1].Trim().Equals(PAY_SEQMENT.Trim()))
+                    {
+                        e.RowError += "同一家銀行同一期數在同一時間區間不可設定二筆以上!";
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                foreach (string s in UseList)
+                {
+                    string[] array = s.Split(',');
+
+                    if (array[0].Trim().Equals(cb.SelectedItem.Value.ToString().Trim()) && array[1].Trim().Equals(PAY_SEQMENT.Trim()))
+                    {
+                        e.RowError += "同一家銀行同一期數在同一時間區間不可設定二筆以上!";
+                        return;
+                    }
+                }
+            }
+        }
+    }
+    #endregion
+
+    protected void btnDelete_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            OPT03_CreditCardInstallment_DTO OPT03_DTO = new OPT03_CreditCardInstallment_DTO();
+            OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTDataTable dtMaster = OPT03_DTO.CREDIT_CART_INSTELLMENT; //分期期數設定檔
+            OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTDataTable dtDetail = OPT03_DTO.CREDIT_CARD_SETTLEMMENT; //拆帳設定檔
+
+            OPT03_Facade facade = new OPT03_Facade();
+
+            List<object> keyValues = this.gvMaster.GetSelectedFieldValues(gvMaster.KeyFieldName);
+
+            foreach (string key in keyValues)
+            {
+                DataTable dtTmp = OPT03_PageHelper.GetCreditCardSettlementByInstellmentId(key);
+
+                foreach (DataRow r in dtTmp.Rows)
+                {
+                    OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTRow drDetail = dtDetail.NewCREDIT_CARD_SETTLEMMENTRow();
+                    drDetail.COST_CENTER_NO = r["COST_CENTER_NO"].ToString();
+                    drDetail.CREATE_DTM = (DateTime)r["CREATE_DTM"];
+                    drDetail.CREATE_USER = r["CREATE_USER"].ToString();
+                    drDetail.INSTELLMENT_ID = r["INSTELLMENT_ID"].ToString();
+                    drDetail.LINE_NO = Convert.ToDecimal(r["LINE_NO"]);
+                    drDetail.MODI_DTM = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                    drDetail.MODI_USER = EmployeeId;
+                    drDetail.SETTLEMENT_ID = r["SETTLEMENT_ID"].ToString();
+                    drDetail.SETTLEMENT_RATE = Convert.ToDecimal(r["SETTLEMENT_RATE"]);
+                    dtDetail.Rows.Add(drDetail);
+                }
+
+                OPT03_CreditCardInstallment_DTO.CREDIT_CART_INSTELLMENTRow drMaster = dtMaster.NewCREDIT_CART_INSTELLMENTRow();
+                DataRow dirtyDr = OPT03_PageHelper.GetCreditCardInstallmentByInstellmentId(key);
+                drMaster.BANK_ID = dirtyDr["BANK_ID"].ToString();
+                drMaster.CREATE_DTM = (DateTime)dirtyDr["CREATE_DTM"];
+                drMaster.CREATE_USER = dirtyDr["CREATE_USER"].ToString();
+                drMaster.CREDIT_CARD_TYPE_ID = dirtyDr["CREDIT_CARD_TYPE_ID"].ToString();
+
+                if (dirtyDr["E_DATE"] != DBNull.Value)
+                    drMaster.E_DATE = (DateTime)dirtyDr["E_DATE"];
+
+                drMaster.INSTELLMENT_ID = dirtyDr["INSTELLMENT_ID"].ToString();
+                drMaster.MODI_DTM = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                drMaster.MODI_USER = EmployeeId;
+                drMaster.PAY_SEQMENT = Convert.ToDecimal(dirtyDr["PAY_SEQMENT"]);
+                drMaster.S_DATE = (DateTime)dirtyDr["S_DATE"];
+                drMaster.SEQMENT_RATE = Convert.ToDecimal(dirtyDr["SEQMENT_RATE"]);
+                dtMaster.Rows.Add(drMaster);
+            }
+
+            dtMaster.AcceptChanges();
+            dtDetail.AcceptChanges();
+
+            facade.Delete_CreditCartInstellment(dtMaster);
+            facade.Delete_CreditCardSettlements(dtDetail);
+
+            //彈跳視窗
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertMessage", "alert('刪除完成!');", true);
+            bindMasterData();
+            bindDetailData();
+        }
+        catch (Exception ex)
+        {
+            if (ex.Message != "DELETE SQL Execute 失敗. ")
+                Logger.Log.Error(ex.Message, ex);
+        }
+    }
+
+    protected void btnDelDetail_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            OPT03_CreditCardInstallment_DTO OPT03_DTO = new OPT03_CreditCardInstallment_DTO();
+            OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTDataTable dtDetail = OPT03_DTO.CREDIT_CARD_SETTLEMMENT; //拆帳設定檔
+            OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTRow drDetail;
+            OPT03_Facade facade = new OPT03_Facade();
+
+            List<object> keyValues = gvDetail.GetSelectedFieldValues(gvDetail.KeyFieldName);
+
+            DataTable TempDT = new DataTable();
+
+            if (Session["Detail"] != null)
+                TempDT = (DataTable)Session["Detail"];
+
+            foreach (string key in keyValues)
+            {
+                if (TempDT.Rows.Count > 0)
+                {
+                    DataRow[] rows = TempDT.Select("SETTLEMENT_ID='" + key + "'");
+                    DataRow TempR = rows[0];
+                    TempDT.Rows.Remove(TempR);
+                    TempDT.AcceptChanges();
+                    Session["Detail"] = TempDT;
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertMessage", "alert('無法刪除!');", true);
+                    /*DataRow r = OPT03_PageHelper.GetCreditCardSettlementBySettlementId(key);
+
+                    drDetail = dtDetail.NewCREDIT_CARD_SETTLEMMENTRow();
+                    drDetail.COST_CENTER_NO = r["COST_CENTER_NO"].ToString();
+                    drDetail.CREATE_DTM = Convert.ToDateTime(r["CREATE_DTM"]);
+                    drDetail.CREATE_USER = r["CREATE_USER"].ToString();
+                    drDetail.INSTELLMENT_ID = r["INSTELLMENT_ID"].ToString();
+                    drDetail.LINE_NO = Convert.ToDecimal(r["LINE_NO"]);
+                    drDetail.MODI_DTM = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                    drDetail.MODI_USER = EmployeeId;
+                    drDetail.SETTLEMENT_ID = r["SETTLEMENT_ID"].ToString();
+                    drDetail.SETTLEMENT_RATE = Convert.ToDecimal(r["SETTLEMENT_RATE"]);
+                    dtDetail.Rows.Add(drDetail);*/
+                }
+            }
+
+            //if (TempDT.Rows.Count == 0)
+            //    facade.Delete_CreditCardSettlements(dtDetail); //刪除實體資料
+
+            //彈跳視窗
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "AlertMessage", "alert('刪除成功!');", true);
+            bindDetailData();
+        }
+        catch (Exception ex)
+        {
+            if (ex.Message != "DELETE SQL Execute 失敗. ")
+                Logger.Log.Error(ex.Message, ex);
+        }
+    }
+
+    protected void gvMaster_HtmlRowPrepared(object sender, ASPxGridViewTableRowEventArgs e)
+    {
+        e.Row.Attributes["canSelect"] = "true";
+
+        if (e.RowType == GridViewRowType.Data)
+        {
+            string date = gvMaster.GetRowValues(e.VisibleIndex, "S_DATE").ToString();
+            string status = gvMaster.GetRowValues(e.VisibleIndex, "STATUS").ToString();
+
+            if (date != null && date != string.Empty)
+            {
+                if (Convert.ToDateTime(date.ToString()) < DateTime.Now)
+                    e.Row.Attributes["canSelect"] = "false";
+            }
+        }
+    }
+
+    protected void gvMaster_HtmlRowCreated(object sender, ASPxGridViewTableRowEventArgs e)
+    {
+        string status = string.Empty;
+
+        if (e.RowType == GridViewRowType.InlineEdit)
+        {
+            Label labItemNo = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["ITEMNO"], "LabITEMNO") as Label;
+
+            ASPxComboBox cb = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["BANK_ID"], "ddlBankID") as ASPxComboBox;
+            TextBox txtPaySeqment = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["PAY_SEQMENT"], "editTxtPaySeqment")
+as TextBox;
+
+            Label labPaySeqment = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["PAY_SEQMENT"], "LabPaySeqment")
+                as Label;
+
+            TextBox txtSeqmentRate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["SEQMENT_RATE"], "TextBox1")
+                as TextBox;
+
+            Label labSeqmentRate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["SEQMENT_RATE"], "LabSEQMENTRATE")
+                as Label;
+
+            ASPxDateEdit txtSDate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["S_DATE"], "txtSDate")
+                as ASPxDateEdit;
+
+            Label labSDATE = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["S_DATE"], "LabSDATE") as Label;
+
+            ASPxDateEdit txtEDate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["E_DATE"], "txtEDate")
+                as ASPxDateEdit;
+
+            Label labEDate = gvMaster.FindEditRowCellTemplateControl((GridViewDataColumn)gvMaster.Columns["E_DATE"], "LabEDATE") as Label;
+
+            if (e.KeyValue != null)
+                status = gvMaster.GetRowValues(e.VisibleIndex, "STATUS").ToString();
+            else
+                labItemNo.Text = "&nbsp;";
+
+            if (txtSDate.Text == string.Empty)
+                txtSDate.Value = DateTime.Today.AddDays(1);
+
+            //物件顯示值設定
+            labPaySeqment.Text = txtPaySeqment.Text;
+            labSeqmentRate.Text = txtSeqmentRate.Text;
+            labSDATE.Text = txtSDate.Text;
+            labEDate.Text = txtEDate.Text;
+
+            bindDdlValTxt(cb, OPT03_PageHelper.GetBankNameId(true, "Edit"), "BANK_ID", "BANK_NAME");
+
+            if (status != string.Empty)
+            {
+                cb.Value = gvMaster.GetRowValues(e.VisibleIndex, "BANK_ID").ToString();
+                cb.Enabled = false;
+            }
+            else
+            {
+                if(ViewState["BankID"] != null)
+                    cb.Value = ViewState["BankID"].ToString();
+            }
+
+            switch (status)
+            {
+                case "有效":
+                    txtPaySeqment.Visible = false;
+                    txtSeqmentRate.Visible = false;
+                    txtSDate.ClientVisible = false;
+                    txtEDate.ClientVisible = true;
+
+                    labPaySeqment.Visible = true;
+                    labSeqmentRate.Visible = true;
+                    labSDATE.Visible = true;
+                    labEDate.Visible = false;
+                    break;
+                case "已過期":
+                    txtPaySeqment.Visible = false;
+                    txtSeqmentRate.Visible = false;
+                    txtSDate.ClientVisible = false;
+                    txtEDate.ClientVisible = false;
+
+                    labPaySeqment.Visible = true;
+                    labSeqmentRate.Visible = true;
+                    labSDATE.Visible = true;
+                    labEDate.Visible = true;
+
+                    break;
+                case "尚未生效":
+                    txtPaySeqment.Visible = true;
+                    txtSeqmentRate.Visible = true;
+                    txtSDate.ClientVisible = true;
+                    txtEDate.ClientVisible = true;
+
+                    labPaySeqment.Visible = false;
+                    labSeqmentRate.Visible = false;
+                    labSDATE.Visible = false;
+                    labEDate.Visible = false;
+
+                    cb.Enabled = true;
+
+                    break;
+                default:
+                    labPaySeqment.Visible = false;
+                    labSeqmentRate.Visible = false;
+                    labSDATE.Visible = false;
+                    labEDate.Visible = false;
+                    break;
+            }
+        }
+    }
+
+    private void GetUseList()
+    {
+        UseList.Clear();
+        OPT03_Facade facade = new OPT03_Facade();
+        DataTable dt = facade.Query_UsingCreditCardInstellment();
+
+        foreach (DataRow r in dt.Rows)
+        {
+            string tmp = r["BANK_ID"].ToString() + "," + r["PAY_SEQMENT"].ToString();
+            UseList.Add(tmp);
+        }
+    }
+
+    protected void gvDetail_HtmlRowCreated(object sender, ASPxGridViewTableRowEventArgs e)
+    {
+        if (e.RowType == GridViewRowType.InlineEdit)
+        {
+            ASPxComboBox cb = gvDetail.FindEditRowCellTemplateControl((GridViewDataColumn)gvDetail.Columns["COST_CENTER_NAME"], "ddlCostCenterName") as ASPxComboBox;
+
+            bindDdlValTxt(cb, OPT03_PageHelper.GetCostCenterNameNo(true, ""), "COST_CENTER_NO", "COST_CENTER_NAME");
+
+            //當無任何資料且為新行時，將第一筆成本中心設定為通路管理部
+            if (gvDetail.VisibleRowCount == 0 && gvDetail.IsNewRowEditing)
+                cb.Value = "004";
+
+            //當已有資料，且資料非新行時
+            if (gvDetail.VisibleRowCount > 0 && gvDetail.IsNewRowEditing == false)
+            {
+                DataTable dt = new DataTable();
+
+                if (Session["Detail"] != null)
+                    dt = (DataTable)Session["Detail"];
+                else
+                    dt = (DataTable)Session["BackDetail"];
+
+                if (cb.Value == null) //若無值代表，使用者要將舊有資料進行修改，所以帶入值
+                    cb.Value = dt.Rows[e.VisibleIndex]["COST_CENTER_NO"].ToString();
+            }
+        }
+    }
+
+    private string CheckDetailInportData()
+    {
+        List<string> Costlist = new List<string>();
+        decimal rateCount = 0; //拆帳費率總合
+        decimal seqmentRate = 0; //分期利率
+        string msg = "";
+
+        for (int i = 0; i < gvDetail.VisibleRowCount; i++)
+        {
+            string strSR = string.Empty;
+            strSR = gvDetail.GetRowValues(i, "SETTLEMENT_RATE").ToString();
+ 
+            if (Costlist.Count == 0)
+            {
+                Costlist.Add(gvDetail.GetRowValues(i, "COST_CENTER_NAME").ToString());
+                rateCount += Convert.ToDecimal(strSR);
+            }
+            else
+            {
+                int tmp = Costlist.IndexOf(gvDetail.GetRowValues(i, "COST_CENTER_NAME").ToString());
+
+                if (tmp == -1)
+                {
+                    Costlist.Add(gvDetail.GetRowValues(i, "COST_CENTER_NAME").ToString());
+                    rateCount += Convert.ToDecimal(strSR);
+                }
+                else
+                {
+                    return "成本中心不得重覆!";
+                }
+            }
+        }
+
+        seqmentRate = Convert.ToDecimal(gvMaster.GetRowValues(gvMaster.FocusedRowIndex, "SEQMENT_RATE"));
+
+        if (seqmentRate != rateCount)
+            return "成本中心拆帳比率需等於分期利率!";
+
+        if (msg.Length > 0)
+        {
+            try
+            {
+                _OPT03_CreditCardInstallment_DTO = new OPT03_CreditCardInstallment_DTO();
+
+                OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTDataTable dtCCS;
+                dtCCS = _OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENT;
+                OPT03_CreditCardInstallment_DTO.CREDIT_CARD_SETTLEMMENTRow drCCS;
+                drCCS = dtCCS.NewCREDIT_CARD_SETTLEMMENTRow();
+
+                DataTable dt = new DataTable();
+
+                if (Session["BackDetail"] != null)
+                    dt = (DataTable)Session["BackDetail"];
+
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        drCCS = dtCCS.NewCREDIT_CARD_SETTLEMMENTRow();
+
+                        drCCS.COST_CENTER_NO = r["COST_CENTER_NO"].ToString();
+                        drCCS.CREATE_DTM = Convert.ToDateTime(r["CREATE_DTM"]);
+                        drCCS.CREATE_USER = r["CREATE_USER"].ToString();
+                        drCCS.INSTELLMENT_ID = r["INSTELLMENT_ID"].ToString();
+                        drCCS.LINE_NO = Convert.ToDecimal(r["LINE_NO"]);
+                        drCCS.MODI_DTM = Convert.ToDateTime(r["MODI_DTM"]);
+                        drCCS.MODI_USER = r["MODI_USER"].ToString();
+                        drCCS.SETTLEMENT_ID = r["SETTLEMENT_ID"].ToString();
+                        drCCS.SETTLEMENT_RATE = Convert.ToDecimal(r["SETTLEMENT_RATE"]);
+
+                        dtCCS.AddCREDIT_CARD_SETTLEMMENTRow(drCCS);
+                    }
+                }
+
+                _OPT03_CreditCardInstallment_DTO.AcceptChanges();
+
+                _OPT03_Facade = new OPT03_Facade();
+                _OPT03_Facade.Update_CreditCardSettlements(_OPT03_CreditCardInstallment_DTO);
+
+                bindDetailData();
+            }
+            catch (Exception ex)
+            {
+                Logger.Log.Error(ex.Message, ex);
+            }
+            finally
+            {
+                _OPT03_CreditCardInstallment_DTO = null;
+            }
+        }
+        return msg;
+    }
+
+    protected void gvDetail_CommandButtonInitialize(object sender, ASPxGridViewCommandButtonEventArgs e)
+    {
+        if (e.VisibleIndex > -1 && gvDetail.Visible == true)
+        {
+            if (e.ButtonType == ColumnCommandButtonType.Edit)
+            {
+                string status1 = ViewState["status1"].ToString();
+
+                if (status1 == "已過期" || status1 == "有效")
+                    e.Enabled = false;
+            }
+
+            if (e.ButtonType == ColumnCommandButtonType.SelectCheckbox)
+            {
+                string status1 = ViewState["status1"].ToString();
+
+                if (status1 == "尚未生效")
+                    e.Enabled = true;
+                else
+                    e.Enabled = false;
+            }
+        }
+    }
+    protected void gvDetail_HtmlRowPrepared(object sender, ASPxGridViewTableRowEventArgs e)
+    {
+        e.Row.Attributes["canSelect"] = "true";
+
+        if (e.RowType == GridViewRowType.Data && gvMaster.FocusedRowIndex >= 0)
+        {
+            string date = gvMaster.GetRowValues(gvMaster.FocusedRowIndex, "S_DATE").ToString();
+            string status = gvMaster.GetRowValues(gvMaster.FocusedRowIndex, "STATUS").ToString();
+
+            if (date != null && date != string.Empty)
+            {
+                if (Convert.ToDateTime(date.ToString()) < DateTime.Now)
+                    e.Row.Attributes["canSelect"] = "false";
+            }
+        }
+    }
+
+    protected void gvDetail_RowValidating(object sender, DevExpress.Web.Data.ASPxDataValidationEventArgs e)
+    {
+        if (e.IsNewRow || gvDetail.IsEditing)
+        {
+            TextBox txtSETTLEMENT_RATE = gvDetail.FindEditRowCellTemplateControl((GridViewDataColumn)gvDetail.Columns["SETTLEMENT_RATE"], "txt3") as TextBox;
+            string SETTLEMENTRATE = e.NewValues["SETTLEMENT_RATE"].ToString();
+            ASPxComboBox cb = gvDetail.FindEditRowCellTemplateControl((GridViewDataColumn)gvDetail.Columns["COST_CENTER_NAME"], "ddlCostCenterName") as ASPxComboBox;
+
+            txtSETTLEMENT_RATE.Text = SeqmentRateFormat(txtSETTLEMENT_RATE.Text.Trim());
+
+            if (cb.Text.Length == 0)
+            {
+                e.RowError += "請選擇成本中心!";
+                return;
+            }
+
+            if (SETTLEMENTRATE.Equals(string.Empty))
+            {
+                e.RowError += "請輸入成本中心拆帳比率!";
+                return;
+            }
+
+            try
+            {
+                decimal tmp = Convert.ToDecimal(SETTLEMENTRATE);
+
+                if (tmp <= 0)
+                    e.RowError += "成本中心拆帳比率需大於0";
+
+            }
+            catch(Exception ex)
+            {
+                e.RowError += "請輸入數字格式";
+                return;
+            }
+        }
+    }
+    protected void gvMaster_CancelRowEditing(object sender, DevExpress.Web.Data.ASPxStartRowEditingEventArgs e)
+    {
+        ViewState["BankID"] = null;
+    }
+
+    private string DBFormatChange(object obj)
+    {
+        string tmp = string.Empty;
+        return string.Empty;
+    }
+
+    #region 分期利率格式轉換
+    private string SeqmentRateFormat(string inport)
+    {
+        string output = string.Empty;
+        int index = inport.IndexOf(".");
+
+        if (index == -1)
+        {
+            //整數處理
+            output = inport + ".00";
+        }
+        else //小數處理
+        {
+            string tmp1 = inport.Substring(0,index); //整數位
+            string tmp2 = inport.Substring(index + 1, inport.Length - 2);//小數位 
+
+            if (tmp2.Length > 2)
+            {
+                int check = Convert.ToInt32(tmp2.Substring(2, 1));
+                
+                //4捨5入
+                if (check > 4)
+                {
+                    int num = Convert.ToInt32(tmp2.Substring(0,2)) + 1;
+                    tmp2 = num.ToString();
+                }
+                else
+                {
+                    tmp2 = tmp2.Substring(0, 2);
+                }
+            }
+            else if (tmp2.Length < 2)
+            {
+                tmp2 = tmp2 + "0";
+            }
+
+            return tmp1 + "." + tmp2;
+        }
+        return output;
+    }
+#endregion
+}

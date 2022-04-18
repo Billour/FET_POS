@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/9570/SourceCode/FET_POS/FET_ConvertApp/DEPT_COSTCENTER_IMPORT
+END
+舊POS(DEPT)匯出資料到(DEPT).txt
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/FET_POS_2010/!svn/ver/7806/SourceCode/FET_POS/FET_ConvertApp/DEPT_COSTCENTER_IMPORT/%E8%88%8APOS(DEPT)%E5%8C%AF%E5%87%BA%E8%B3%87%E6%96%99%E5%88%B0(DEPT).txt
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7806/SourceCode/FET_POS/FET_ConvertApp/DEPT_COSTCENTER_IMPORT/App.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7806/SourceCode/FET_POS/FET_ConvertApp/DEPT_COSTCENTER_IMPORT/Program.cs
+END
+DEPT_COSTCENTER_IMPORT.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FET_POS_2010/!svn/ver/9570/SourceCode/FET_POS/FET_ConvertApp/DEPT_COSTCENTER_IMPORT/DEPT_COSTCENTER_IMPORT.csproj
+END

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ORD09_DISTRIBUTES_ORDER" targetNamespace="http://tempuri.org/ORD09_DISTRIBUTES_ORDER.xsd" xmlns:mstns="http://tempuri.org/ORD09_DISTRIBUTES_ORDER.xsd" xmlns="http://tempuri.org/ORD09_DISTRIBUTES_ORDER.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString3 (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString3" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ORD09_DISTRIBUTES_ORDER" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ORD09_DISTRIBUTES_ORDER" msprop:Generator_UserDSName="ORD09_DISTRIBUTES_ORDER" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HQ_DS_ORDER_M" msprop:Generator_UserTableName="HQ_DS_ORDER_M" msprop:Generator_RowDeletedName="HQ_DS_ORDER_MRowDeleted" msprop:Generator_TableClassName="HQ_DS_ORDER_MDataTable" msprop:Generator_RowChangedName="HQ_DS_ORDER_MRowChanged" msprop:Generator_RowClassName="HQ_DS_ORDER_MRow" msprop:Generator_RowChangingName="HQ_DS_ORDER_MRowChanging" msprop:Generator_RowEvArgName="HQ_DS_ORDER_MRowChangeEvent" msprop:Generator_RowEvHandlerName="HQ_DS_ORDER_MRowChangeEventHandler" msprop:Generator_TablePropName="HQ_DS_ORDER_M" msprop:Generator_TableVarName="tableHQ_DS_ORDER_M" msprop:Generator_RowDeletingName="HQ_DS_ORDER_MRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HQ_ORDER_M_ID" msprop:Generator_UserColumnName="HQ_ORDER_M_ID" msprop:Generator_ColumnPropNameInRow="HQ_ORDER_M_ID" msprop:Generator_ColumnVarNameInTable="columnHQ_ORDER_M_ID" msprop:Generator_ColumnPropNameInTable="HQ_ORDER_M_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HQ_DS_ORDER_NO" msprop:Generator_UserColumnName="HQ_DS_ORDER_NO" msprop:Generator_ColumnPropNameInRow="HQ_DS_ORDER_NO" msprop:Generator_ColumnVarNameInTable="columnHQ_DS_ORDER_NO" msprop:Generator_ColumnPropNameInTable="HQ_DS_ORDER_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS" msprop:Generator_UserColumnName="STATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="HQ_DS_ORDER_D" msprop:Generator_UserTableName="HQ_DS_ORDER_D" msprop:Generator_RowDeletedName="HQ_DS_ORDER_DRowDeleted" msprop:Generator_TableClassName="HQ_DS_ORDER_DDataTable" msprop:Generator_RowChangedName="HQ_DS_ORDER_DRowChanged" msprop:Generator_RowClassName="HQ_DS_ORDER_DRow" msprop:Generator_RowChangingName="HQ_DS_ORDER_DRowChanging" msprop:Generator_RowEvArgName="HQ_DS_ORDER_DRowChangeEvent" msprop:Generator_RowEvHandlerName="HQ_DS_ORDER_DRowChangeEventHandler" msprop:Generator_TablePropName="HQ_DS_ORDER_D" msprop:Generator_TableVarName="tableHQ_DS_ORDER_D" msprop:Generator_RowDeletingName="HQ_DS_ORDER_DRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HQ_ORDER_D" msprop:Generator_UserColumnName="HQ_ORDER_D" msprop:Generator_ColumnPropNameInRow="HQ_ORDER_D" msprop:Generator_ColumnVarNameInTable="columnHQ_ORDER_D" msprop:Generator_ColumnPropNameInTable="HQ_ORDER_DColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AUTO_DIS_FLAG" msprop:Generator_UserColumnName="AUTO_DIS_FLAG" msprop:Generator_ColumnPropNameInRow="AUTO_DIS_FLAG" msprop:Generator_ColumnVarNameInTable="columnAUTO_DIS_FLAG" msprop:Generator_ColumnPropNameInTable="AUTO_DIS_FLAGColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DIS_QTY" msprop:Generator_UserColumnName="DIS_QTY" msprop:Generator_ColumnPropNameInRow="DIS_QTY" msprop:Generator_ColumnVarNameInTable="columnDIS_QTY" msprop:Generator_ColumnPropNameInTable="DIS_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REMARK" msprop:Generator_UserColumnName="REMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HQ_ORDER_M_ID" msprop:Generator_UserColumnName="HQ_ORDER_M_ID" msprop:Generator_ColumnPropNameInRow="HQ_ORDER_M_ID" msprop:Generator_ColumnVarNameInTable="columnHQ_ORDER_M_ID" msprop:Generator_ColumnPropNameInTable="HQ_ORDER_M_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STORE_NO" msprop:Generator_UserColumnName="STORE_NO" msprop:Generator_ColumnPropNameInRow="STORE_NO" msprop:Generator_ColumnVarNameInTable="columnSTORE_NO" msprop:Generator_ColumnPropNameInTable="STORE_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ATR_QTY" msprop:Generator_UserColumnName="ATR_QTY" msprop:Generator_ColumnPropNameInRow="ATR_QTY" msprop:Generator_ColumnVarNameInTable="columnATR_QTY" msprop:Generator_ColumnPropNameInTable="ATR_QTYColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HQ_DS_ORDER_M" />
+      <xs:field xpath="mstns:HQ_ORDER_M_ID" />
+    </xs:unique>
+    <xs:unique name="HQ_DS_ORDER_D_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HQ_DS_ORDER_D" />
+      <xs:field xpath="mstns:HQ_ORDER_D" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

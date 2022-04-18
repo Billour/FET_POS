@@ -1,0 +1,704 @@
+@charset "utf-8";
+
+html, body, form
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}   
+
+
+body {
+	background: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;	
+	color:#780C0C;
+}
+
+.splitterContainer 
+{            
+    width: 100%;
+    height: 100%;                         
+}
+
+
+/* ~~ 元素/標籤選取器 ~~ */
+ul, ol, dl { /* 由於瀏覽器之間的差異，最佳作法是在清單中使用零寬度的欄位間隔及邊界。為了保持一致，您可以在這裡指定所要的量，或在清單包含的清單項目 (LI、DT、DD) 上指定所要的量。請記住，除非您寫入較為特定的選取器，否則在此執行的作業將重疊顯示到 .nav 清單。 */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* 移除上方邊界可以解決邊界可能從其包含的 Div 逸出的問題。剩餘的下方邊界可以保持 Div 不與接在後面的元素接觸。 */
+	padding-right: 15px;
+	padding-left: 15px; /* 將欄位間隔加入至 Div 內元素的兩側 (而不是 Div 本身)，即可不需執行任何方塊模型的計算作業。具有側邊欄位間隔的巢狀 Div 也可當做替代方法。 */
+}
+a img { /* 這個選取器會移除某些瀏覽器在影像由連結所圍繞時，影像周圍所顯示的預設藍色邊框 */
+	border: none;
+}
+
+/* ~~ 網站連結的樣式設定必須保持此順序，包括建立滑過 (Hover) 效果的選取器群組在內。~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* 除非您要設定非常獨特的連結樣式，否則最好提供底線，以便快速看出 */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽的使用者，也和使用滑鼠的使用者一樣擁有相同的滑過體驗。 */
+	text-decoration: none;
+}
+
+/* ~~這個固定寬度的容器環繞著其他 Div~~ */
+.container {
+	width: 1020px;
+	background: #FFF;
+	margin: 0 auto; /* 兩側的自動值與寬度結合後，版面便會置中對齊 */
+}
+
+/* ~~ 頁首沒有指定的寬度，而會橫跨版面的整個寬度。頁首包含影像預留位置，必須由您自己的連結商標加以取代 ~~ 
+.header {
+	background-image: url(hd_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+*/
+.login {
+	height: auto;	
+	font-size:11px;
+    vertical-align:middle;
+}
+
+/* ~~ 這是版面的欄位。~~ 
+
+1) 欄位間隔只會置於 Div 的頂端或底部。這些 Div 內的元素在兩側會有欄位間隔，可讓您不需進行「方塊模型計算」。請記住，如果對 Div 本身加入任何側邊的欄位間隔或邊框，在計算「總」寬度時，就會將這些加入您定義的寬度。您也可以選擇移除 Div 中元素的欄位間隔，然後在其中放置沒有寬度的第二個 Div，並依設計所需放置欄位間隔。
+
+2) 尚未為這些欄位提供邊界，因為它們全都是浮動的。如果必須加入邊界，請避免將其放在浮動方向的一側 (例如將右邊界放在設定為向右浮動的 Div 上)。在許多時候，您都可以改用欄位間隔。對於必須違反此規則的 Div，您應該在 Div 的規則中加入 "display:inline" 宣告，以防止某些版本的 Internet Explorer 將邊界加倍。
+
+3) 因為可在文件中多次使用類別 (也可對單一的元素套用多個類別)，所以已為欄位指定類別名稱，而非 ID。例如，您可在必要時將兩個側邊列 Div 堆疊起來。如有需要，也可以將這些名稱輕鬆地變更為 ID (只要您在每份文件中只使用一次)。
+
+4) 如果想要將導覽放在右方而非左方，只要將這些欄設定為往反方向浮動 (全部往右，而非全部往左)，它們就會以相反順序呈現。您不需要在 HTML 原始碼中移動 Div。
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	padding-bottom: 10px;
+	background-color: #FCC;
+}
+.content {
+	width: 770px;
+	float: right;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+
+.func {
+	padding: 4px;
+	/*border: 1px solid #666;*/
+	margin-bottom: 5px;
+}
+
+/*
+    padding: 5px;
+	height: 25px;
+	background:#999;
+	color:#FFF;
+	font-weight: bold;
+	font-size:16px;
+    vertical-align:middle;
+*/
+.titlef {
+ padding: 5px;
+ height: 25px;
+ font-family: "新細明體";
+ color: #000000;
+ font-weight: bold;
+ font-size:16px;
+ background:#999;
+ color:#FFF;
+ vertical-align:middle;
+
+}
+
+.customer {
+	padding: 5px;
+	width:555px;
+	float:left;
+}
+
+ul.customer_layout {
+	list-style: none; /* 這會移除清單標記 */
+	display: inline;
+	padding: 5px 5px;
+}
+
+ul.customer_layout li {
+	float: left;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.operator {
+	padding: 5px;
+	width:190px;
+	top:10px;
+	right:0px;
+	position:absolute;
+	/*float:right;
+	top: -34px;
+	position: relative;
+	position:absolute;
+	float:right;
+	z-index:1;*/
+}
+
+ul.operator_layout {
+	list-style: none; /* 這會移除清單標記 */
+	border-top: 1px solid #666; /* 這會建立連結的上方邊框，其他則都會使用下方邊框放置在 LI 上 */
+	margin-bottom: 3px;
+}
+
+ul.operator_layout li {
+	border-bottom: 1px solid #666; /* 這會建立按鈕分隔 */
+	border-left: 1px solid #666; /* 這會建立按鈕分隔 */
+	border-right: 1px solid #666; /* 這會建立按鈕分隔 */	
+}
+
+ul.operator_layout a, ul.operator_layout a:visited { /* 將這些選取器放入群組，即可確保您的連結即使在受到點擊後仍保有按鈕外觀 */
+	padding: 3px 3px 3px 9px;
+	display: block; /* 這會為連結提供區塊屬性，使連結能填滿包含它的整個 LI，讓整個區域都能回應滑鼠點按動作。 */
+	width: 176px;  /*這個寬度使整個按鈕都可用於 IE6 的點按動作。如果不需要支援 IE6，就可將其移除。請從側邊列容器的寬度減去此連結的間距來計算適當的寬度。 */
+	text-decoration: none;
+	background-color: #FF9;
+}
+ul.operator_layout a:hover, ul.operator_layout a:active, ul.operator_layout a:focus { /* 這會同時變更滑鼠及鍵盤導覽器的背景及文字顏色 */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+.mainframe {
+	padding: 0px;
+	top: 0px;
+	position: relative;
+}
+.items_op {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #999;
+	height: 25;
+}
+
+.items {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	overflow: scroll;
+}
+.items_sum {
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+ul.items_op_layout {
+	list-style: none; /* 這會移除清單標記 */
+	margin-bottom: 3px;
+	padding: 3px;
+}
+
+ul.items_op_layout li {
+	border: 0px;
+	color:#FFF;
+	float: left;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #FC0;
+}
+
+ul.items_op_layout a, ul.items_op_layout a:visited { /* 將這些選取器放入群組，即可確保您的連結即使在受到點擊後仍保有按鈕外觀 */
+	display: block; /* 這會為連結提供區塊屬性，使連結能填滿包含它的整個 LI，讓整個區域都能回應滑鼠點按動作。 */
+	text-decoration: none;
+	padding: 0px 5px;
+}
+ul.items_op_layout a:hover, ul.items_op_layout a:active, ul.items_op_layout a:focus { /* 這會同時變更滑鼠及鍵盤導覽器的背景及文字顏色 */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+.payments_op {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #999;
+	height: 25;
+}
+
+.payments {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	overflow: scroll;	
+}
+.payments_sum {
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.action {
+	height: 25px;
+	padding: 5px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #999;
+	background-color: #CCC;
+}
+
+/* ~~ 這個群組選取器會在 .content 區域空間中提供清單 ~~ */
+.content ul, .content ol { 
+	padding: 0 0px 0px 0px; /* 這個欄位間隔反映出上方標題和段落規則中的右方間隔。當欄位間隔位於下方時，便可將清單中的其他元素間隔開來；當位於左方時，則可藉此建立縮排。這些動作均可依需要進行調整。 */
+}
+
+/* ~~ 導覽清單樣式 (如果選擇使用 Spry 之類的預製飛出選單，則可移除) ~~ */
+ul.nav {
+	list-style: none; /* 這會移除清單標記 */
+	border-top: 1px solid #666; /* 這會建立連結的上方邊框，其他則都會使用下方邊框放置在 LI 上 */
+	margin-bottom: 15px; /* 這會在下方的內容上建立導覽間的間距 */	
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* 這會建立按鈕分隔 */
+}
+ul.nav a, ul.nav a:visited { /* 將這些選取器放入群組，即可確保您的連結即使在受到點擊後仍保有按鈕外觀 */
+	padding: 5px 5px 5px 15px;
+	display: block; /* 這會為連結提供區塊屬性，使連結能填滿包含它的整個 LI，讓整個區域都能回應滑鼠點按動作。 */
+	width: 160px;  /*這個寬度使整個按鈕都可用於 IE6 的點按動作。如果不需要支援 IE6，就可將其移除。請從側邊列容器的寬度減去此連結的間距來計算適當的寬度。 */
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* 這會同時變更滑鼠及鍵盤導覽器的背景及文字顏色 */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ 頁尾 ~~ */
+.footer {
+	position: relative;/* 這會為 IE6 提供 hasLayout 以進行適當的清除動作 */
+	clear: both; /* 這個 clear 屬性可以強制 .container 辨識欄結束於何處以及包含欄的位置 */
+	background-image: url(../images/BoxAD_bg.jpg);
+	height: 25px;
+	width: 960px;	
+}
+
+/* ~~ 其他 float/clear 類別 ~~ */
+.fltrt {  /* 這個類別可用來讓元素在頁面中浮動，浮動的元素必須位於頁面上相鄰的元素之前。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* 這個類別可用來讓元素在頁面左方浮動，浮動的元素必須位於頁面上相鄰的元素之前。 */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* 這個類別可放置在 <br /> 或空白的 Div 上，當做接在 #container 內最後一個浮動 Div 後方的最後一個元素 (如果從 #container 移除或取出 #footer) */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/*--Extra Add--*/
+td.tdtxt
+{
+    width:13%;
+    /*background-color:Purple;
+    color:White;*/
+    text-align:right;
+    white-space: nowrap;
+}
+
+td.tdval
+{
+    width:20%;
+    /*background-color:Green;
+    color:White;*/
+    text-align:left;
+}
+td.tdcen
+{
+    text-align:center;
+}
+td.tdListBox
+{
+    width:30;
+}
+td.tdBtn
+{
+    text-align:center;
+    width:42px;
+}
+td.tdEmptyData
+{
+    height: 50px;
+    text-align: center;
+    vertical-align: middle
+}
+input.groovybutton
+{
+   font-size:10pt;
+   width:80px;
+   margin:2px;
+   font-family:新細明體 Verdana;
+   vertical-align:middle;
+   overflow:visible; width:1px !important;/*IE use*/
+}
+
+.groovybutton[class]
+{
+    width: auto !important;
+}
+
+.mGrid { width: 98%; background-color: #fff; margin: 0px ; border: solid 0px #525252; border-collapse:collapse; }
+    .mGrid td { padding: 2px; border: solid 1px #c1c1c1; color: #717171; }
+    .mGrid th { padding: 2px 2px; color: #fff; background: #780C0C url(grd_head.png) repeat-x top; border-left: solid 1px #525252; font-size: 0.9em; }
+.mGrid .alt { background: #fcfcfc url(grd_alt.png) repeat-x top; }
+.mGrid .pgr {background: #424242 url(grd_pgr.png) repeat-x top; }
+    .mGrid .pgr table { margin: 5px 0; }
+    .mGrid .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }   
+    .mGrid .pgr a { color: #666; text-decoration: none; }
+    .mGrid .pgr a:hover { color: #000; text-decoration: none; }
+
+gvMaster
+{
+    vertical-align:middle;
+}    
+
+div .txt
+{
+   white-space:nowrap;
+}
+
+.btnPosition
+{
+    width:100%;
+    vertical-align:middle;
+    text-align:center;
+    padding:0px;
+}
+
+
+.criteria
+{
+    width:100%;
+    text-align:left;    
+}
+
+.criteria table
+{
+    width:99%;
+}
+
+
+
+.visoft__tab_xpie7  .ajax__tab_header {
+     background:url(tab-line.gif) repeat-x bottom;
+     font-family:新細明體,Arial;
+     font-size:14px; 
+}
+
+.visoft__tab_xpie7 .ajax__tab_outer    {
+      background:url(tab-right.gif) no-repeat right;
+      padding-right:3px;
+      height:21px;
+}
+
+.visoft__tab_xpie7 .ajax__tab_inner    {
+     background:url(tab-left.gif) no-repeat;
+      padding-left:2px;
+}
+
+.visoft__tab_xpie7 .ajax__tab_tab {
+     background:url(tab.gif) repeat-x;
+     padding:2px 20px;
+}
+
+.visoft__tab_xpie7 .ajax__tab_hover .ajax__tab_outer {
+     background:url(tab-hover-right.gif) no-repeat right;
+}
+
+.visoft__tab_xpie7 .ajax__tab_hover .ajax__tab_inner {
+     background:url(tab-hover-left.gif) no-repeat;
+}
+
+.visoft__tab_xpie7 .ajax__tab_hover .ajax__tab_tab {
+     background:url(tab-hover.gif) repeat-x;
+}
+
+.visoft__tab_xpie7 .ajax__tab_active .ajax__tab_outer {
+     background:url(tab-active-right.gif) no-repeat right;
+}
+
+.visoft__tab_xpie7 .ajax__tab_active .ajax__tab_inner {
+     background:url(tab-active-left.gif) no-repeat;
+}
+
+.visoft__tab_xpie7 .ajax__tab_active .ajax__tab_tab {
+     background:url(tab-active.gif) repeat-x;
+}
+
+/*遮罩的樣式外觀設定*/
+.modalBackground
+{
+	background-color: #fff;
+	filter: alpha(opacity=80);
+	opacity: 0.7px;
+}
+.modalPopup
+{
+	border: solid1px#c0c0c0;
+	background: #f0f0f0;
+}
+
+/*新增/刪除/功能子區塊外觀設定*/
+.SubEditBlock
+{
+	border-width: 0px;
+	border-style: solid;
+	border-color:Silver;
+	margin:0px;
+	padding:0px;
+}
+.SubEditCommand
+{
+    margin:0px;
+    padding :2px;
+	background-color: #A66322;
+}
+.seperate
+{
+     height:10px;
+     /*background-color:blue;*/
+}
+
+.divForGrid
+{
+    height :150px; 
+    overflow:scroll; 
+    border :1px ; 
+    border-style :solid; 
+}
+.GridScrollBar
+{
+    height :90px;
+    overflow:auto;
+    border :0px ;
+    border-style :solid;
+}
+/*讓查詢/設定頁面的TextBox/DropDownList寬度一致設定*/
+.tbSpanWidth
+{
+	width :180px;
+}
+.ddlWidthFormat
+{
+	width :186px;
+}
+
+table.header
+{
+	  background-color:#8C170E;
+}
+
+td.logo
+{
+	text-align: left;
+	width: 184px;
+}
+
+td.title 
+	{
+		text-align: center;
+		font-family: verdana;
+		font-size: x-large;
+		font-weight: bolder;
+		color: #FFFFFF;
+	}
+
+td.headerbar 
+{
+	background-image: url(Images/bar.jpg);
+	text-align: right;
+	height: 24px;
+}
+
+.checkOutDiv
+{
+    text-align:center;
+}
+
+div.center 
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.PageBody
+{
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ background-color: #FFFFFF
+ }
+
+.EditTitle {  
+ font-family: "新細明體";
+ font-size: 12pt;
+ color: #000000;
+ text-align: center;
+ font-weight: bold;
+ background-color: #FFCC99
+ }
+
+.EditLabel {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: left;
+ font-weight: bold;
+ background-color: #FFFBDD
+ }
+
+.EditData {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: left;
+ font-weight: normal;
+ background-color: #FFFFFF
+ }
+
+.EditTable {  
+ border: 1px;
+ background-color: #FFCC99; 
+ }
+
+.EditFoot {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ font-weight: bold;
+ background-color: #FFFBDD
+ }
+
+.ListTitle {  
+ font-family: "新細明體";
+ color: #000000;
+ font-weight: bold;
+ background-color: #FFCC99
+ }
+
+.ListLabel {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: center;
+ font-weight: bold;
+ background-color: #FFFBDD
+ }
+
+.ListDataString {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: left;
+ font-weight: normal;
+ background-color: #FFFFFF
+ }
+
+.ListDataFixedString {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: Center;
+ font-weight: normal;
+ background-color: #FFFFFF
+ }
+
+.ListDataNumber {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: Right;
+ font-weight: normal;
+ background-color: #FFFFFF
+ }
+
+.ListTable {  
+ border: 1px;
+ background-color: #FFCC99;  
+ }
+
+.ListFoot {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: Right;
+ font-weight: bold;
+ background-color: #FFFBDD
+ }
+
+.HyperLink {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ }
+
+.CustomerBriefInfo1{
+ font-family: "新細明體";
+ font-size: 11px;
+ color: #339900;
+ padding: 5px;
+ border: 1px solid #CFDFDC;
+ background-color: #FFFFCC;
+ font-weight: bold;
+ color: #3399CC;
+}
+
+.CustomerBriefInfo2{
+ font-family: "新細明體";
+ font-size: 11px;
+ padding: 3px;
+ border: 1px solid #CFDFDC;
+ height: 22px;
+ background-color: #FFFFCC; 
+ color: #0000FF;
+}
+ 
+
+.PostListLabel {  
+ font-family: "新細明體";
+ font-size: 9pt;
+ color: #000000;
+ text-align: center;
+ font-weight: bold;
+ background-color: #FFFBDD
+ }
+ 
+
+
+

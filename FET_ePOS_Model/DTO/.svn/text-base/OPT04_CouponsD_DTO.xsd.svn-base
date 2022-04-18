@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OPT04_Coupons_D" targetNamespace="http://tempuri.org/OPT04_Coupons_D.xsd" xmlns:mstns="http://tempuri.org/OPT04_Coupons_D.xsd" xmlns="http://tempuri.org/OPT04_Coupons_D.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OPT04_Coupons_D" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="OPT04_Coupons_D" msprop:Generator_UserDSName="OPT04_Coupons_D" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="COUPONS_COMPANY" msprop:Generator_UserTableName="COUPONS_COMPANY" msprop:Generator_RowDeletedName="COUPONS_COMPANYRowDeleted" msprop:Generator_TableClassName="COUPONS_COMPANYDataTable" msprop:Generator_RowChangedName="COUPONS_COMPANYRowChanged" msprop:Generator_RowClassName="COUPONS_COMPANYRow" msprop:Generator_RowChangingName="COUPONS_COMPANYRowChanging" msprop:Generator_RowEvArgName="COUPONS_COMPANYRowChangeEvent" msprop:Generator_RowEvHandlerName="COUPONS_COMPANYRowChangeEventHandler" msprop:Generator_TablePropName="COUPONS_COMPANY" msprop:Generator_TableVarName="tableCOUPONS_COMPANY" msprop:Generator_RowDeletingName="COUPONS_COMPANYRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COUPON_COMPANY_ID" msprop:Generator_UserColumnName="COUPON_COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COUPON_COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOUPON_COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COUPON_COMPANY_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_NAME" msprop:Generator_UserColumnName="COMPANY_NAME" msprop:Generator_ColumnPropNameInRow="COMPANY_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_NAME" msprop:Generator_ColumnPropNameInTable="COMPANY_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="COUPONS_D" msprop:Generator_UserTableName="COUPONS_D" msprop:Generator_RowDeletedName="COUPONS_DRowDeleted" msprop:Generator_TableClassName="COUPONS_DDataTable" msprop:Generator_RowChangedName="COUPONS_DRowChanged" msprop:Generator_RowClassName="COUPONS_DRow" msprop:Generator_RowChangingName="COUPONS_DRowChanging" msprop:Generator_RowEvArgName="COUPONS_DRowChangeEvent" msprop:Generator_RowEvHandlerName="COUPONS_DRowChangeEventHandler" msprop:Generator_TablePropName="COUPONS_D" msprop:Generator_TableVarName="tableCOUPONS_D" msprop:Generator_RowDeletingName="COUPONS_DRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COUPON_SET_ID" msprop:Generator_UserColumnName="COUPON_SET_ID" msprop:Generator_ColumnPropNameInRow="COUPON_SET_ID" msprop:Generator_ColumnVarNameInTable="columnCOUPON_SET_ID" msprop:Generator_ColumnPropNameInTable="COUPON_SET_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUPON_RATE" msprop:Generator_UserColumnName="COUPON_RATE" msprop:Generator_ColumnPropNameInRow="COUPON_RATE" msprop:Generator_ColumnVarNameInTable="columnCOUPON_RATE" msprop:Generator_ColumnPropNameInTable="COUPON_RATEColumn" type="xs:decimal" />
+              <xs:element name="LOG_COUPON_NO" msprop:Generator_UserColumnName="LOG_COUPON_NO" msprop:Generator_ColumnPropNameInRow="LOG_COUPON_NO" msprop:Generator_ColumnVarNameInTable="columnLOG_COUPON_NO" msprop:Generator_ColumnPropNameInTable="LOG_COUPON_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_DATE" msprop:Generator_UserColumnName="S_DATE" msprop:Generator_ColumnPropNameInRow="S_DATE" msprop:Generator_ColumnVarNameInTable="columnS_DATE" msprop:Generator_ColumnPropNameInTable="S_DATEColumn" type="xs:dateTime" />
+              <xs:element name="E_DATE" msprop:Generator_UserColumnName="E_DATE" msprop:Generator_ColumnPropNameInRow="E_DATE" msprop:Generator_ColumnVarNameInTable="columnE_DATE" msprop:Generator_ColumnPropNameInTable="E_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COUPON_ID" msprop:Generator_UserColumnName="COUPON_ID" msprop:Generator_ColumnPropNameInRow="COUPON_ID" msprop:Generator_ColumnVarNameInTable="columnCOUPON_ID" msprop:Generator_ColumnPropNameInTable="COUPON_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODE_USER" msprop:Generator_UserColumnName="MODE_USER" msprop:Generator_ColumnPropNameInRow="MODE_USER" msprop:Generator_ColumnVarNameInTable="columnMODE_USER" msprop:Generator_ColumnPropNameInTable="MODE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="COUPONS_M" msprop:Generator_UserTableName="COUPONS_M" msprop:Generator_RowDeletedName="COUPONS_MRowDeleted" msprop:Generator_TableClassName="COUPONS_MDataTable" msprop:Generator_RowChangedName="COUPONS_MRowChanged" msprop:Generator_RowClassName="COUPONS_MRow" msprop:Generator_RowChangingName="COUPONS_MRowChanging" msprop:Generator_RowEvArgName="COUPONS_MRowChangeEvent" msprop:Generator_RowEvHandlerName="COUPONS_MRowChangeEventHandler" msprop:Generator_TablePropName="COUPONS_M" msprop:Generator_TableVarName="tableCOUPONS_M" msprop:Generator_RowDeletingName="COUPONS_MRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COUPON_ID" msprop:Generator_UserColumnName="COUPON_ID" msprop:Generator_ColumnPropNameInRow="COUPON_ID" msprop:Generator_ColumnVarNameInTable="columnCOUPON_ID" msprop:Generator_ColumnPropNameInTable="COUPON_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUPON_COMPANY_ID" msprop:Generator_UserColumnName="COUPON_COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COUPON_COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOUPON_COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COUPON_COMPANY_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:COUPONS_COMPANY" />
+      <xs:field xpath="mstns:COUPON_COMPANY_ID" />
+    </xs:unique>
+    <xs:unique name="COUPONS_D_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:COUPONS_D" />
+      <xs:field xpath="mstns:COUPON_SET_ID" />
+    </xs:unique>
+    <xs:unique name="COUPONS_M_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:COUPONS_M" />
+      <xs:field xpath="mstns:COUPON_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

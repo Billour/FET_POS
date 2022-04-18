@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 67
+*.pdb
+AdvTekUtility.dll
+App_Licenses.dll
+ePOSModel.dll
+log4net.dll
+
+END

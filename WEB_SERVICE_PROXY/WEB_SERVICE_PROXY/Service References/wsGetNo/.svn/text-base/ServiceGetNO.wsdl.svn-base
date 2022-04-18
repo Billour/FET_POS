@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetSALE_No">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PA_Sheet_Type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="STORE_NO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MACHINE_ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSALE_NoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSALE_NoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetINVOICE_NO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="STORE_NO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetINVOICE_NOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetINVOICE_NOResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRECITT_NO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PA_Sheet_Type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRECITT_NOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRECITT_NOResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSALE_NoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSALE_No" />
+  </wsdl:message>
+  <wsdl:message name="GetSALE_NoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSALE_NoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetINVOICE_NOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetINVOICE_NO" />
+  </wsdl:message>
+  <wsdl:message name="GetINVOICE_NOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetINVOICE_NOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRECITT_NOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRECITT_NO" />
+  </wsdl:message>
+  <wsdl:message name="GetRECITT_NOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRECITT_NOResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceGetNOSoap">
+    <wsdl:operation name="GetSALE_No">
+      <wsdl:input message="tns:GetSALE_NoSoapIn" />
+      <wsdl:output message="tns:GetSALE_NoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetINVOICE_NO">
+      <wsdl:input message="tns:GetINVOICE_NOSoapIn" />
+      <wsdl:output message="tns:GetINVOICE_NOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRECITT_NO">
+      <wsdl:input message="tns:GetRECITT_NOSoapIn" />
+      <wsdl:output message="tns:GetRECITT_NOSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceGetNOSoap" type="tns:ServiceGetNOSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSALE_No">
+      <soap:operation soapAction="http://tempuri.org/GetSALE_No" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetINVOICE_NO">
+      <soap:operation soapAction="http://tempuri.org/GetINVOICE_NO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRECITT_NO">
+      <soap:operation soapAction="http://tempuri.org/GetRECITT_NO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceGetNOSoap12" type="tns:ServiceGetNOSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSALE_No">
+      <soap12:operation soapAction="http://tempuri.org/GetSALE_No" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetINVOICE_NO">
+      <soap12:operation soapAction="http://tempuri.org/GetINVOICE_NO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRECITT_NO">
+      <soap12:operation soapAction="http://tempuri.org/GetRECITT_NO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceGetNO">
+    <wsdl:port name="ServiceGetNOSoap" binding="tns:ServiceGetNOSoap">
+      <soap:address location="http://localhost/WEB_SERVICE/ServiceGetNO.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceGetNOSoap12" binding="tns:ServiceGetNOSoap12">
+      <soap12:address location="http://localhost/WEB_SERVICE/ServiceGetNO.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

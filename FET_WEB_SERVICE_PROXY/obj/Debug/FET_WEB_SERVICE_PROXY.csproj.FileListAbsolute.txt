@@ -1,0 +1,6 @@
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\obj\Debug\ResolveAssemblyReference.cache
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\bin\Debug\ePOSwsProxy.dll.config
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\bin\Debug\ePOSwsProxy.dll
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\bin\Debug\ePOSwsProxy.pdb
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\obj\Debug\ePOSwsProxy.dll
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\obj\Debug\ePOSwsProxy.pdb

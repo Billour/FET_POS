@@ -1,0 +1,80 @@
+﻿
+    {
+        _OPT13_HgConvertibleRestricted_DTO = new OPT13_HgConvertibleRestricted_DTO();
+        _OPT13_Facade = new OPT13_Facade();
+
+        try
+        {
+            //若不使用DataSourceID時UPDATE INSERT 和DELPETE 都要自己控制 以下為UPDATE時需自行控制
+            ASPxGridView grid = (ASPxGridView)sender;
+
+            OPT13_HgConvertibleRestricted_DTO.HG_CONVERT_REST_PRODDataTable dtHGCRP = _OPT13_HgConvertibleRestricted_DTO.HG_CONVERT_REST_PROD;
+            OPT13_HgConvertibleRestricted_DTO.PRODUCTDataTable dtProd = _OPT13_HgConvertibleRestricted_DTO.PRODUCT;
+            OPT13_HgConvertibleRestricted_DTO.HG_CONVERTIBLE_RESTRICTEDDataTable dtHGCR = _OPT13_HgConvertibleRestricted_DTO.HG_CONVERTIBLE_RESTRICTED;
+
+            string HGCRP_UUID = GuidNo.getUUID();
+            string PRODUCT_UUID = GuidNo.getUUID();
+            string HGCR_UUID = GuidNo.getUUID();
+            string PROMO_ID = GuidNo.getUUID();
+
+            OPT13_HgConvertibleRestricted_DTO.HG_CONVERT_REST_PRODRow drHGCRP = dtHGCRP.NewHG_CONVERT_REST_PRODRow();
+            OPT13_HgConvertibleRestricted_DTO.PRODUCTRow drProd = dtProd.NewPRODUCTRow();
+            OPT13_HgConvertibleRestricted_DTO.HG_CONVERTIBLE_RESTRICTEDRow drHGCR = dtHGCR.NewHG_CONVERTIBLE_RESTRICTEDRow();
+
+            //dtHGCRP collect properties
+            drHGCRP.ACTIVITY_ID = HGCRP_UUID;
+            drHGCRP.PRODNO = PRODUCT_UUID;
+
+            //drProd collect properties
+            drProd.PRODNO = PRODUCT_UUID; //PRODNO
+            drProd.PRODNAME = e.NewValues["PRODNAME"].ToString(); //PRODNAME
+            drProd.PRODTYPENO = "001"; //PRODTYPENO        
+            drProd.MODI_USER = "Josh"; //MODI_USER
+            drProd.MODI_DTM = Convert.ToDateTime(System.DateTime.Now); //MODI_DTM               
+            drProd.CREATE_USER = "Josh";//CREATE_USER        
+            drProd.IS_POS_DEF_PRICE = "Y";//IS_POS_DEF_PRICE                
+            drProd.IMEI_FLAG = "Y";//IMEI_FLAG
+
+            //dtHGCR collect properties        
+            drHGCR.ACTIVITY_ID = HGCRP_UUID;
+            drHGCR.ACTIVITY_NAME = e.NewValues["ACTIVITY_NAME"].ToString();
+            drHGCR.CONVERT_REST_TYPE = OPT13_PageHelper.GetConvertRestTypeName(false).Tables[0].AsEnumerable()
+                                                       .Single(
+                                                                dr => dr.Field<string>("CONVERT_REST_TYPE_NAME")
+                                                                      == e.NewValues["CONVERT_REST_TYPE_NAME"].ToString()
+                                                              ).Field<string>("CONVERT_REST_TYPE");
+                                                       
+            drHGCR.PAY_OFF_TYPE = OPT13_PageHelper.GetPayOffTypeName(false).Tables[0].AsEnumerable()
+                                                  .Single(
+                                                            dr => dr.Field<string>("PAY_OFF_TYPE_NAME")
+                                                                  == e.NewValues["PAY_OFF_TYPE_NAME"].ToString()
+                                                         ).Field<string>("PAY_OFF_TYPE");
+
+            drHGCR.CREATE_DTM = Convert.ToDateTime(System.DateTime.Now);
+            drHGCR.CREATE_USER = "Josh";
+            drHGCR.S_DATE = Convert.ToDateTime(e.NewValues["S_DATE"]);
+            drHGCR.E_DATE = Convert.ToDateTime(e.NewValues["E_DATE"]);
+            drHGCR.MODI_DTM = Convert.ToDateTime(e.NewValues["MODI_DTM"]);
+            drHGCR.MODI_USER = e.NewValues["MODI_USER"].ToString();
+            drHGCR.PRODNO = PRODUCT_UUID;
+            drHGCR.PROMO_ID = PROMO_ID;
+            drHGCR.U_BOUND = Convert.ToDecimal(e.NewValues["U_BOUND"]);
+            drHGCR.USE_COUNT = Convert.ToDecimal(e.NewValues["USE_COUNT"]);
+
+            gvActivity.CancelEdit();
+            e.Cancel = true;
+
+            bindHgConvertDiscountActivity();
+            ////e.NewValues["TemplateID"] = Guid.NewGuid(); // I set this PK myself.
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            _OPT13_HgConvertibleRestricted_DTO = null;
+            _OPT13_Facade = null;
+        }
+        
+    }

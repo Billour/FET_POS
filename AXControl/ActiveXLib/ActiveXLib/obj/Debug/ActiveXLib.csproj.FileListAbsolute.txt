@@ -1,0 +1,6 @@
+C:\Users\Ricky\Documents\Visual Studio 2008\Projects\ActiveXLib\ActiveXLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricky\Documents\Visual Studio 2008\Projects\ActiveXLib\ActiveXLib\bin\Debug\ActiveXLib.dll
+C:\Users\Ricky\Documents\Visual Studio 2008\Projects\ActiveXLib\ActiveXLib\bin\Debug\ActiveXLib.pdb
+C:\Users\Ricky\Documents\Visual Studio 2008\Projects\ActiveXLib\ActiveXLib\bin\Debug\ActiveXLib.tlb
+C:\Users\Ricky\Documents\Visual Studio 2008\Projects\ActiveXLib\ActiveXLib\obj\Debug\ActiveXLib.dll
+C:\Users\Ricky\Documents\Visual Studio 2008\Projects\ActiveXLib\ActiveXLib\obj\Debug\ActiveXLib.pdb

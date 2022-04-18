@@ -1,0 +1,111 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>        
+    <script type="text/javascript">                    
+        function resetForm(ele) {
+            if (!isPostBack()) {
+                ele.reset();
+            } else {
+                window.location.href = window.location.href;
+            }
+        }               
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onkeydown="if(window.event.keyCode==13){window.event.keyCode = 9;}">
+
+    <form id="form1" runat="server">
+    
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="true">
+        <Scripts>
+            <asp:ScriptReference Path="~/ClientUtility/shortcut.js" />
+        </Scripts>
+    </asp:ToolkitScriptManager>
+    
+    <script type="text/javascript">
+        shortcut.add('Ctrl+Shift+X', function() {
+            alert('Hi there!');
+        });
+    </script>
+    
+    <cc:ASPxPopupControl ID="pcSAL11" ClientInstanceName="pcSAL11" runat="server" AllowDragging="True"
+         AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/SAL/SAL11/SAL11_Transaction.aspx"   
+         PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" PopupHorizontalOffset="400" PopupVerticalOffset="50"
+         Width="300px" Height="180px" HeaderText="交易補登選項" Modal="true" EnableHierarchyRecreation="true">
+    </cc:ASPxPopupControl>
+    
+    <div class="splitterContainer" style="overflow: scroll;">
+    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>    
+    </div> 
+  
+    
+<%--    <div id="loadingContainer" style="width: 100%; height: 100%">
+    
+        <dx:ASPxLoadingPanel ID="loadingPanel" runat="server" ClientInstanceName="loadingPanel"
+            Modal="true">
+            <ClientSideEvents Init="function(s,e) { 
+            //loadingPanel.ShowInElementByID('loadingContainer'); 
+            loadingPanel.Show();
+            }" />
+        </dx:ASPxLoadingPanel>
+        <div id="splitterContainer" class="splitterContainer" runat="server">
+            <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" Width="100%" Height="100%" 
+                Orientation="Vertical" PaneMinSize="0px" AllowResize="False" >
+                <Panes>
+                    <dx:SplitterPane Size="0px" PaneStyle-BackColor="#FFFFFF"   >
+                        <PaneStyle BackColor="#FFFFFF">
+                            <Paddings Padding="0px" />
+                        </PaneStyle>
+                        <ContentCollection>
+                            <dx:SplitterContentControl ID="SplitterContentControl1"  runat="server" >
+                               
+                            </dx:SplitterContentControl>
+                        </ContentCollection>
+                    </dx:SplitterPane>
+                    <dx:SplitterPane>
+                        <Panes>
+                            <dx:SplitterPane Size="0px" PaneStyle-BackColor="#FFFFFF" ShowCollapseBackwardButton="True" 
+                                ScrollBars="Auto">
+                                <PaneStyle BackColor="#FFFFFF">
+                                    <Paddings Padding="0px"></Paddings>
+                                </PaneStyle>
+                                <ContentCollection>
+                                    <dx:SplitterContentControl ID="SplitterContentControl2" runat="server">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; height: 100%;">
+                                        </table>
+                                    </dx:SplitterContentControl>
+                                </ContentCollection>
+                            </dx:SplitterPane>
+                            <dx:SplitterPane PaneStyle-BackColor="#FFFFFF" ScrollBars="Auto" ContentUrlIFrameName="contentUrlPane">
+                                <PaneStyle BackColor="#FFFFFF">
+                                </PaneStyle>
+                                <ContentCollection>
+                                    <dx:SplitterContentControl ID="ContentUrlPane" runat="server">                                 
+                                        <!--This is the main content pane-->
+                                        <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                                        </asp:ContentPlaceHolder>                                       
+                                    </dx:SplitterContentControl>
+                                </ContentCollection>
+                            </dx:SplitterPane>
+                        </Panes>
+                        <ContentCollection>
+                            <dx:SplitterContentControl runat="server"></dx:SplitterContentControl>
+                        </ContentCollection>
+                    </dx:SplitterPane>
+                </Panes>
+                <ClientSideEvents Init="function(s, e) {
+                    loadingPanel.Hide();
+                    document.getElementById('ctl00_splitterContainer').style.visibility = 'visible';                
+                }" />
+            </dx:ASPxSplitter>
+            
+            
+        </div>
+    </div>--%>
+    </form>
+</body>
+</html>

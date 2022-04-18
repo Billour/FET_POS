@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/10002/SourceCode/FET_POS/FET_WEB_POS_v2/WebServices
+END
+BankService.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/1762/SourceCode/FET_POS/FET_WEB_POS_v2/WebServices/BankService.asmx
+END
+ServiceGetNO.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/10002/SourceCode/FET_POS/FET_WEB_POS_v2/WebServices/ServiceGetNO.asmx
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException
+END
+FieldListNotSetException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/FieldListNotSetException.cs
+END
+ResetTypeDefineException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/ResetTypeDefineException.cs
+END
+SegmentTypeDefineException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/SegmentTypeDefineException.cs
+END
+FieldNotMatchException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/FieldNotMatchException.cs
+END
+RowIndexOutOfBoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/RowIndexOutOfBoundException.cs
+END
+ConfigurationException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/ConfigurationException.cs
+END
+SheetTypeNotFoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/SheetTypeNotFoundException.cs
+END
+SegUserIndexOutOfBoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/SegUserIndexOutOfBoundException.cs
+END
+SeqNoOutOfBoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/SeqNoOutOfBoundException.cs
+END
+SegmentValueNullPointerException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/UserException/SegmentValueNullPointerException.cs
+END

@@ -1,0 +1,8 @@
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\bin\Release\ePOSwsProxy.dll.config
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\bin\Release\ePOSwsProxy.dll
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\bin\Release\ePOSwsProxy.XmlSerializers.dll
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\bin\Release\ePOSwsProxy.pdb
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\obj\Release\ResolveAssemblyReference.cache
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\obj\Release\ePOSwsProxy.dll
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\obj\Release\ePOSwsProxy.pdb
+D:\02_WorkSpace\FET_WEB_SERVICE_PROXY\obj\Release\ePOSwsProxy.XmlSerializers.dll

@@ -1,0 +1,146 @@
+<HTML>
+<HEAD>
+<TITLE>ECR.CAB</TITLE>
+<OBJECT ID="oECR"
+CLASSID="CLSID:9126B51B-F1B9-4AED-AA4C-131FC05482B3"
+CODEBASE="ECRAPI.CAB#version=1,0,0,0">
+</OBJECT>
+</HEAD>
+<BODY>
+
+<script type="text/javascript">
+<!--
+function Call_Credit_Card_Sale()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	var result = oECR.Credit_Card_Sale(txtAmount.value,txtStoreId.value,"0","");
+	alert(result);
+	var val = result.split(',');
+	txtRECEIPTNo.value = val[3];
+}
+function Call_Credit_Card_Sale_Installment()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	var result = oECR.Credit_Card_Sale(txtAmount.value,txtStoreId.value,"I",txtPERIOD_NO.value);
+	alert(result);
+}
+function Call_Credit_Card_Refund()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	var result = oECR.Credit_Card_Refund(txtAmount.value,txtApproveNo.value,txtRECEIPTNo.value,txtStoreId.value,"0");
+	alert(result);
+}
+function Call_Inquiry_Loyalty_Point()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	var result = oECR.Inquiry_Loyalty_Point(txtHappyCardNo.value);
+	alert(result);
+}
+function Call_FEG_REWARD()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	if (txtAmount.value == "" || txtStoreId.value == "" || txtPayType.value == "" || txtHappyCardNo.value == "") 
+	{
+		alert('please input 金額, STORE_ID, Pay Type, HAPPY GO CARD_NO');
+		return false;
+	}
+	var result = oECR.Reward_Transaction(txtAmount.value,txtStoreId.value,txtPayType.value,txtHappyCardNo.value);
+	alert(result);
+}
+function Call_Online_Redeem_Transaction()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	if (txtAmount.value == "" || txtStoreId.value == "" || txtPayType.value == "" || txtHappyCardNo.value == "") 
+	{
+		alert('please input 金額, STORE_ID, Pay Type, HAPPY GO CARD_NO');
+		return false;
+	}
+	var result = oECR.Online_Redeem_Transaction(txtAmount.value,txtStoreId.value,txtPayType.value,txtHappyCardNo.value);
+	alert(result);
+}
+function Call_Point_Sale_Transaction()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	if (txtAmount.value == "" || txtStoreId.value == "" || txtPayType.value == "" || txtHappyCardNo.value == "" || txtRedeemPoint.value == "") 
+	{
+		alert('please input 金額, STORE_ID, Pay Type, HAPPY GO CARD_NO, Redeem Point');
+		return false;
+	}
+	var result = oECR.Point_Sale_Transaction(txtAmount.value,txtStoreId.value,txtPayType.value,txtHappyCardNo.value,txtRedeemPoint.value);
+	alert(result);
+}
+function Call_Full_Redeem()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	if (txtStoreId.value == "" || txtHappyCardNo.value == "" || txtRedeemPoint.value == "") 
+	{
+		alert('please input STORE_ID, HAPPY GO CARD_NO, Redeem Point');
+		return false;
+	}
+	var result = oECR.Full_Redeem(txtStoreId.value,txtHappyCardNo.value,txtRedeemPoint.value);
+	alert(result);
+}
+function Call_Reward_Refund()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	if (txtStoreId.value == "" || txtHappyCardNo.value == "" || txtRedeemPoint.value == "") 
+	{
+		alert('please input STORE_ID, HAPPY GO CARD_NO, Redeem Point');
+		return false;
+	}
+	var result = oECR.Reward_Refund(txtStoreId.value,txtHappyCardNo.value,txtRedeemPoint.value);
+	alert(result);
+}
+function Call_Redeem_Refund()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	if (txtStoreId.value == "" || txtHappyCardNo.value == "" || txtRedeemPoint.value == "") 
+	{
+		alert('please input STORE_ID, HAPPY GO CARD_NO, Redeem Point');
+		return false;
+	}
+	var result = oECR.Redeem_Refund(txtStoreId.value,txtHappyCardNo.value,txtRedeemPoint.value);
+	alert(result);
+}
+function Call_FETC_Inquiry()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	var result = oECR.FETC_Inquiry();
+	alert(result);
+}
+function Call_FETC_Loading()
+{
+	var oECR = new ActiveXObject("ProjECR.ECRAPI");
+	if (txtAmount.value == "" || txtStoreId.value == "") 
+	{
+		alert('please input 金額, STORE_ID');
+		return false;
+	}
+	var result = oECR.FETC_Loading(txtAmount.value,txtStoreId.value);
+	alert(result);
+}
+//-->
+</script>
+金額：<input type="text" id="txtAmount"><BR>
+PERIOD_NO：<input type="text" id="txtPERIOD_NO" value="1"><BR>
+STORE_ID：<input type="text" id="txtStoreId" value="2101"><BR>
+APPROVE NO：<input type="text" id="txtApproveNo" value=""><BR>
+RECEIPT NO：<input type="text" id="txtRECEIPTNo" value=""><BR><HR>
+HAPPY GO CARD_NO：<input type="text" id="txtHappyCardNo" value=""><BR>
+Pay Type：<input type="text" id="txtPayType" value="1"> 1: Credit Card, 2: Cash, 3:Voucher Paper<BR>
+Redeem Point：<input type="text" id="txtRedeemPoint" value=""><BR><HR>
+<input type="button" value="[銷售]" onclick="Call_Credit_Card_Sale()">&nbsp;
+<input type="button" value="[銷售(分期)]" onclick="Call_Credit_Card_Sale_Installment()">&nbsp;
+<input type="button" value="[退貨]" onclick="Call_Credit_Card_Refund()"><BR><HR>
+<input type="button" value="[查詢Happy Go點數]" onclick="Call_Inquiry_Loyalty_Point()">&nbsp;
+<input type="button" value="[FEG REWARD]" onclick="Call_FEG_REWARD()">&nbsp;
+<input type="button" value="[Online Redeem Transaction]" onclick="Call_Online_Redeem_Transaction()">&nbsp;
+<input type="button" value="[Point Sale Transaction]" onclick="Call_Point_Sale_Transaction()">&nbsp;
+<input type="button" value="[Full Redeem]" onclick="Call_Full_Redeem()">&nbsp;
+<input type="button" value="[Reward Refund]" onclick="Call_Reward_Refund()">&nbsp;
+<input type="button" value="[Redeem Refund]" onclick="Call_Redeem_Refund()"><BR><HR>
+<input type="button" value="[FETC Inquiry]" onclick="Call_FETC_Inquiry()">&nbsp;
+<input type="button" value="[FETC Loading]" onclick="Call_FETC_Loading()">&nbsp;
+</BODY>
+</HTML>
+

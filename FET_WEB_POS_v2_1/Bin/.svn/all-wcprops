@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/FET_POS_2010/!svn/ver/3306/SourceCode/FET_POS/FET_WEB_POS_v2_1/Bin
+END
+App_Licenses.dll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3306/SourceCode/FET_POS/FET_WEB_POS_v2_1/Bin/App_Licenses.dll
+END
+AjaxControlToolkit.dll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Bin/AjaxControlToolkit.dll
+END
+log4net.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Bin/log4net.dll
+END
+GotDotNet.ApplicationBlocks.Data.dll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Bin/GotDotNet.ApplicationBlocks.Data.dll
+END
+AdvTekUtility.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Bin/AdvTekUtility.dll
+END

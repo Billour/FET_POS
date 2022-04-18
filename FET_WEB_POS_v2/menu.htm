@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   <script type="text/javascript" src="ClientUtility/jquery.js" ></script>
+    <script type="text/javascript">
+        function go(url) {
+            var a = document.getElementById('value_a').value;
+            var b = document.getElementById('value_b').value;
+            var c = document.getElementById('value_c').value;
+            var d = document.getElementById('value_d').value;
+            //top.content.location = url + '?storeId=' + a + '&EmployeeId=' + b + '&machine_id=' + c + '&role=' + d;
+            Encrypt(url,a,b,c,d);
+          
+        }
+
+           //加密
+        function Encrypt(url,a, b, c, d) {
+            $.ajax({
+                url: 'EntryPoint_SP2.aspx',
+                type: 'GET',
+                data: {
+                    url: url,
+                    storeId: a,
+                    EmployeeId: b,
+                    machine_id: c,
+                    role: d
+                },
+                error: function(xhr) {
+                    alert('error');
+                    alert(xhr.responseText);
+                    top.content.location = url + '?storeId=' + a + '&EmployeeId=' + b + '&machine_id=' + c + '&role=' + d;
+                },
+                success: function(response) {
+                    var t = new Date().getTime();
+                    top.content.location = 'EntryPoint_SP2.aspx?Param=' + response + '&t='+t;
+                }
+            });
+        }
+    </script>
+    
+    
+</head>
+<body>
+store:<br />
+<select name="value_a" id="value_a">
+    <option value="2101">2101-遠企</option>
+    <option value="2104">2104-天母忠誠</option>
+    <option value="2108">2108-西門</option>
+    <option value="2201">2201-三多</option>
+    <option value="2911">2911-信義威秀</option>
+    <option value="2921">2921-新竹竹塹</option>
+    <option value="2121">2121-台北民權</option>
+    <option value="2129">2129-台北八德</option>
+    <option value="2138">2138-永和竹林</option>
+    <option value="2139">2139-板橋雙十</option>
+    <option value="2140">2140-台北三重</option>
+    <option value="2141">2141-台北北新</option>
+    <option value="2142">2142-桃園三民</option>
+    <option value="2225">2225-鳳山光遠</option>
+    <option value="2226">2226-林森</option>
+    <option value="2227">2227-屏東民生</option>
+    <option value="2301">2301-美村</option>
+    <option value="2309">2309-田中中州</option>
+    <option value="2326">2326-閉店豐原圓環</option>
+    <option value="2327">2327-彰化中山</option>
+    <option value="2407">2407-花蓮中山</option>
+    <option value="2601">2601-閉店K_Retail-中區旗艦門市</option>
+    <option value="2921">2921-無限城竹塹館</option>
+    <option value="3113">3113-桃園機場</option>
+    <option value="2306">2306-閉店斗六</option>
+    <option value="HQ">HQ-遠傳總公司</option>
+</select>
+<br />
+employee:<br />
+<select name="value_b" id="value_b">
+    <option value="60123">60123-周*昕</option>
+    <option value="60679">60679-葉*芳</option>
+    <option value="60697">60697-王*慧</option>
+    <option value="60734">60734-盧*華</option>
+    <option value="60736">60736-李*鈞</option>
+    <option value="60971">60971-董*碧</option>
+    <option value="61743">61743-黃*樹</option>
+    <option value="62892">62892-林*璇</option>
+    <option value="64030">64030-林*萱</option>
+    <option value="64951">64951-陳*螢</option>
+    <option value="67479">67479-孫*生</option>
+    <option value="69697">69697-陳*樺</option>
+    <option value="70950">70950-楊*惠</option>
+    <option value="90147">90147-王*茹</option>
+    <option value="99456">99456-楊*羚</option>
+</select>
+<br />
+machine:<br />
+<select name="value_c" id="value_c">
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">09</option>
+    <option value="10">10</option>
+</select>
+<br />
+role:<br />
+<select name="value_d" id="value_d">
+    <option value="1">店長</option>
+    <option value="2">店員</option>
+    <option value="HQ">總部人員</option>
+    <option value="IF">IT人員</option>
+</select>
+<br /><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL07/SAL07.aspx');" >促銷商品價格查詢</a><br />
+<!--<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL01/SAL01.aspx');" >銷售作業</a><br />-->
+<a href="javascript:void(0);" onclick="go('VSS/SAL/TSAL01/TSAL01.aspx');" >銷售作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/TSAL05/TSAL05.aspx');" >交易未結清單</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/TSAL02/TSAL02.aspx');" >銷售交易查詢(測)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL02/SAL02.aspx');" >銷售交易查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL12/SAL12.aspx');" >商品單價查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL13/SAL13.aspx');" >折扣優惠查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV29/INV29.aspx');" >IMEI上傳作業</a><br />
+<br />系統管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/LOG/LOG04/LOG04.aspx');" >系統參數設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/LOG/LOG06/LOG06.aspx');" >門市特殊客訴處理折扣密碼設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/LOG/LOG07/LOG07.aspx');" >店長折扣密碼設定(測)</a><br />
+
+<!--<a href="javascript:void(0);" onclick="go('VSS/LOG/LOG05.aspx');" >功能清單設定</a><br />-->
+<!--<a href="javascript:void(0);" onclick="go('VSS/LOG/LOG03.aspx');" >角色功能對應作業</a><br />-->
+<!--<a href="javascript:void(0);" onclick="go('VSS/LOG/LOG03b.aspx');" >使用者功能對應作業</a><br />-->
+<br />基本資料設定<br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT01/OPT01.aspx');" >支付方式設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT02/OPT02.aspx');" >信用卡手續費設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT03/OPT03.aspx');" >信用卡分期設定作業</a><br />
+<!--<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT04.aspx');" >禮卷設定作業</a><br />-->
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT05/OPT05.aspx');" >總部發票設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT05/OPT05a.aspx');" >門市離線發票設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT10/OPT10.aspx');" >商品主檔設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT11/OPT11.aspx');" >HG點數兌換設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT12/OPT12.aspx');" >HG點數累點設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT13/OPT13.aspx');" >HG活動兌點限制－商品料號</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT13/OPT13_1.aspx');" >HG活動兌點限制－促銷活動</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT15/OPT15.aspx');" >HG點數兌換-來店禮</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT18/OPT18.aspx');" >門市特殊客訢處理折扣設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/OPT/OPT19/OPT19.aspx');" >會計分錄處理作業</a><br />
+
+<br />日結管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/CHK/CHK01/CHK01.aspx');" >門市日結作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CHK/CHK02/CHK02.aspx');" >機台日結讀帳作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CHK/CHK04/CHK04.aspx');" >找零金</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CHK/CHK05/CHK05.aspx');" >繳大鈔</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CHK/CHK06/CHK06.aspx');" >總部對帳作業</a><br />
+<br />庫存管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV01/INV01.aspx');" >總部移撥查詢作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV03/INV03.aspx');" >庫存查詢作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV05/INV05.aspx');" >退倉設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV06/INV06.aspx');" >退倉作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV08/INV08.aspx');" >進貨驗收作業</a><br />
+<!--<a href="javascript:void(0);" onclick="go('VSS/INV/INV11/INV10.aspx');" >盤點查詢作業</a><br />--> <!--此作業不需獨立出來 by Jennifer -->
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV11/INV11.aspx');" >盤點作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV12/INV12.aspx');" >無訂單進貨資料輸入</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV13/INV13.aspx');" >無訂單進貨資料查詢作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV17/INV17.aspx');" >關帳日設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV18_1/INV18_1.aspx');" >庫存調整作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV23/INV23.aspx');" >倉別設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV25/INV25.aspx');" >移出作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV26/INV26.aspx');" >撥入作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV27/INV27.aspx');" >總部拆封商品設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/INV/INV28/INV28.aspx');" >門市拆封IMEI設定</a><br />
+
+<br />訂貨管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD01/ORD01.aspx');" >訂貨作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD12/ORD12.aspx');" >預訂貨作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD02/ORD02.aspx');" >(預)訂單查詢作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD03.aspx');" >訂單查詢報表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD04/ORD04.aspx');" >調整訂單作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD06/ORD06.aspx');" >一搭一設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD08/ORD08.aspx');" >Non-DropShipment主配作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD09/ORD09.aspx');" >DropShipment主配上傳</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD10/ORD10.aspx');" >權重佔比分配</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD11/ORD11.aspx');" >商品建議訂購量設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD13/ORD13.aspx');" >卡片安全庫存量暨最低庫存量設定</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/ORD/ORD14/ORD14.aspx');" >卡片群組設定</a><br />
+<br />寄銷管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON02/CON02.aspx');" >外部廠商維護作業(總部)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON01/CON01a.aspx');" >外部廠商查詢作業(門市)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON04/CON04.aspx');" >寄銷商品維護作業(總部)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON03/CON03a.aspx');" >寄銷商品查詢作業(門市)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON06/CON06.aspx');" >寄銷商品訂貨作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON08/CON08.aspx');" >寄銷商品主配作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON10/CON10.aspx');" >寄銷商品退倉設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON12/CON12.aspx');" >寄銷商品退倉作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON14/CON14.aspx');" >寄銷商品進貨驗收作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON16/CON16.aspx');" >寄銷商品盤點作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON17/CON17.aspx');" >外部廠商月結作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON20/CON20.aspx');" >寄銷商品移出作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/CONS/CON21/CON21.aspx');" >寄銷商品撥入作業 </a><br />
+<br />銷售管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL03/SAL031.aspx');" >換貨作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/TSAL03/TSAL031.aspx');" >換貨作業(測)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL041/SAL041.aspx');" >銷售作廢作業</a><br />
+<!--<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL05/SAL05.aspx');" >交易未結清單</a><br />-->
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL06.aspx');" >交易暫存清單</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL11/SAL11.aspx');" >交易補登</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/TSAL11/TSAL11.aspx');" >交易補登(測)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL14/SAL14.aspx');" >紙本授權</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/TSAL14/TSAL14.aspx');" >紙本授權(測)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/SAL15/SAL15.aspx');" >HAPPY GO來店禮兌換</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/OSAL04/OSAL041.aspx');" >作廢舊POS交易</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/SAL/OSAL02/OSAL02.aspx');" >舊POS作廢查詢</a><br />
+<br />預購管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/PRE/PRE01/PRE01.aspx');" >預收作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/PRE/PRE02/PRE02.aspx');" >預收款查詢</a><br />
+<br />商品管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/DIS/DIS01/DIS01.aspx');" >折扣設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/DIS/DIS10/DIS10.aspx');" >ERP與類別屬性對應查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/DIS/DIS08/DIS08.aspx');" >組合促銷轉換值查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/DIS/DIS05/DIS05.aspx');" >促銷商品設定查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/DIS/DIS04/DIS04.aspx');" >商品關聯性查詢</a><br />
+<br />報表管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL024.aspx');" >調整明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL026.aspx');" >庫存在途明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL027.aspx');" >總部庫存進銷存明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL032.aspx');" >Dropshipment訂單差異明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL033.aspx');" >門市庫存量分析表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL053.aspx');" >庫存日報表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL061.aspx');" >門市調撥明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL064.aspx');" >退倉明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL065.aspx');" >退換貨明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL007.aspx');" >門市交易明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL008.aspx');" >門市保證金明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL011.aspx');" >代收業務彙總表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL012.aspx');" >代收業務明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL020.aspx');" >0元訂單明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL021.aspx');" >易付卡及儲值卡卡片銷售明細</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL030.aspx');" >商品銷售統計表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL034.aspx');" >門市銷售量分析表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL044.aspx');" >各項交易明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL055.aspx');" >單品銷售報表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL056.aspx');" >商品銷售排行表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL059.aspx');" >信用卡明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL066.aspx');" >維修費明細表</a><br />
+<br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL019.aspx');" >RPL019-促銷及折扣設定項目明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL036.aspx');" >RPL036-Handset Subsidy Report</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL037.aspx');" >RPL037-促銷及補貼檢核表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL038.aspx');" >RPL038-促銷新增商品檢核表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL039.aspx');" >RPL039組合促銷價格檢核表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL040.aspx');" >RPL040-POS discount</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL048.aspx');" >RPL048-HAPPY GO明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL049.aspx');" >RPL049-信用卡交易明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL051.aspx');" >RPL051-ETC儲值明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL054.aspx');" >RPL054-門市商品銷售統計表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL057.aspx');" >RPL057-商品迴轉率表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL073.aspx');" >RPL073-集團卡明細表</a><br />
+<br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL001.aspx');" >RPL001-門市付款方式明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL002.aspx');" >RPL002-門市對帳明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL003.aspx');" >RPL003-門市對帳總表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL004.aspx');" >RPL004-門市差異調整報表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL005.aspx');" >RPL005-信用卡付款入帳明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL006.aspx');" >RPL006-信用卡分期付款明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL009.aspx');" >RPL009-門市結帳分錄彙總表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL010.aspx');" >RPL010-門市結帳分錄明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL022.aspx');" >RPL022-廠商結算報表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL029.aspx');" >RPL029-日結交易彙</a><br />
+<br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL013.aspx');" >RPL013-門市報稅彙總表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL014.aspx');" >RPL014-發票明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL015.aspx');" >RPL015-發票跨月作廢明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL016.aspx');" >RPL016-交易取消憑證回收狀態表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL028.aspx');" >RPL028-代收資費彙總表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL031.aspx');" >RPL031-各項促銷銷售分析收入表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL035.aspx');" >RPL035-業績分析報表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL041.aspx');" >RPL041-POS門市手機銷量表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL042.aspx');" >RPL042-POS門市銷量表-3C</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL043.aspx');" >RPL043-POS門市銷量表-CPA</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL045.aspx');" >RPL045-Billing保證金明細表/退保證金明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL046.aspx');" >RPL046-門市銷售日報表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL047.aspx');" >RPL047-發票作廢明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL050.aspx');" >RPL050-門市折讓明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL067.aspx');" >RPL067-設備賠償明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL068.aspx');" >RPL068-退保證金明細表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL069.aspx');" >RPL069-門市促銷分析表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL070.aspx');" >RPL070-促銷/商品分析表</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/RPT/RPL071.aspx');" >RPL071-折扣明細表</a><br />
+<br />租賃管理<br />
+<a href="javascript:void(0);" onclick="go('VSS/LEA/LEA01/LEA01.aspx');" >設備租賃設定作業</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/LEA/LEA02/LEA02.aspx');" >可租賃設備查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/LEA//LEA03//LEA03.aspx');" >已租賃設備查詢</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/LEA//LEA05//LEA05.aspx');" >設備租賃作業(含租賃簽收單)</a><br />
+<a href="javascript:void(0);" onclick="go('VSS/LEA/LEA06/LEA06.aspx');" >租賃收費明細表查詢</a><br />
+</body>
+</html>

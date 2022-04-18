@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LEA01_LEASE_M" targetNamespace="http://tempuri.org/LEA01_LEASE_M.xsd" xmlns:mstns="http://tempuri.org/LEA01_LEASE_M.xsd" xmlns="http://tempuri.org/LEA01_LEASE_M.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString4" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString4 (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString4" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LEA01_LEASE_M" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LEA01_LEASE_M" msprop:Generator_DataSetName="LEA01_LEASE_M" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RENT_INDEMNIFY_ITEMS" msprop:Generator_UserTableName="RENT_INDEMNIFY_ITEMS" msprop:Generator_RowDeletedName="RENT_INDEMNIFY_ITEMSRowDeleted" msprop:Generator_RowChangedName="RENT_INDEMNIFY_ITEMSRowChanged" msprop:Generator_RowClassName="RENT_INDEMNIFY_ITEMSRow" msprop:Generator_RowChangingName="RENT_INDEMNIFY_ITEMSRowChanging" msprop:Generator_RowEvArgName="RENT_INDEMNIFY_ITEMSRowChangeEvent" msprop:Generator_RowEvHandlerName="RENT_INDEMNIFY_ITEMSRowChangeEventHandler" msprop:Generator_TableClassName="RENT_INDEMNIFY_ITEMSDataTable" msprop:Generator_TableVarName="tableRENT_INDEMNIFY_ITEMS" msprop:Generator_RowDeletingName="RENT_INDEMNIFY_ITEMSRowDeleting" msprop:Generator_TablePropName="RENT_INDEMNIFY_ITEMS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LEASE_ID" msprop:Generator_UserColumnName="LEASE_ID" msprop:Generator_ColumnVarNameInTable="columnLEASE_ID" msprop:Generator_ColumnPropNameInRow="LEASE_ID" msprop:Generator_ColumnPropNameInTable="LEASE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEQNO" msprop:Generator_UserColumnName="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" type="xs:decimal" />
+              <xs:element name="IND_ITEM_CODE" msprop:Generator_UserColumnName="IND_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIND_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IND_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IND_ITEM_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IND_ITEM_NAME" msprop:Generator_UserColumnName="IND_ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnIND_ITEM_NAME" msprop:Generator_ColumnPropNameInRow="IND_ITEM_NAME" msprop:Generator_ColumnPropNameInTable="IND_ITEM_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IND_UNIT_PRICE" msprop:Generator_UserColumnName="IND_UNIT_PRICE" msprop:Generator_ColumnVarNameInTable="columnIND_UNIT_PRICE" msprop:Generator_ColumnPropNameInRow="IND_UNIT_PRICE" msprop:Generator_ColumnPropNameInTable="IND_UNIT_PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RENT_INDEMNIFY_ITEMS" msprop:Generator_UserColumnName="RENT_INDEMNIFY_ITEMS" msprop:Generator_ColumnVarNameInTable="columnRENT_INDEMNIFY_ITEMS" msprop:Generator_ColumnPropNameInRow="RENT_INDEMNIFY_ITEMS" msprop:Generator_ColumnPropNameInTable="RENT_INDEMNIFY_ITEMSColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LEASE_M" msprop:Generator_UserTableName="LEASE_M" msprop:Generator_RowDeletedName="LEASE_MRowDeleted" msprop:Generator_RowChangedName="LEASE_MRowChanged" msprop:Generator_RowClassName="LEASE_MRow" msprop:Generator_RowChangingName="LEASE_MRowChanging" msprop:Generator_RowEvArgName="LEASE_MRowChangeEvent" msprop:Generator_RowEvHandlerName="LEASE_MRowChangeEventHandler" msprop:Generator_TableClassName="LEASE_MDataTable" msprop:Generator_TableVarName="tableLEASE_M" msprop:Generator_RowDeletingName="LEASE_MRowDeleting" msprop:Generator_TablePropName="LEASE_M">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LEASE_ID" msprop:Generator_UserColumnName="LEASE_ID" msprop:Generator_ColumnVarNameInTable="columnLEASE_ID" msprop:Generator_ColumnPropNameInRow="LEASE_ID" msprop:Generator_ColumnPropNameInTable="LEASE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LEASE_TYPE" msprop:Generator_UserColumnName="LEASE_TYPE" msprop:Generator_ColumnVarNameInTable="columnLEASE_TYPE" msprop:Generator_ColumnPropNameInRow="LEASE_TYPE" msprop:Generator_ColumnPropNameInTable="LEASE_TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODTYPENO" msprop:Generator_UserColumnName="PRODTYPENO" msprop:Generator_ColumnVarNameInTable="columnPRODTYPENO" msprop:Generator_ColumnPropNameInRow="PRODTYPENO" msprop:Generator_ColumnPropNameInTable="PRODTYPENOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RENT_PRODNO" msprop:Generator_UserColumnName="RENT_PRODNO" msprop:Generator_ColumnVarNameInTable="columnRENT_PRODNO" msprop:Generator_ColumnPropNameInRow="RENT_PRODNO" msprop:Generator_ColumnPropNameInTable="RENT_PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAILY_RENT_PRICE" msprop:Generator_UserColumnName="DAILY_RENT_PRICE" msprop:Generator_ColumnVarNameInTable="columnDAILY_RENT_PRICE" msprop:Generator_ColumnPropNameInRow="DAILY_RENT_PRICE" msprop:Generator_ColumnPropNameInTable="DAILY_RENT_PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EARNEST_PRODNO" msprop:Generator_UserColumnName="EARNEST_PRODNO" msprop:Generator_ColumnVarNameInTable="columnEARNEST_PRODNO" msprop:Generator_ColumnPropNameInRow="EARNEST_PRODNO" msprop:Generator_ColumnPropNameInTable="EARNEST_PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EARNEST_MONEY" msprop:Generator_UserColumnName="EARNEST_MONEY" msprop:Generator_ColumnVarNameInTable="columnEARNEST_MONEY" msprop:Generator_ColumnPropNameInRow="EARNEST_MONEY" msprop:Generator_ColumnPropNameInTable="EARNEST_MONEYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INDEMNITY_PRODNO" msprop:Generator_UserColumnName="INDEMNITY_PRODNO" msprop:Generator_ColumnVarNameInTable="columnINDEMNITY_PRODNO" msprop:Generator_ColumnPropNameInRow="INDEMNITY_PRODNO" msprop:Generator_ColumnPropNameInTable="INDEMNITY_PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INDEMNITY_AMT" msprop:Generator_UserColumnName="INDEMNITY_AMT" msprop:Generator_ColumnVarNameInTable="columnINDEMNITY_AMT" msprop:Generator_ColumnPropNameInRow="INDEMNITY_AMT" msprop:Generator_ColumnPropNameInTable="INDEMNITY_AMTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_DATE" msprop:Generator_UserColumnName="S_DATE" msprop:Generator_ColumnVarNameInTable="columnS_DATE" msprop:Generator_ColumnPropNameInRow="S_DATE" msprop:Generator_ColumnPropNameInTable="S_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="E_DATE" msprop:Generator_UserColumnName="E_DATE" msprop:Generator_ColumnVarNameInTable="columnE_DATE" msprop:Generator_ColumnPropNameInRow="E_DATE" msprop:Generator_ColumnPropNameInTable="E_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REMARK" msprop:Generator_UserColumnName="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SUPP_ID" msprop:Generator_UserColumnName="SUPP_ID" msprop:Generator_ColumnVarNameInTable="columnSUPP_ID" msprop:Generator_ColumnPropNameInRow="SUPP_ID" msprop:Generator_ColumnPropNameInTable="SUPP_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RENT_DISCOUNT_ITEMS" msprop:Generator_UserTableName="RENT_DISCOUNT_ITEMS" msprop:Generator_RowDeletedName="RENT_DISCOUNT_ITEMSRowDeleted" msprop:Generator_RowChangedName="RENT_DISCOUNT_ITEMSRowChanged" msprop:Generator_RowClassName="RENT_DISCOUNT_ITEMSRow" msprop:Generator_RowChangingName="RENT_DISCOUNT_ITEMSRowChanging" msprop:Generator_RowEvArgName="RENT_DISCOUNT_ITEMSRowChangeEvent" msprop:Generator_RowEvHandlerName="RENT_DISCOUNT_ITEMSRowChangeEventHandler" msprop:Generator_TableClassName="RENT_DISCOUNT_ITEMSDataTable" msprop:Generator_TableVarName="tableRENT_DISCOUNT_ITEMS" msprop:Generator_RowDeletingName="RENT_DISCOUNT_ITEMSRowDeleting" msprop:Generator_TablePropName="RENT_DISCOUNT_ITEMS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEQNO" msprop:Generator_UserColumnName="SEQNO" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DISCOUNT_AMT" msprop:Generator_UserColumnName="DISCOUNT_AMT" msprop:Generator_ColumnPropNameInRow="DISCOUNT_AMT" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT_AMT" msprop:Generator_ColumnPropNameInTable="DISCOUNT_AMTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DISCOUNT_RATE" msprop:Generator_UserColumnName="DISCOUNT_RATE" msprop:Generator_ColumnPropNameInRow="DISCOUNT_RATE" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT_RATE" msprop:Generator_ColumnPropNameInTable="DISCOUNT_RATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COST_CENTER_NO" msprop:Generator_UserColumnName="COST_CENTER_NO" msprop:Generator_ColumnPropNameInRow="COST_CENTER_NO" msprop:Generator_ColumnVarNameInTable="columnCOST_CENTER_NO" msprop:Generator_ColumnPropNameInTable="COST_CENTER_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCOUNT_CODE" msprop:Generator_UserColumnName="ACCOUNT_CODE" msprop:Generator_ColumnPropNameInRow="ACCOUNT_CODE" msprop:Generator_ColumnVarNameInTable="columnACCOUNT_CODE" msprop:Generator_ColumnPropNameInTable="ACCOUNT_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LEASE_ID" msprop:Generator_UserColumnName="LEASE_ID" msprop:Generator_ColumnPropNameInRow="LEASE_ID" msprop:Generator_ColumnVarNameInTable="columnLEASE_ID" msprop:Generator_ColumnPropNameInTable="LEASE_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RENT_DISCOUNT_ID" msprop:Generator_UserColumnName="RENT_DISCOUNT_ID" msprop:Generator_ColumnPropNameInRow="RENT_DISCOUNT_ID" msprop:Generator_ColumnVarNameInTable="columnRENT_DISCOUNT_ID" msprop:Generator_ColumnPropNameInTable="RENT_DISCOUNT_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RENT_INDEMNIFY_ITEMS" />
+      <xs:field xpath="mstns:RENT_INDEMNIFY_ITEMS" />
+    </xs:unique>
+    <xs:unique name="LEASE_M_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LEASE_M" />
+      <xs:field xpath="mstns:LEASE_ID" />
+    </xs:unique>
+    <xs:unique name="RENT_DISCOUNT_ITEMS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RENT_DISCOUNT_ITEMS" />
+      <xs:field xpath="mstns:RENT_DISCOUNT_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

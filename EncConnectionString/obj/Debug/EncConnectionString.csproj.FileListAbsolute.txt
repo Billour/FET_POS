@@ -1,0 +1,44 @@
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\bin\Debug\EncConnectionString.exe
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\bin\Debug\EncConnectionString.pdb
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\bin\Debug\AdvTekUtility.dll
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\bin\Debug\log4net.dll
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\bin\Debug\AdvTekUtility.pdb
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\obj\Debug\EncConnectionString.Form1.resources
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\obj\Debug\EncConnectionString.Properties.Resources.resources
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\obj\Debug\EncConnectionString.csproj.GenerateResource.Cache
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\obj\Debug\EncConnectionString.exe
+C:\Users\garychu\Desktop\FET-POS - 複製\EncConnectionString\obj\Debug\EncConnectionString.pdb
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\bin\Debug\EncConnectionString.exe
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\bin\Debug\EncConnectionString.pdb
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\bin\Debug\AdvTekUtility.dll
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\bin\Debug\log4net.dll
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\bin\Debug\AdvTekUtility.pdb
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\obj\Debug\EncConnectionString.Form1.resources
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\obj\Debug\EncConnectionString.Properties.Resources.resources
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\obj\Debug\EncConnectionString.csproj.GenerateResource.Cache
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\obj\Debug\EncConnectionString.exe
+C:\Users\GaryChu\Desktop\Josh-FET-Sln\FET\EncConnectionString\obj\Debug\EncConnectionString.pdb
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\bin\Debug\EncConnectionString.exe
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\bin\Debug\EncConnectionString.pdb
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\bin\Debug\AdvTekUtility.dll
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\bin\Debug\log4net.dll
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\bin\Debug\AdvTekUtility.pdb
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\obj\Debug\EncConnectionString.Form1.resources
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\obj\Debug\EncConnectionString.Properties.Resources.resources
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\obj\Debug\EncConnectionString.csproj.GenerateResource.Cache
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\obj\Debug\EncConnectionString.exe
+D:\Projects\Svn\AdvantTech\JOSH\ToJoshSourceCode\EncConnectionString\obj\Debug\EncConnectionString.pdb
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\obj\Debug\EncConnectionString.exe
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\obj\Debug\EncConnectionString.pdb
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\bin\Debug\EncConnectionString.exe
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\bin\Debug\EncConnectionString.pdb
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\bin\Debug\AdvTekUtility.dll
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\bin\Debug\log4net.dll
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\bin\Debug\AdvTekUtility.pdb
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\obj\Debug\EncConnectionString.Form1.resources
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\obj\Debug\EncConnectionString.Properties.Resources.resources
+D:\Projects\Josh\Project\FET_WEB_POS\EncConnectionString\obj\Debug\EncConnectionString.csproj.GenerateResource.Cache

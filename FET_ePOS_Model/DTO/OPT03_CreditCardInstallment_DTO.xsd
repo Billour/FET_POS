@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OPT03_CreditCardInstallment_DTO" targetNamespace="http://tempuri.org/OPT03_CreditCardInstallment.xsd" xmlns:mstns="http://tempuri.org/OPT03_CreditCardInstallment.xsd" xmlns="http://tempuri.org/OPT03_CreditCardInstallment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OPT03_CreditCardInstallment_DTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OPT03_CreditCardInstallment_DTO" msprop:Generator_DataSetName="OPT03_CreditCardInstallment_DTO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BANK" msprop:Generator_UserTableName="BANK" msprop:Generator_RowDeletedName="BANKRowDeleted" msprop:Generator_RowChangedName="BANKRowChanged" msprop:Generator_RowClassName="BANKRow" msprop:Generator_RowChangingName="BANKRowChanging" msprop:Generator_RowEvArgName="BANKRowChangeEvent" msprop:Generator_RowEvHandlerName="BANKRowChangeEventHandler" msprop:Generator_TableClassName="BANKDataTable" msprop:Generator_TableVarName="tableBANK" msprop:Generator_RowDeletingName="BANKRowDeleting" msprop:Generator_TablePropName="BANK">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BANK_ID" msprop:Generator_UserColumnName="BANK_ID" msprop:Generator_ColumnPropNameInRow="BANK_ID" msprop:Generator_ColumnVarNameInTable="columnBANK_ID" msprop:Generator_ColumnPropNameInTable="BANK_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BANK_NAME" msprop:Generator_UserColumnName="BANK_NAME" msprop:Generator_ColumnPropNameInRow="BANK_NAME" msprop:Generator_ColumnVarNameInTable="columnBANK_NAME" msprop:Generator_ColumnPropNameInTable="BANK_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="COST_CENTER" msprop:Generator_UserTableName="COST_CENTER" msprop:Generator_RowDeletedName="COST_CENTERRowDeleted" msprop:Generator_RowChangedName="COST_CENTERRowChanged" msprop:Generator_RowClassName="COST_CENTERRow" msprop:Generator_RowChangingName="COST_CENTERRowChanging" msprop:Generator_RowEvArgName="COST_CENTERRowChangeEvent" msprop:Generator_RowEvHandlerName="COST_CENTERRowChangeEventHandler" msprop:Generator_TableClassName="COST_CENTERDataTable" msprop:Generator_TableVarName="tableCOST_CENTER" msprop:Generator_RowDeletingName="COST_CENTERRowDeleting" msprop:Generator_TablePropName="COST_CENTER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COST_CENTER_ID" msprop:Generator_UserColumnName="COST_CENTER_ID" msprop:Generator_ColumnPropNameInRow="COST_CENTER_ID" msprop:Generator_ColumnVarNameInTable="columnCOST_CENTER_ID" msprop:Generator_ColumnPropNameInTable="COST_CENTER_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COST_CENTER_NO" msprop:Generator_UserColumnName="COST_CENTER_NO" msprop:Generator_ColumnPropNameInRow="COST_CENTER_NO" msprop:Generator_ColumnVarNameInTable="columnCOST_CENTER_NO" msprop:Generator_ColumnPropNameInTable="COST_CENTER_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COST_CENTER_NAME" msprop:Generator_UserColumnName="COST_CENTER_NAME" msprop:Generator_ColumnPropNameInRow="COST_CENTER_NAME" msprop:Generator_ColumnVarNameInTable="columnCOST_CENTER_NAME" msprop:Generator_ColumnPropNameInTable="COST_CENTER_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CREDIT_CARD_SETTLEMMENT" msprop:Generator_UserTableName="CREDIT_CARD_SETTLEMMENT" msprop:Generator_RowDeletedName="CREDIT_CARD_SETTLEMMENTRowDeleted" msprop:Generator_RowChangedName="CREDIT_CARD_SETTLEMMENTRowChanged" msprop:Generator_RowClassName="CREDIT_CARD_SETTLEMMENTRow" msprop:Generator_RowChangingName="CREDIT_CARD_SETTLEMMENTRowChanging" msprop:Generator_RowEvArgName="CREDIT_CARD_SETTLEMMENTRowChangeEvent" msprop:Generator_RowEvHandlerName="CREDIT_CARD_SETTLEMMENTRowChangeEventHandler" msprop:Generator_TableClassName="CREDIT_CARD_SETTLEMMENTDataTable" msprop:Generator_TableVarName="tableCREDIT_CARD_SETTLEMMENT" msprop:Generator_RowDeletingName="CREDIT_CARD_SETTLEMMENTRowDeleting" msprop:Generator_TablePropName="CREDIT_CARD_SETTLEMMENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SETTLEMENT_ID" msprop:Generator_UserColumnName="SETTLEMENT_ID" msprop:Generator_ColumnPropNameInRow="SETTLEMENT_ID" msprop:Generator_ColumnVarNameInTable="columnSETTLEMENT_ID" msprop:Generator_ColumnPropNameInTable="SETTLEMENT_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSTELLMENT_ID" msprop:Generator_UserColumnName="INSTELLMENT_ID" msprop:Generator_ColumnPropNameInRow="INSTELLMENT_ID" msprop:Generator_ColumnVarNameInTable="columnINSTELLMENT_ID" msprop:Generator_ColumnPropNameInTable="INSTELLMENT_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LINE_NO" msprop:Generator_UserColumnName="LINE_NO" msprop:Generator_ColumnPropNameInRow="LINE_NO" msprop:Generator_ColumnVarNameInTable="columnLINE_NO" msprop:Generator_ColumnPropNameInTable="LINE_NOColumn" type="xs:decimal" />
+              <xs:element name="SETTLEMENT_RATE" msprop:Generator_UserColumnName="SETTLEMENT_RATE" msprop:Generator_ColumnPropNameInRow="SETTLEMENT_RATE" msprop:Generator_ColumnVarNameInTable="columnSETTLEMENT_RATE" msprop:Generator_ColumnPropNameInTable="SETTLEMENT_RATEColumn" type="xs:decimal" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+              <xs:element name="COST_CENTER_NO" msprop:Generator_UserColumnName="COST_CENTER_NO" msprop:Generator_ColumnPropNameInRow="COST_CENTER_NO" msprop:Generator_ColumnVarNameInTable="columnCOST_CENTER_NO" msprop:Generator_ColumnPropNameInTable="COST_CENTER_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CREDIT_CART_INSTELLMENT" msprop:Generator_UserTableName="CREDIT_CART_INSTELLMENT" msprop:Generator_RowDeletedName="CREDIT_CART_INSTELLMENTRowDeleted" msprop:Generator_TableClassName="CREDIT_CART_INSTELLMENTDataTable" msprop:Generator_RowChangedName="CREDIT_CART_INSTELLMENTRowChanged" msprop:Generator_RowClassName="CREDIT_CART_INSTELLMENTRow" msprop:Generator_RowChangingName="CREDIT_CART_INSTELLMENTRowChanging" msprop:Generator_RowEvArgName="CREDIT_CART_INSTELLMENTRowChangeEvent" msprop:Generator_RowEvHandlerName="CREDIT_CART_INSTELLMENTRowChangeEventHandler" msprop:Generator_TablePropName="CREDIT_CART_INSTELLMENT" msprop:Generator_TableVarName="tableCREDIT_CART_INSTELLMENT" msprop:Generator_RowDeletingName="CREDIT_CART_INSTELLMENTRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INSTELLMENT_ID" msprop:Generator_UserColumnName="INSTELLMENT_ID" msprop:Generator_ColumnPropNameInRow="INSTELLMENT_ID" msprop:Generator_ColumnVarNameInTable="columnINSTELLMENT_ID" msprop:Generator_ColumnPropNameInTable="INSTELLMENT_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAY_SEQMENT" msprop:Generator_UserColumnName="PAY_SEQMENT" msprop:Generator_ColumnPropNameInRow="PAY_SEQMENT" msprop:Generator_ColumnVarNameInTable="columnPAY_SEQMENT" msprop:Generator_ColumnPropNameInTable="PAY_SEQMENTColumn" type="xs:decimal" />
+              <xs:element name="SEQMENT_RATE" msprop:Generator_UserColumnName="SEQMENT_RATE" msprop:Generator_ColumnPropNameInRow="SEQMENT_RATE" msprop:Generator_ColumnVarNameInTable="columnSEQMENT_RATE" msprop:Generator_ColumnPropNameInTable="SEQMENT_RATEColumn" type="xs:decimal" />
+              <xs:element name="S_DATE" msprop:Generator_UserColumnName="S_DATE" msprop:Generator_ColumnPropNameInRow="S_DATE" msprop:Generator_ColumnVarNameInTable="columnS_DATE" msprop:Generator_ColumnPropNameInTable="S_DATEColumn" type="xs:dateTime" />
+              <xs:element name="E_DATE" msprop:Generator_UserColumnName="E_DATE" msprop:Generator_ColumnPropNameInRow="E_DATE" msprop:Generator_ColumnVarNameInTable="columnE_DATE" msprop:Generator_ColumnPropNameInTable="E_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+              <xs:element name="BANK_ID" msprop:Generator_UserColumnName="BANK_ID" msprop:Generator_ColumnPropNameInRow="BANK_ID" msprop:Generator_ColumnVarNameInTable="columnBANK_ID" msprop:Generator_ColumnPropNameInTable="BANK_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREDIT_CARD_TYPE_ID" msprop:Generator_UserColumnName="CREDIT_CARD_TYPE_ID" msprop:Generator_ColumnPropNameInRow="CREDIT_CARD_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnCREDIT_CARD_TYPE_ID" msprop:Generator_ColumnPropNameInTable="CREDIT_CARD_TYPE_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BANK" />
+      <xs:field xpath="mstns:BANK_ID" />
+    </xs:unique>
+    <xs:unique name="COST_CENTER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:COST_CENTER" />
+      <xs:field xpath="mstns:COST_CENTER_ID" />
+    </xs:unique>
+    <xs:unique name="CREDIT_CARD_SETTLEMMENT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CREDIT_CARD_SETTLEMMENT" />
+      <xs:field xpath="mstns:SETTLEMENT_ID" />
+    </xs:unique>
+    <xs:unique name="CREDIT_CART_INSTELLMENT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CREDIT_CART_INSTELLMENT" />
+      <xs:field xpath="mstns:INSTELLMENT_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

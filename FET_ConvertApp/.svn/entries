@@ -1,0 +1,361 @@
+10
+
+dir
+10661
+https://es.advtek.com.tw/svn/FET_POS_2010/SourceCode/FET_POS/FET_ConvertApp
+https://es.advtek.com.tw/svn/FET_POS_2010
+
+
+
+2011-05-06T05:18:10.471625Z
+10622
+v_de_tako_lin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+051d9338-59bf-ac4a-a7df-480f2442468b
+
+OLD_POS_INV_TRANSFER
+dir
+
+EMPLOYEE_CONVERT
+dir
+
+DEPT_COSTCENTER_IMPORT
+dir
+
+SIM_CARD_AUTO_REP
+dir
+
+POS2ERP_ORDER
+dir
+
+STORE_IMPORT
+dir
+
+ERP_SALESDETAIL_HANDOVER
+dir
+
+MACHINE_PORTAL_UPDATE
+dir
+
+SIM_GROUP_SAFEQTY_ALERT
+dir
+
+SO_UPDATE_LOG_UPLOAD
+dir
+
+PRODUCT_PRICE_IMPORT
+dir
+
+FTP_UPLOAD
+dir
+
+ADD_STORE_SEQSEGMENT
+dir
+
+INVOICE_TRANSFER
+dir
+
+BILL_DISPATCH
+dir
+
+PROCESSORDER_IMPORT
+dir
+
+CHECK_SHIP_NOTIFICATION
+dir
+
+SyncHRS_FIXI
+dir
+
+DS_UPLOAD
+dir
+
+POS_SOMSOD_WEB_SOMSOD_TRANSFER
+dir
+
+DMS_IMPORT
+dir
+
+GL_TEMP2POS_GL
+dir
+
+PREORDER_TO_ORDER
+dir
+
+REASON_IMPORT
+dir
+
+ONSAFE_NOTIFICATION
+dir
+
+FET_BILLING_BACKOUTPAYMENTTRX
+dir
+
+FET_BILLING_INSPAYMENTTRX
+dir
+
+KGT_BILLING
+dir
+
+INV_TRAN_LOG_UPLOAD
+dir
+
+SEEDNET_BILLING
+dir
+
+POS_ATR_TO_SIM_ATR
+dir
+
+NDS_UPLOAD
+dir
+
+SIM_STORE_MEND_DAILY
+dir
+
+ETC_BILLING_NOPAPER
+dir
+
+FETT_DROPSHIPITEM_ONBOARD_TRANSFER
+dir
+
+SALES2GL_TEMP
+dir
+
+ERP_RTNNO
+dir
+
+DS_ORDERM_IMPORT
+dir
+
+SendMailSchedule
+dir
+
+FET_ConvertApp.sln
+file
+
+
+
+
+2011-04-19T01:39:59.149153Z
+90eb419de8f0ac929e833c2b9a5918f6
+2011-04-18T12:06:02.499413Z
+9988
+owen_yang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+49781
+
+STORE_PORTAL_UPDATE
+dir
+
+WebPOSJOB_Scheduring_1223.xls
+file
+
+
+
+
+2011-01-25T06:22:18.872636Z
+7c6d898d68e1e25a5deac0f9e77ab813
+2011-01-24T04:05:29.356415Z
+6764
+steven_wang
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+35840
+
+STOCK_MONTHLY_CLOSE
+dir
+
+INVOICE_ALERT
+dir
+
+STORETRAN_NOTSTORETRANSFER
+dir
+
+COUNT_RECOMMANDED
+dir
+
+RTN_PUBLISH
+dir
+
+STORE_SPECIAL_DIS
+dir
+
+SUPPLIER_IMPORT
+dir
+
+GL_TEMP_CLEAR
+dir
+
+STORE_TRANSFER
+dir
+
+IMEI_TRANS2ACME
+dir
+
+INVOICE_INVALID
+dir
+
+DAY_CLOSE
+dir
+
+DS_TO_ORDER
+dir
+
+DAY_CLOSE_STATUS
+dir
+
+c_POS_ATR
+dir
+
+RTN_NOTIFICATION
+dir
+
+COUNT_STORE_ATR
+dir
+
+PRODUCT_TYPE_IMPORT
+dir
+
+SALE_DISCOUNT_DISPATCH
+dir
+
+SyncPOS2HRS_FIXI
+dir
+
+CANCLE_TO_CLOSE
+dir
+
+NCIC_BILLING
+dir
+
+MM_UPLOAD
+dir
+
+FET_BILL_TXT_FILE
+dir
+
+ATR_DEFICIENCY_NOTIFICATION
+dir
+
+RTN_CUTOFF_NOTIFICATION
+dir
+
+UPLOADPOSRT_GUI
+dir
+
+NDS_TO_ORDER
+dir
+
+FET_ConvertApp.suo
+file
+
+
+
+
+2011-05-05T08:57:59.344333Z
+ad114a5b7f5c2baa445d34dd36923a96
+2011-05-05T08:56:05.784125Z
+10608
+owen_yang
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+647680
+
+SO_UPLOAD_LOG
+dir
+
+MEND_NOTIFICATION
+dir
+
+SYNC_HRS_IMEI
+dir
+
+POS_GL_ERP_TRANSFER
+dir
+
+UPD_STOCK_DAILY_CLOSE
+dir
+
+ETC_BILLING_PAPER
+dir
+
+INVOICE_HEAD_HANDOVER
+dir
+
+SIM_CARD_AUTO
+dir
+
+PRODUCT_IMPORT
+dir
+

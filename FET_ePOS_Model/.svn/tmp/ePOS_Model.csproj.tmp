@@ -1,0 +1,1340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CEB6177-44F5-4247-9FAD-86BABCE49E61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FET.POS.Model</RootNamespace>
+    <AssemblyName>ePOSModel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkSubset>Full</TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="GotDotNet.ApplicationBlocks.Data, Version=3.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ePosSUtility2008\bin\GotDotNet.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ePosSUtility2008\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CHK05_PageHelper.cs" />
+    <Compile Include="Common\CHK06_PageHelper.cs" />
+    <Compile Include="Common\CON06_PageHelper.cs" />
+    <Compile Include="Common\DIS01_PageHelper.cs" />
+    <Compile Include="Common\DIS08_PageHelper.cs" />
+    <Compile Include="Common\DIS10_PageHelper.cs" />
+    <Compile Include="Common\INV01_PageHelper.cs" />
+    <Compile Include="Common\INV03_PageHelper.cs" />
+    <Compile Include="Common\INV05_PageHelper.cs" />
+    <Compile Include="Common\INV06_PageHelper.cs" />
+    <Compile Include="Common\INV08_PageHelper.cs" />
+    <Compile Include="Common\INV11_PageHelper.cs" />
+    <Compile Include="Common\INV17_PageHelper.cs" />
+    <Compile Include="Common\INV23_PageHelper.cs" />
+    <Compile Include="Common\INV25_PageHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\LOG04_PageHelper.cs" />
+    <Compile Include="Common\LOG06_PageHelper.cs" />
+    <Compile Include="Common\OPT01_PageHelper.cs" />
+    <Compile Include="Common\OPT02_PageHelper.cs" />
+    <Compile Include="Common\OPT03_PageHelper.cs" />
+    <Compile Include="Common\OPT05_PageHelper.cs" />
+    <Compile Include="Common\OPT10_PageHelper.cs" />
+    <Compile Include="Common\OPT11_PageHelper.cs" />
+    <Compile Include="Common\OPT12_PageHelper..cs" />
+    <Compile Include="Common\OPT13_PageHelper.cs" />
+    <Compile Include="Common\OPT15_PageHelper.cs" />
+    <Compile Include="Common\OPT16_PageHelper.cs" />
+    <Compile Include="Common\OPT18_PageHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ORD04_PageHelper.cs" />
+    <Compile Include="Common\ORD08_PageHelper.cs" />
+    <Compile Include="Common\ORD12_PageHelper.cs" />
+    <Compile Include="Common\CHK04_PageHelper.cs" />
+    <Compile Include="Common\ORD13_PageHelper.cs" />
+    <Compile Include="Common\PRODUCT_PageHelper.cs" />
+    <Compile Include="Common\RPL_PageHelper.cs" />
+    <Compile Include="Common\CON03_PageHelper.cs" />
+    <Compile Include="Common\RPL_PageHelper3.cs" />
+    <Compile Include="DAO\OPT01_PaymentMethodSet_DAO.cs" />
+    <Compile Include="DTO\CHK01_DAY_CLOSE_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHK01_DAY_CLOSE_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CHK02_SALE_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHK02_SALE_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CHK04_SmallChange_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHK04_SmallChange_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CHK05_BigMoney_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHK05_BigMoney_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CHK06_BankCash_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHK06_BankCash_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CON02_CSM_SUPPLIER.cs">
+      <DependentUpon>CON02_CSM_SUPPLIER.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\CON02_CSM_SUPPLIER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CON02_CSM_SUPPLIER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\APP01_ProductImport.cs">
+      <DependentUpon>APP01_ProductImport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\APP01_ProductImport.Designer.cs">
+      <DependentUpon>APP01_ProductImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\APP02_DeptImport_DTO.Designer.cs" />
+    <Compile Include="DTO\ConvertApp\APP03_Reason_Import_DTO.Designer.cs" />
+    <Compile Include="DTO\ConvertApp\APP04_ProcessOrder_DTO.Designer.cs" />
+    <Compile Include="DTO\ConvertApp\APP05_DS_ORDERM_IMPORT_DTO.Designer.cs" />
+    <Compile Include="DTO\ConvertApp\cPOSATR_DataSet_DTO.cs">
+      <DependentUpon>cPOSATR_DataSet_DTO.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\cPOSATR_DataSet_DTO.Designer.cs">
+      <DependentUpon>cPOSATR_DataSet_DTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\EMPLOYEE_CONVERT_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMPLOYEE_CONVERT_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\ERP_PRODUCTPRICE_HANDOVER_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_PRODUCTPRICE_HANDOVER_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\ERP_SALESDETAIL_HANDOVER_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_SALESDETAIL_HANDOVER_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\INVOICE_HEAD_HANDOVER_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INVOICE_HEAD_HANDOVER_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MACHINE_PORTAL_UPDATE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MACHINE_PORTAL_UPDATE_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\OLD_POS_INV_TRANSFER_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OLD_POS_INV_TRANSFER_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\POS_GL_ERP_TRANSFER_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_GL_ERP_TRANSFER_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\SCH08_Product_Type_DTO.Designer.cs" />
+    <Compile Include="DTO\ConvertApp\SendMailSchedule_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SendMailSchedule_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ConvertApp\STORE_PORTAL_UPDATE_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STORE_PORTAL_UPDATE_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DIS01_DiscountMasterDataSet_DTO.Designer.cs" />
+    <Compile Include="DTO\DIS08_PROD_TRANS_VALUE_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DIS08_PROD_TRANS_VALUE_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV03_INVONHANDCURRENTSet_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV03_INVONHANDCURRENTSet_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV05_RTNM_DTO.cs">
+      <DependentUpon>INV05_RTNM_DTO.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\INV05_RTNM_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV05_RTNM_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV06_RTNM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV06_RTNM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV08_InventoryApproval_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV08_InventoryApproval_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV11_StockCHK_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV11_StockCHK_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV12_NPOrder_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV12_NPOrder_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV17_CUTOFFDATESet_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV17_CUTOFFDATESet_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV18_StockADJ_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV18_StockADJ_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV23_LOCSet_DTO.Designer.cs" />
+    <Compile Include="DTO\INV25_StoreTransfer_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV25_StoreTransfer_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV27_TakeOff_DTO.cs">
+      <DependentUpon>INV27_TakeOff_DTO.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\INV27_TakeOff_DTO.Designer.cs">
+      <DependentUpon>INV27_TakeOff_DTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV28_SEAL_OFF_IMEI_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV28_SEAL_OFF_IMEI_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\INV29_IMEIUpload_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INV29_IMEIUpload_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\LOG04_SysPara_DTO.Designer.cs" />
+    <Compile Include="DTO\LOG06_StoreHeaderDiscountPWD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOG06_StoreHeaderDiscountPWD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT02_CreditCardProceRate_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT02_CreditCardProceRate_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT01_PaymentMethodSet_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT01_PaymentMethodSet_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT03_CreditCardInstallment_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT03_CreditCardInstallment_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT04_CouponsD_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT04_CouponsD_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT05_HqInvoiceAssign_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT05_HqInvoiceAssign_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT10_Product_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT10_Product_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT11_HgConvertible_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT11_HgConvertible_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT12_HgAccumulate_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT12_HgAccumulate_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT13_HgConvertibleRestricted_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT13_HgConvertibleRestricted_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT15_HgConvertibleGiftM_DTO.cs">
+      <DependentUpon>OPT15_HgConvertibleGiftM_DTO.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\OPT15_HgConvertibleGiftM_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT15_HgConvertibleGiftM_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT16_HgConvertMemberList_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT16_HgConvertMemberList_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OPT18_StoreSpecialDis_DTO.cs">
+      <DependentUpon>OPT18_StoreSpecialDis_DTO.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\OPT18_StoreSpecialDis_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OPT18_StoreSpecialDis_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD01_OrderMD_DTO.Designer.cs" />
+    <Compile Include="DTO\ORD04_ORDERM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD04_ORDERM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD06_OneToOne_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD06_OneToOne_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD08_HQNDSORDERMSet_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD08_HQNDSORDERMSet_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD09_DISTRIBUTES_ORDER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD09_DISTRIBUTES_ORDER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD09_DropShipment.Designer.cs" />
+    <Compile Include="DTO\ORD10_WeightDistribute_DTO.Designer.cs" />
+    <Compile Include="DTO\ORD11_PORQ_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD11_PORQ_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD12_PreOrder_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD12_PreOrder_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD13_SCQC_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD13_SCQC_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ORD14_SIM_GROUP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORD14_SIM_GROUP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\PROD_IMEI_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROD_IMEI_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\SAL01_SALE_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAL01_SALE_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\SAL05_TO_CLOSE_DTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAL05_TO_CLOSE_DTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Facade\ConvertApp\APP01_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\APP02_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\APP03_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\APP04_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\APP05_Facade.cs" />
+    <Compile Include="Common\Common_PageHelper.cs" />
+    <Compile Include="Facade\ConvertApp\COUNT_RECOMMANDED_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\COUNT_STORE_ATR_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\cPOSATR_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\DAY_CLOSE_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\DAY_CLOSE_STATUS_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\DS_UPLOAD_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\EMPLOYEE_CONVERT_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\ERP_PRODUCTPRICE_HANDOVER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\ERP_SALESDETAIL_HANDOVER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\FETT_DROPSHIPITEM_ONBOARD_TRANSFER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\INVOICE_HEAD_HANDOVER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\INVOICE_INVALID_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\INVOICE_TRANSFER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\MACHINE_PORTAL_UPDATE_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\OLD_POS_INV_TRANSFER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\POS2ERP_ORDER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\POS_GL_ERP_TRANSFER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\POS_SOMSOD_WEB_SOMSOD_TRANSFER_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\RTN_CUTOFF_NOTIFICATION_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\RTN_NOTIFICATION_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\RTN_PUBLISH_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\SCH08_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\SendMailSchedule_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\STOCK_MONTHLY_CLOSE_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\STORE_PORTAL_UPDATE_Facade.cs" />
+    <Compile Include="Facade\ConvertApp\UPD_STOCK_DAILY_CLOSE_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\Category_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CHK01_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CHK02_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CHK04_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CHK05_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CHK06_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CON02_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CON05_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CON06_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CON08_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CostCenter_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\DIS01_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\DIS02_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\DIS04_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\DIS05_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\DIS08_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\DIS10_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\Employee_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\IMEI_Facade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Facade\FacadeImpl\INV01_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV03_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV05_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV06_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV08_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV11_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV12_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV13_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV17_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV18_1_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV23_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV25_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV28_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV29_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INVENTORY_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\LOG04_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\LOG06_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT05_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT10_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT11_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT13_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT15_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT16_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT18_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD01_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD02_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD04_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD06_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD08_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD09_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD10_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD11_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT12_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\INV27_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD12_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD13_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\ORD14_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\Product_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\Promontions_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\RPL_Facade_File1.cs" />
+    <Compile Include="Facade\FacadeImpl\RPL_Facade_File2.cs" />
+    <Compile Include="Facade\FacadeImpl\RPL_Facade_File3.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL01_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL02_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL03_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL041_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL05_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL07_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL12_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\SAL13_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\Store_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\CON04_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\Supplier_Facade.cs" />
+    <Compile Include="Facade\IOPT01_Facade.cs" />
+    <Compile Include="Facade\IOPT02_Facade.cs" />
+    <Compile Include="Facade\IOPT03_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT01_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT02_Facade.cs" />
+    <Compile Include="Facade\FacadeImpl\OPT03_Facade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helper\LambExpHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DTO\CHK01_DAY_CLOSE_DTO.xsc">
+      <DependentUpon>CHK01_DAY_CLOSE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK01_DAY_CLOSE_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CHK01_DAY_CLOSE_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\CHK01_DAY_CLOSE_DTO.xss">
+      <DependentUpon>CHK01_DAY_CLOSE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK02_SALE_DTO.xsc">
+      <DependentUpon>CHK02_SALE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK02_SALE_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CHK02_SALE_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\CHK02_SALE_DTO.xss">
+      <DependentUpon>CHK02_SALE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK04_SmallChange_DTO.xsc">
+      <DependentUpon>CHK04_SmallChange_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK04_SmallChange_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CHK04_SmallChange_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\CHK04_SmallChange_DTO.xss">
+      <DependentUpon>CHK04_SmallChange_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK05_BigMoney_DTO.xsc">
+      <DependentUpon>CHK05_BigMoney_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK05_BigMoney_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CHK05_BigMoney_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\CHK05_BigMoney_DTO.xss">
+      <DependentUpon>CHK05_BigMoney_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK06_BankCash_DTO.xsc">
+      <DependentUpon>CHK06_BankCash_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CHK06_BankCash_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CHK06_BankCash_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\CHK06_BankCash_DTO.xss">
+      <DependentUpon>CHK06_BankCash_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CON02_CSM_SUPPLIER.xsc">
+      <DependentUpon>CON02_CSM_SUPPLIER.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CON02_CSM_SUPPLIER.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CON02_CSM_SUPPLIER.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\CON02_CSM_SUPPLIER.xss">
+      <DependentUpon>CON02_CSM_SUPPLIER.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP01_ProductImport.xsc">
+      <DependentUpon>APP01_ProductImport.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP01_ProductImport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\APP01_ProductImport.xss">
+      <DependentUpon>APP01_ProductImport.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP02_DeptImport_DTO.xsc">
+      <DependentUpon>APP02_DeptImport_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP02_DeptImport_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\APP02_DeptImport_DTO.xss">
+      <DependentUpon>APP02_DeptImport_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP03_Reason_Import_DTO.xsc">
+      <DependentUpon>APP03_Reason_Import_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP03_Reason_Import_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\APP03_Reason_Import_DTO.xss">
+      <DependentUpon>APP03_Reason_Import_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP04_ProcessOrder_DTO.xsc">
+      <DependentUpon>APP04_ProcessOrder_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP04_ProcessOrder_DTO.xsd" />
+    <None Include="DTO\ConvertApp\APP04_ProcessOrder_DTO.xss">
+      <DependentUpon>APP04_ProcessOrder_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP05_DS_ORDERM_IMPORT_DTO.xsc">
+      <DependentUpon>APP05_DS_ORDERM_IMPORT_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\APP05_DS_ORDERM_IMPORT_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\APP05_DS_ORDERM_IMPORT_DTO.xss">
+      <DependentUpon>APP05_DS_ORDERM_IMPORT_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\cPOSATR_DataSet_DTO.xsc">
+      <DependentUpon>cPOSATR_DataSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\cPOSATR_DataSet_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\cPOSATR_DataSet_DTO.xss">
+      <DependentUpon>cPOSATR_DataSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\EMPLOYEE_CONVERT_DTO.xsc">
+      <DependentUpon>EMPLOYEE_CONVERT_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\EMPLOYEE_CONVERT_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EMPLOYEE_CONVERT_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\EMPLOYEE_CONVERT_DTO.xss">
+      <DependentUpon>EMPLOYEE_CONVERT_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\ERP_PRODUCTPRICE_HANDOVER_DTO.xsc">
+      <DependentUpon>ERP_PRODUCTPRICE_HANDOVER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\ERP_PRODUCTPRICE_HANDOVER_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ERP_PRODUCTPRICE_HANDOVER_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\ERP_PRODUCTPRICE_HANDOVER_DTO.xss">
+      <DependentUpon>ERP_PRODUCTPRICE_HANDOVER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\ERP_SALESDETAIL_HANDOVER_DTO.xsc">
+      <DependentUpon>ERP_SALESDETAIL_HANDOVER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\ERP_SALESDETAIL_HANDOVER_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ERP_SALESDETAIL_HANDOVER_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\ERP_SALESDETAIL_HANDOVER_DTO.xss">
+      <DependentUpon>ERP_SALESDETAIL_HANDOVER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.xsc">
+      <DependentUpon>FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.xss">
+      <DependentUpon>FETT_DROPSHIPITEM_ONBOARD_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\INVOICE_HEAD_HANDOVER_DTO.xsc">
+      <DependentUpon>INVOICE_HEAD_HANDOVER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\INVOICE_HEAD_HANDOVER_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INVOICE_HEAD_HANDOVER_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\INVOICE_HEAD_HANDOVER_DTO.xss">
+      <DependentUpon>INVOICE_HEAD_HANDOVER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE.xsc">
+      <DependentUpon>MACHINE_PORTAL_UPDATE.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MACHINE_PORTAL_UPDATE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE.xss">
+      <DependentUpon>MACHINE_PORTAL_UPDATE.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE_DTO.xsc">
+      <DependentUpon>MACHINE_PORTAL_UPDATE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MACHINE_PORTAL_UPDATE_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\MACHINE_PORTAL_UPDATE_DTO.xss">
+      <DependentUpon>MACHINE_PORTAL_UPDATE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\OLD_POS_INV_TRANSFER_DTO.xsc">
+      <DependentUpon>OLD_POS_INV_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\OLD_POS_INV_TRANSFER_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OLD_POS_INV_TRANSFER_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\OLD_POS_INV_TRANSFER_DTO.xss">
+      <DependentUpon>OLD_POS_INV_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\POS_GL_ERP_TRANSFER_DTO.xsc">
+      <DependentUpon>POS_GL_ERP_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\POS_GL_ERP_TRANSFER_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_GL_ERP_TRANSFER_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\POS_GL_ERP_TRANSFER_DTO.xss">
+      <DependentUpon>POS_GL_ERP_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.xsc">
+      <DependentUpon>POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.Designer.cs</LastGenOutput>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="DTO\ConvertApp\POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.xss">
+      <DependentUpon>POS_SOMSOD_WEB_SOMSOD_TRANSFER_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\SCH08_Product_Type_DTO.xsc">
+      <DependentUpon>SCH08_Product_Type_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\SCH08_Product_Type_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\SCH08_Product_Type_DTO.xss">
+      <DependentUpon>SCH08_Product_Type_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\SendMailSchedule_DTO.xsc">
+      <DependentUpon>SendMailSchedule_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\SendMailSchedule_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SendMailSchedule_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ConvertApp\SendMailSchedule_DTO.xss">
+      <DependentUpon>SendMailSchedule_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\STORE_PORTAL_UPDATE_DTO.xsc">
+      <DependentUpon>STORE_PORTAL_UPDATE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ConvertApp\STORE_PORTAL_UPDATE_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STORE_PORTAL_UPDATE_DTO.Designer.cs</LastGenOutput>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="DTO\ConvertApp\STORE_PORTAL_UPDATE_DTO.xss">
+      <DependentUpon>STORE_PORTAL_UPDATE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\DIS01_DiscountMasterDataSet_DTO.xsc">
+      <DependentUpon>DIS01_DiscountMasterDataSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\DIS01_DiscountMasterDataSet_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\DIS01_DiscountMasterDataSet_DTO.xss">
+      <DependentUpon>DIS01_DiscountMasterDataSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\DIS08_PROD_TRANS_VALUE_DTO.xsc">
+      <DependentUpon>DIS08_PROD_TRANS_VALUE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\DIS08_PROD_TRANS_VALUE_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DIS08_PROD_TRANS_VALUE_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\DIS08_PROD_TRANS_VALUE_DTO.xss">
+      <DependentUpon>DIS08_PROD_TRANS_VALUE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV03_INVONHANDCURRENTSet_DTO.xsc">
+      <DependentUpon>INV03_INVONHANDCURRENTSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV03_INVONHANDCURRENTSet_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV03_INVONHANDCURRENTSet_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV03_INVONHANDCURRENTSet_DTO.xss">
+      <DependentUpon>INV03_INVONHANDCURRENTSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV05_RTNM_DTO.xsc">
+      <DependentUpon>INV05_RTNM_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV05_RTNM_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV05_RTNM_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV05_RTNM_DTO.xss">
+      <DependentUpon>INV05_RTNM_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV06_RTNM.xsc">
+      <DependentUpon>INV06_RTNM.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV06_RTNM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV06_RTNM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\INV06_RTNM.xss">
+      <DependentUpon>INV06_RTNM.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV08_InventoryApproval_DTO.xsc">
+      <DependentUpon>INV08_InventoryApproval_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV08_InventoryApproval_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV08_InventoryApproval_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV08_InventoryApproval_DTO.xss">
+      <DependentUpon>INV08_InventoryApproval_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV11_StockCHK_DTO.xsc">
+      <DependentUpon>INV11_StockCHK_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV11_StockCHK_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV11_StockCHK_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\INV11_StockCHK_DTO.xss">
+      <DependentUpon>INV11_StockCHK_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV12_NPOrder_DTO.xsc">
+      <DependentUpon>INV12_NPOrder_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV12_NPOrder_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV12_NPOrder_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\INV12_NPOrder_DTO.xss">
+      <DependentUpon>INV12_NPOrder_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV17_CUTOFFDATESet_DTO.xsc">
+      <DependentUpon>INV17_CUTOFFDATESet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV17_CUTOFFDATESet_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV17_CUTOFFDATESet_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV17_CUTOFFDATESet_DTO.xss">
+      <DependentUpon>INV17_CUTOFFDATESet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV18_StockADJ_DTO.xsc">
+      <DependentUpon>INV18_StockADJ_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV18_StockADJ_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV18_StockADJ_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV18_StockADJ_DTO.xss">
+      <DependentUpon>INV18_StockADJ_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV23_LOCSet_DTO.xsc">
+      <DependentUpon>INV23_LOCSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV23_LOCSet_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV23_LOCSet_DTO1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV23_LOCSet_DTO.xss">
+      <DependentUpon>INV23_LOCSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV25_StoreTransfer_DTO.xsc">
+      <DependentUpon>INV25_StoreTransfer_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV25_StoreTransfer_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV25_StoreTransfer_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\INV25_StoreTransfer_DTO.xss">
+      <DependentUpon>INV25_StoreTransfer_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV27_TakeOff_DTO.xsc">
+      <DependentUpon>INV27_TakeOff_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV27_TakeOff_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV27_TakeOff_DTO2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV27_TakeOff_DTO.xss">
+      <DependentUpon>INV27_TakeOff_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV28_SEAL_OFF_IMEI_DTO.xsc">
+      <DependentUpon>INV28_SEAL_OFF_IMEI_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV28_SEAL_OFF_IMEI_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV28_SEAL_OFF_IMEI_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\INV28_SEAL_OFF_IMEI_DTO.xss">
+      <DependentUpon>INV28_SEAL_OFF_IMEI_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV29_IMEIUpload_DTO.xsc">
+      <DependentUpon>INV29_IMEIUpload_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\INV29_IMEIUpload_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INV29_IMEIUpload_DTO.Designer.cs</LastGenOutput>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="DTO\INV29_IMEIUpload_DTO.xss">
+      <DependentUpon>INV29_IMEIUpload_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\LOG04_SysPara_DTO.xsc">
+      <DependentUpon>LOG04_SysPara_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\LOG04_SysPara_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\LOG04_SysPara_DTO.xss">
+      <DependentUpon>LOG04_SysPara_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\LOG06_StoreHeaderDiscountPWD.xsc">
+      <DependentUpon>LOG06_StoreHeaderDiscountPWD.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\LOG06_StoreHeaderDiscountPWD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LOG06_StoreHeaderDiscountPWD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\LOG06_StoreHeaderDiscountPWD.xss">
+      <DependentUpon>LOG06_StoreHeaderDiscountPWD.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT02_CreditCardProceRate_DTO.xsc">
+      <DependentUpon>OPT02_CreditCardProceRate_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT02_CreditCardProceRate_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT02_CreditCardProceRate_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT02_CreditCardProceRate_DTO.xss">
+      <DependentUpon>OPT02_CreditCardProceRate_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT01_PaymentMethodSet_DTO.xsc">
+      <DependentUpon>OPT01_PaymentMethodSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT01_PaymentMethodSet_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT01_PaymentMethodSet_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT01_PaymentMethodSet_DTO.xss">
+      <DependentUpon>OPT01_PaymentMethodSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT03_CreditCardInstallment_DTO.xsc">
+      <DependentUpon>OPT03_CreditCardInstallment_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT03_CreditCardInstallment_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT03_CreditCardInstallment_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT03_CreditCardInstallment_DTO.xss">
+      <DependentUpon>OPT03_CreditCardInstallment_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT04_CouponsD_DTO.xsc">
+      <DependentUpon>OPT04_CouponsD_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT04_CouponsD_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT04_CouponsD_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT04_CouponsD_DTO.xss">
+      <DependentUpon>OPT04_CouponsD_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT05_HqInvoiceAssign_DTO.xsc">
+      <DependentUpon>OPT05_HqInvoiceAssign_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT05_HqInvoiceAssign_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT05_HqInvoiceAssign_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT05_HqInvoiceAssign_DTO.xss">
+      <DependentUpon>OPT05_HqInvoiceAssign_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT10_Product_DTO.xsc">
+      <DependentUpon>OPT10_Product_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT10_Product_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT10_Product_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT10_Product_DTO.xss">
+      <DependentUpon>OPT10_Product_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT11_HgConvertible_DTO.xsc">
+      <DependentUpon>OPT11_HgConvertible_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT11_HgConvertible_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT11_HgConvertible_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT11_HgConvertible_DTO.xss">
+      <DependentUpon>OPT11_HgConvertible_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT12_HgAccumulate_DTO.xsc">
+      <DependentUpon>OPT12_HgAccumulate_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT12_HgAccumulate_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT12_HgAccumulate_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT12_HgAccumulate_DTO.xss">
+      <DependentUpon>OPT12_HgAccumulate_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT13_HgConvertibleRestricted_DTO.xsc">
+      <DependentUpon>OPT13_HgConvertibleRestricted_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT13_HgConvertibleRestricted_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT13_HgConvertibleRestricted_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\OPT13_HgConvertibleRestricted_DTO.xss">
+      <DependentUpon>OPT13_HgConvertibleRestricted_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT15_HgConvertibleGiftM_DTO.xsc">
+      <DependentUpon>OPT15_HgConvertibleGiftM_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT15_HgConvertibleGiftM_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT15_HgConvertibleGiftM_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT15_HgConvertibleGiftM_DTO.xss">
+      <DependentUpon>OPT15_HgConvertibleGiftM_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT16_HgConvertMemberList_DTO.xsc">
+      <DependentUpon>OPT16_HgConvertMemberList_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT16_HgConvertMemberList_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT16_HgConvertMemberList_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT16_HgConvertMemberList_DTO.xss">
+      <DependentUpon>OPT16_HgConvertMemberList_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT18_StoreSpecialDis_DTO.xsc">
+      <DependentUpon>OPT18_StoreSpecialDis_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OPT18_StoreSpecialDis_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OPT18_StoreSpecialDis_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\OPT18_StoreSpecialDis_DTO.xss">
+      <DependentUpon>OPT18_StoreSpecialDis_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD01_OrderMD_DTO.xsc">
+      <DependentUpon>ORD01_OrderMD_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD01_OrderMD_DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD01_OrderMD_DTO.xss">
+      <DependentUpon>ORD01_OrderMD_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD04_ORDERM.xsc">
+      <DependentUpon>ORD04_ORDERM.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD04_ORDERM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD04_ORDERM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD04_ORDERM.xss">
+      <DependentUpon>ORD04_ORDERM.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD06_OneToOne_DTO.xsc">
+      <DependentUpon>ORD06_OneToOne_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD06_OneToOne_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD06_OneToOne_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD06_OneToOne_DTO.xss">
+      <DependentUpon>ORD06_OneToOne_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD08_HQNDSORDERMSet_DTO.xsc">
+      <DependentUpon>ORD08_HQNDSORDERMSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD08_HQNDSORDERMSet_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD08_HQNDSORDERMSet_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD08_HQNDSORDERMSet_DTO.xss">
+      <DependentUpon>ORD08_HQNDSORDERMSet_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD09_DISTRIBUTES_ORDER.xsc">
+      <DependentUpon>ORD09_DISTRIBUTES_ORDER.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD09_DISTRIBUTES_ORDER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD09_DISTRIBUTES_ORDER.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD09_DISTRIBUTES_ORDER.xss">
+      <DependentUpon>ORD09_DISTRIBUTES_ORDER.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD09_DropShipment.xsc">
+      <DependentUpon>ORD09_DropShipment.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD09_DropShipment.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD09_DropShipment.xss">
+      <DependentUpon>ORD09_DropShipment.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD10_WeightDistribute_DTO.xsc">
+      <DependentUpon>ORD10_WeightDistribute_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD10_WeightDistribute_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD10_WeightDistribute_DTO1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD10_WeightDistribute_DTO.xss">
+      <DependentUpon>ORD10_WeightDistribute_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD11_PORQ_DTO.xsc">
+      <DependentUpon>ORD11_PORQ_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD11_PORQ_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD11_PORQ_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD11_PORQ_DTO.xss">
+      <DependentUpon>ORD11_PORQ_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD12_PreOrder_DTO.xsc">
+      <DependentUpon>ORD12_PreOrder_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD12_PreOrder_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD12_PreOrder_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\ORD12_PreOrder_DTO.xss">
+      <DependentUpon>ORD12_PreOrder_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD13_SCQC_DTO.xsc">
+      <DependentUpon>ORD13_SCQC_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD13_SCQC_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD13_SCQC_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\ORD13_SCQC_DTO.xss">
+      <DependentUpon>ORD13_SCQC_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD14_SIM_GROUP.xsc">
+      <DependentUpon>ORD14_SIM_GROUP.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ORD14_SIM_GROUP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ORD14_SIM_GROUP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\ORD14_SIM_GROUP.xss">
+      <DependentUpon>ORD14_SIM_GROUP.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\PROD_IMEI_DTO.xsc">
+      <DependentUpon>PROD_IMEI_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\PROD_IMEI_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROD_IMEI_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\PROD_IMEI_DTO.xss">
+      <DependentUpon>PROD_IMEI_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\SAL01_SALE_DTO.xsc">
+      <DependentUpon>SAL01_SALE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\SAL01_SALE_DTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAL01_SALE_DTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\SAL01_SALE_DTO.xss">
+      <DependentUpon>SAL01_SALE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\SAL05_TO_CLOSE_DTO.xsc">
+      <DependentUpon>SAL05_TO_CLOSE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\SAL05_TO_CLOSE_DTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAL05_TO_CLOSE_DTO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DTO\SAL05_TO_CLOSE_DTO.xss">
+      <DependentUpon>SAL05_TO_CLOSE_DTO.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ePosSUtility2008\AdvtekUtility.csproj">
+      <Project>{627D1167-3E5D-463E-9292-69A7EC25559D}</Project>
+      <Name>AdvtekUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BO\" />
+    <Folder Include="Facade\FacadeStub\" />
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

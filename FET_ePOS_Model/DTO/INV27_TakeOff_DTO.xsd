@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="INV27_TakeOff_DTO" targetNamespace="http://tempuri.org/INV27_TakeOff_DTO.xsd" xmlns:mstns="http://tempuri.org/INV27_TakeOff_DTO.xsd" xmlns="http://tempuri.org/INV27_TakeOff_DTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString3 (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString3" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="INV27_TakeOff_DTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="INV27_TakeOff_DTO" msprop:Generator_UserDSName="INV27_TakeOff_DTO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SEAL_OFF_IMEI" msprop:Generator_UserTableName="SEAL_OFF_IMEI" msprop:Generator_RowDeletedName="SEAL_OFF_IMEIRowDeleted" msprop:Generator_TableClassName="SEAL_OFF_IMEIDataTable" msprop:Generator_RowChangedName="SEAL_OFF_IMEIRowChanged" msprop:Generator_RowClassName="SEAL_OFF_IMEIRow" msprop:Generator_RowChangingName="SEAL_OFF_IMEIRowChanging" msprop:Generator_RowEvArgName="SEAL_OFF_IMEIRowChangeEvent" msprop:Generator_RowEvHandlerName="SEAL_OFF_IMEIRowChangeEventHandler" msprop:Generator_TablePropName="SEAL_OFF_IMEI" msprop:Generator_TableVarName="tableSEAL_OFF_IMEI" msprop:Generator_RowDeletingName="SEAL_OFF_IMEIRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEAL_OFF_IMEI_ID" msprop:Generator_UserColumnName="SEAL_OFF_IMEI_ID" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_IMEI_ID" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_IMEI_ID" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_IMEI_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEAL_OFF_PROD_ID" msprop:Generator_UserColumnName="SEAL_OFF_PROD_ID" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_PROD_ID" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_PROD_ID" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_PROD_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STORE_NO" msprop:Generator_UserColumnName="STORE_NO" msprop:Generator_ColumnPropNameInRow="STORE_NO" msprop:Generator_ColumnVarNameInTable="columnSTORE_NO" msprop:Generator_ColumnPropNameInTable="STORE_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IMEI" msprop:Generator_UserColumnName="IMEI" msprop:Generator_ColumnPropNameInRow="IMEI" msprop:Generator_ColumnVarNameInTable="columnIMEI" msprop:Generator_ColumnPropNameInTable="IMEIColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SEAL_OFF_STORE_ID" msprop:Generator_UserColumnName="SEAL_OFF_STORE_ID" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_STORE_ID" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_STORE_ID" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_STORE_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SEAL_OFF_PROD_M" msprop:Generator_UserTableName="SEAL_OFF_PROD_M" msprop:Generator_RowDeletedName="SEAL_OFF_PROD_MRowDeleted" msprop:Generator_TableClassName="SEAL_OFF_PROD_MDataTable" msprop:Generator_RowChangedName="SEAL_OFF_PROD_MRowChanged" msprop:Generator_RowClassName="SEAL_OFF_PROD_MRow" msprop:Generator_RowChangingName="SEAL_OFF_PROD_MRowChanging" msprop:Generator_RowEvArgName="SEAL_OFF_PROD_MRowChangeEvent" msprop:Generator_RowEvHandlerName="SEAL_OFF_PROD_MRowChangeEventHandler" msprop:Generator_TablePropName="SEAL_OFF_PROD_M" msprop:Generator_TableVarName="tableSEAL_OFF_PROD_M" msprop:Generator_RowDeletingName="SEAL_OFF_PROD_MRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEAL_OFF_PROD_ID" msprop:Generator_UserColumnName="SEAL_OFF_PROD_ID" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_PROD_ID" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_PROD_ID" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_PROD_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEAL_OFF_DATE" msprop:Generator_UserColumnName="SEAL_OFF_DATE" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_DATE" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_DATE" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="S_DATE" msprop:Generator_UserColumnName="S_DATE" msprop:Generator_ColumnPropNameInRow="S_DATE" msprop:Generator_ColumnVarNameInTable="columnS_DATE" msprop:Generator_ColumnPropNameInTable="S_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="E_DATE" msprop:Generator_UserColumnName="E_DATE" msprop:Generator_ColumnPropNameInRow="E_DATE" msprop:Generator_ColumnVarNameInTable="columnE_DATE" msprop:Generator_ColumnPropNameInTable="E_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SEAL_OFF_QTY" msprop:Generator_UserColumnName="SEAL_OFF_QTY" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_QTY" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_QTY" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DISCOUNT_TYPE" msprop:Generator_UserColumnName="DISCOUNT_TYPE" msprop:Generator_ColumnPropNameInRow="DISCOUNT_TYPE" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT_TYPE" msprop:Generator_ColumnPropNameInTable="DISCOUNT_TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT_PRICE" msprop:Generator_UserColumnName="UNIT_PRICE" msprop:Generator_ColumnPropNameInRow="UNIT_PRICE" msprop:Generator_ColumnVarNameInTable="columnUNIT_PRICE" msprop:Generator_ColumnPropNameInTable="UNIT_PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DISCOUNT_PRICE" msprop:Generator_UserColumnName="DISCOUNT_PRICE" msprop:Generator_ColumnPropNameInRow="DISCOUNT_PRICE" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT_PRICE" msprop:Generator_ColumnPropNameInTable="DISCOUNT_PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SEAL_OFF_STORE" msprop:Generator_UserTableName="SEAL_OFF_STORE" msprop:Generator_RowDeletedName="SEAL_OFF_STORERowDeleted" msprop:Generator_TableClassName="SEAL_OFF_STOREDataTable" msprop:Generator_RowChangedName="SEAL_OFF_STORERowChanged" msprop:Generator_RowClassName="SEAL_OFF_STORERow" msprop:Generator_RowChangingName="SEAL_OFF_STORERowChanging" msprop:Generator_RowEvArgName="SEAL_OFF_STORERowChangeEvent" msprop:Generator_RowEvHandlerName="SEAL_OFF_STORERowChangeEventHandler" msprop:Generator_TablePropName="SEAL_OFF_STORE" msprop:Generator_TableVarName="tableSEAL_OFF_STORE" msprop:Generator_RowDeletingName="SEAL_OFF_STORERowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEAL_OFF_PROD_ID" msprop:Generator_UserColumnName="SEAL_OFF_PROD_ID" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_PROD_ID" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_PROD_ID" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_PROD_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STORE_NO" msprop:Generator_UserColumnName="STORE_NO" msprop:Generator_ColumnPropNameInRow="STORE_NO" msprop:Generator_ColumnVarNameInTable="columnSTORE_NO" msprop:Generator_ColumnPropNameInTable="STORE_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEAL_OFF_STORE_ID" msprop:Generator_UserColumnName="SEAL_OFF_STORE_ID" msprop:Generator_ColumnPropNameInRow="SEAL_OFF_STORE_ID" msprop:Generator_ColumnVarNameInTable="columnSEAL_OFF_STORE_ID" msprop:Generator_ColumnPropNameInTable="SEAL_OFF_STORE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SEAL_OFF_IMEI" />
+      <xs:field xpath="mstns:SEAL_OFF_IMEI_ID" />
+    </xs:unique>
+    <xs:unique name="SEAL_OFF_PROD_M_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SEAL_OFF_PROD_M" />
+      <xs:field xpath="mstns:SEAL_OFF_PROD_ID" />
+    </xs:unique>
+    <xs:unique name="SEAL_OFF_STORE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SEAL_OFF_STORE" />
+      <xs:field xpath="mstns:SEAL_OFF_STORE_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

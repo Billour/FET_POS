@@ -1,0 +1,413 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS
+END
+UbnVerificationForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/UbnVerificationForm.cs
+END
+HappyGoRedeemForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/HappyGoRedeemForm.Designer.cs
+END
+InstallmentForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/InstallmentForm.cs
+END
+NumberPortingForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/NumberPortingForm.cs
+END
+CallDetailRecordForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CallDetailRecordForm.cs
+END
+MDIParent.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MDIParent.Designer.cs
+END
+MainForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MainForm.resx
+END
+ECardTopUpForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/ECardTopUpForm.Designer.cs
+END
+LoginForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/LoginForm.Designer.cs
+END
+OfflineCreditCardForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/OfflineCreditCardForm.cs
+END
+LoginForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/LoginForm.cs
+END
+MobileRepairForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MobileRepairForm.Designer.cs
+END
+MDIParent.resx
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MDIParent.resx
+END
+WizardBase.dll
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/WizardBase.dll
+END
+CashForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CashForm.cs
+END
+CreditCardForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CreditCardForm.resx
+END
+Splash.resx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/Splash.resx
+END
+DiscountForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/DiscountForm.Designer.cs
+END
+DiscountForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/DiscountForm.cs
+END
+CallDetailRecordForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CallDetailRecordForm.Designer.cs
+END
+MDIParent.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MDIParent.cs
+END
+CobrandedCardTopUpForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CobrandedCardTopUpForm.Designer.cs
+END
+CouponForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CouponForm.Designer.cs
+END
+Splash.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/Splash.Designer.cs
+END
+InstallmentForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/InstallmentForm.resx
+END
+CobrandedCardTopUpForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CobrandedCardTopUpForm.resx
+END
+CouponForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CouponForm.resx
+END
+BankCardForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/BankCardForm.resx
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/Program.cs
+END
+LoginForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/LoginForm.resx
+END
+InstallmentForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/InstallmentForm.Designer.cs
+END
+CashForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CashForm.resx
+END
+CollectionForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CollectionForm.Designer.cs
+END
+MobileLeaseForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MobileLeaseForm.resx
+END
+CouponForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CouponForm.cs
+END
+CobrandedCardTopUpForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CobrandedCardTopUpForm.cs
+END
+DiscountForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/DiscountForm.resx
+END
+BankCardForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/BankCardForm.cs
+END
+HappyGoRedeemForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/HappyGoRedeemForm.resx
+END
+ECardTopUpForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/ECardTopUpForm.cs
+END
+CollectionForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CollectionForm.resx
+END
+CombinedSalesForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CombinedSalesForm.Designer.cs
+END
+CombinedSalesForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CombinedSalesForm.cs
+END
+MobileRepairForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MobileRepairForm.cs
+END
+CashForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CashForm.Designer.cs
+END
+Utility.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/Utility.cs
+END
+MobileLeaseForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MobileLeaseForm.cs
+END
+MainForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MainForm.Designer.cs
+END
+MainForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MainForm.cs
+END
+UbnVerificationForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/UbnVerificationForm.Designer.cs
+END
+HappyGoRedeemForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/HappyGoRedeemForm.cs
+END
+NumberPortingForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/NumberPortingForm.Designer.cs
+END
+CollectionForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CollectionForm.cs
+END
+UbnVerificationForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/UbnVerificationForm.resx
+END
+CreditCardForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CreditCardForm.Designer.cs
+END
+CreditCardForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CreditCardForm.cs
+END
+BankCardForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/BankCardForm.Designer.cs
+END
+OfflineCreditCardForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/OfflineCreditCardForm.Designer.cs
+END
+Splash.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/Splash.cs
+END
+NumberPortingForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/NumberPortingForm.resx
+END
+CallDetailRecordForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CallDetailRecordForm.resx
+END
+ListViewEx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/ListViewEx.cs
+END
+MobileLeaseForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MobileLeaseForm.Designer.cs
+END
+ECardTopUpForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/ECardTopUpForm.resx
+END
+OfflineCreditCardForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/OfflineCreditCardForm.resx
+END
+FET_WIN_POS.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/FET_WIN_POS.csproj
+END
+CombinedSalesForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/CombinedSalesForm.resx
+END
+MobileRepairForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/3164/SourceCode/FET_POS/FET_WIN_POS/MobileRepairForm.resx
+END

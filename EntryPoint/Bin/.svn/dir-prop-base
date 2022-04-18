@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 129
+AdvTekUtility.dll
+AdvTekUtility.dll.refresh
+AdvTekUtility.pdb
+App_Licenses.dll
+ePOSModel.dll
+ePOSModel.dll.refresh
+ePOSModel.pdb
+
+END

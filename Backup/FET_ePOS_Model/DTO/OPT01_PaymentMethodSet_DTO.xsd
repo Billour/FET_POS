@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OPT01_PaymentMethodSet_DTO" targetNamespace="http://tempuri.org/OPT01_PaymentMethodSet_DTO.xsd" xmlns:mstns="http://tempuri.org/OPT01_PaymentMethodSet_DTO.xsd" xmlns="http://tempuri.org/OPT01_PaymentMethodSet_DTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OPT01_PaymentMethodSet_DTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OPT01_PaymentMethodSet_DTO" msprop:Generator_DataSetName="OPT01_PaymentMethodSet_DTO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PAY_MODE" msprop:Generator_UserTableName="PAY_MODE" msprop:Generator_RowDeletedName="PAY_MODERowDeleted" msprop:Generator_RowChangedName="PAY_MODERowChanged" msprop:Generator_RowClassName="PAY_MODERow" msprop:Generator_RowChangingName="PAY_MODERowChanging" msprop:Generator_RowEvArgName="PAY_MODERowChangeEvent" msprop:Generator_RowEvHandlerName="PAY_MODERowChangeEventHandler" msprop:Generator_TableClassName="PAY_MODEDataTable" msprop:Generator_TableVarName="tablePAY_MODE" msprop:Generator_RowDeletingName="PAY_MODERowDeleting" msprop:Generator_TablePropName="PAY_MODE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAY_MODE_ID" msprop:Generator_UserColumnName="PAY_MODE_ID" msprop:Generator_ColumnVarNameInTable="columnPAY_MODE_ID" msprop:Generator_ColumnPropNameInRow="PAY_MODE_ID" msprop:Generator_ColumnPropNameInTable="PAY_MODE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAY_MODE_NAME" msprop:Generator_UserColumnName="PAY_MODE_NAME" msprop:Generator_ColumnVarNameInTable="columnPAY_MODE_NAME" msprop:Generator_ColumnPropNameInRow="PAY_MODE_NAME" msprop:Generator_ColumnPropNameInTable="PAY_MODE_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PAYMENT_METHOD_SET" msprop:Generator_UserTableName="PAYMENT_METHOD_SET" msprop:Generator_RowDeletedName="PAYMENT_METHOD_SETRowDeleted" msprop:Generator_TableClassName="PAYMENT_METHOD_SETDataTable" msprop:Generator_RowChangedName="PAYMENT_METHOD_SETRowChanged" msprop:Generator_RowClassName="PAYMENT_METHOD_SETRow" msprop:Generator_RowChangingName="PAYMENT_METHOD_SETRowChanging" msprop:Generator_RowEvArgName="PAYMENT_METHOD_SETRowChangeEvent" msprop:Generator_RowEvHandlerName="PAYMENT_METHOD_SETRowChangeEventHandler" msprop:Generator_TablePropName="PAYMENT_METHOD_SET" msprop:Generator_TableVarName="tablePAYMENT_METHOD_SET" msprop:Generator_RowDeletingName="PAYMENT_METHOD_SETRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAYMENT_METHOD_ID" msprop:Generator_UserColumnName="PAYMENT_METHOD_ID" msprop:Generator_ColumnPropNameInRow="PAYMENT_METHOD_ID" msprop:Generator_ColumnVarNameInTable="columnPAYMENT_METHOD_ID" msprop:Generator_ColumnPropNameInTable="PAYMENT_METHOD_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAY_MODE_ID" msprop:Generator_UserColumnName="PAY_MODE_ID" msprop:Generator_ColumnPropNameInRow="PAY_MODE_ID" msprop:Generator_ColumnVarNameInTable="columnPAY_MODE_ID" msprop:Generator_ColumnPropNameInTable="PAY_MODE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCOUNT_CODE" msprop:Generator_UserColumnName="ACCOUNT_CODE" msprop:Generator_ColumnPropNameInRow="ACCOUNT_CODE" msprop:Generator_ColumnVarNameInTable="columnACCOUNT_CODE" msprop:Generator_ColumnPropNameInTable="ACCOUNT_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="23" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_DATE" msprop:Generator_UserColumnName="S_DATE" msprop:Generator_ColumnPropNameInRow="S_DATE" msprop:Generator_ColumnVarNameInTable="columnS_DATE" msprop:Generator_ColumnPropNameInTable="S_DATEColumn" type="xs:dateTime" />
+              <xs:element name="E_DATE" msprop:Generator_UserColumnName="E_DATE" msprop:Generator_ColumnPropNameInRow="E_DATE" msprop:Generator_ColumnVarNameInTable="columnE_DATE" msprop:Generator_ColumnPropNameInTable="E_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PAY_MODE" />
+      <xs:field xpath="mstns:PAY_MODE_ID" />
+    </xs:unique>
+    <xs:unique name="PAYMENT_METHOD_SET_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PAYMENT_METHOD_SET" />
+      <xs:field xpath="mstns:PAYMENT_METHOD_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

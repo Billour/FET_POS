@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/9186/SourceCode/FET_POS/FET_ConvertApp/SyncPOS2HRS_FIXI
+END
+HRS維修單結帳發票資訊轉入舊POS.txt
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/svn/FET_POS_2010/!svn/ver/7369/SourceCode/FET_POS/FET_ConvertApp/SyncPOS2HRS_FIXI/HRS%E7%B6%AD%E4%BF%AE%E5%96%AE%E7%B5%90%E5%B8%B3%E7%99%BC%E7%A5%A8%E8%B3%87%E8%A8%8A%E8%BD%89%E5%85%A5%E8%88%8APOS.txt
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/7369/SourceCode/FET_POS/FET_ConvertApp/SyncPOS2HRS_FIXI/App.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/7369/SourceCode/FET_POS/FET_ConvertApp/SyncPOS2HRS_FIXI/Program.cs
+END
+SyncPOS2HRS_FIXI.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FET_POS_2010/!svn/ver/9186/SourceCode/FET_POS/FET_ConvertApp/SyncPOS2HRS_FIXI/SyncPOS2HRS_FIXI.csproj
+END

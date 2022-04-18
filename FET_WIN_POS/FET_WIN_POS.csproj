@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22B27614-D9E5-430A-B2A7-BADC604A17CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FetPos</RootNamespace>
+    <AssemblyName>FetPos</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>FetPos.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankCardForm.Designer.cs">
+      <DependentUpon>BankCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallDetailRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CallDetailRecordForm.Designer.cs">
+      <DependentUpon>CallDetailRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashForm.Designer.cs">
+      <DependentUpon>CashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CobrandedCardTopUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CobrandedCardTopUpForm.Designer.cs">
+      <DependentUpon>CobrandedCardTopUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollectionForm.Designer.cs">
+      <DependentUpon>CollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CombinedSalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CombinedSalesForm.Designer.cs">
+      <DependentUpon>CombinedSalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouponForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouponForm.Designer.cs">
+      <DependentUpon>CouponForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditCardForm.Designer.cs">
+      <DependentUpon>CreditCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiscountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscountForm.Designer.cs">
+      <DependentUpon>DiscountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECardTopUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECardTopUpForm.Designer.cs">
+      <DependentUpon>ECardTopUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HappyGoRedeemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyGoRedeemForm.Designer.cs">
+      <DependentUpon>HappyGoRedeemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallmentForm.Designer.cs">
+      <DependentUpon>InstallmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MobileLeaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MobileLeaseForm.Designer.cs">
+      <DependentUpon>MobileLeaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MobileRepairForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MobileRepairForm.Designer.cs">
+      <DependentUpon>MobileRepairForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPortingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberPortingForm.Designer.cs">
+      <DependentUpon>NumberPortingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfflineCreditCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfflineCreditCardForm.Designer.cs">
+      <DependentUpon>OfflineCreditCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BankCardForm.resx">
+      <DependentUpon>BankCardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallDetailRecordForm.resx">
+      <DependentUpon>CallDetailRecordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashForm.resx">
+      <DependentUpon>CashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CobrandedCardTopUpForm.resx">
+      <DependentUpon>CobrandedCardTopUpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionForm.resx">
+      <DependentUpon>CollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CombinedSalesForm.resx">
+      <DependentUpon>CombinedSalesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouponForm.resx">
+      <DependentUpon>CouponForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditCardForm.resx">
+      <DependentUpon>CreditCardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscountForm.resx">
+      <DependentUpon>DiscountForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECardTopUpForm.resx">
+      <DependentUpon>ECardTopUpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyGoRedeemForm.resx">
+      <DependentUpon>HappyGoRedeemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallmentForm.resx">
+      <DependentUpon>InstallmentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MobileLeaseForm.resx">
+      <DependentUpon>MobileLeaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MobileRepairForm.resx">
+      <DependentUpon>MobileRepairForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberPortingForm.resx">
+      <DependentUpon>NumberPortingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfflineCreditCardForm.resx">
+      <DependentUpon>OfflineCreditCardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbnVerificationForm.resx">
+      <DependentUpon>UbnVerificationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\InfoContainer.resx">
+      <DependentUpon>InfoContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\InfoPage.resx">
+      <DependentUpon>InfoPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbnVerificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbnVerificationForm.Designer.cs">
+      <DependentUpon>UbnVerificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="Wizard\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\HeaderDesigner.cs" />
+    <Compile Include="Wizard\InfoContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InfoContainerDesigner.cs" />
+    <Compile Include="Wizard\InfoPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InfoPageDesigner.cs" />
+    <Compile Include="Wizard\PageCollection.cs" />
+    <Compile Include="Wizard\PageEventHandler.cs" />
+    <Compile Include="Wizard\Wizard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardDesigner.cs" />
+    <Compile Include="Wizard\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardPageDesigner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Resources\SplashScreenImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_fetnet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Wizard\Wizard.bmp" />
+    <Content Include="Wizard\wizBigOnlineFolder.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

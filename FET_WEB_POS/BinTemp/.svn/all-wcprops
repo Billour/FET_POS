@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp
+END
+ePOSModel.dll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/ePOSModel.dll
+END
+ePOSModel.pdb.exclude
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/ePOSModel.pdb.exclude
+END
+AjaxControlToolkit.dll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/AjaxControlToolkit.dll
+END
+log4net.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/log4net.dll
+END
+GotDotNet.ApplicationBlocks.Data.dll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/GotDotNet.ApplicationBlocks.Data.dll
+END
+AdvTekUserCtrl.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/AdvTekUserCtrl.dll
+END
+AdvTekUtility.dll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/AdvTekUtility.dll
+END
+AdvTekUtility.pdb.exclude
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_WEB_POS/BinTemp/AdvTekUtility.pdb.exclude
+END

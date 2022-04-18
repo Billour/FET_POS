@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/10144/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common
+END
+ProductTypePopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/6682/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductTypePopup.aspx
+END
+OddNumberPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/OddNumberPopup.aspx.cs
+END
+ConsignmentVendorsPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/8187/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ConsignmentVendorsPopup.aspx
+END
+ProductsPopup3.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/7377/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductsPopup3.aspx
+END
+ProductTypePopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductTypePopup.aspx.cs
+END
+WeightRatingImportPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/4581/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/WeightRatingImportPopup.aspx
+END
+ProductsPopup2.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductsPopup2.aspx.cs
+END
+LeasePopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/9119/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/LeasePopup.aspx
+END
+ProductsPopup3.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductsPopup3.aspx.cs
+END
+NonDropShipmentExportPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/FET_POS_2010/!svn/ver/9435/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/NonDropShipmentExportPopup.aspx.cs
+END
+WeightRatingExportPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/3108/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/WeightRatingExportPopup.aspx
+END
+ChooseConsignVendor.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/1762/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ChooseConsignVendor.aspx.cs
+END
+WeightRatingExportPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/WeightRatingExportPopup.aspx.cs
+END
+ProductsPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/9906/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductsPopup.aspx.cs
+END
+CostCenterPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/4043/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/CostCenterPopup.aspx
+END
+PromotionsPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/8648/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/PromotionsPopup.aspx.cs
+END
+ProductCategoryPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/6402/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductCategoryPopup.aspx
+END
+OddNumberPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/7866/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/OddNumberPopup.aspx
+END
+OnlyPromotionsPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/OnlyPromotionsPopup.aspx.cs
+END
+ProductCategoryPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductCategoryPopup.aspx.cs
+END
+StoresPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/StoresPopup.aspx.cs
+END
+ProductsPopup2.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/5989/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductsPopup2.aspx
+END
+EmployeesDepartmentPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FET_POS_2010/!svn/ver/7379/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/EmployeesDepartmentPopup.aspx
+END
+DiscountPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/5431/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/DiscountPopup.aspx
+END
+NonDropShipmentExportPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FET_POS_2010/!svn/ver/10144/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/NonDropShipmentExportPopup.aspx
+END
+ConsignmentVendorsPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ConsignmentVendorsPopup.aspx.cs
+END
+EmployeesDepartmentPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/EmployeesDepartmentPopup.aspx.cs
+END
+ChooseConsignVendor.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/3108/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ChooseConsignVendor.aspx
+END
+WeightRatingImportPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/9094/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/WeightRatingImportPopup.aspx.cs
+END
+DiscountPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/DiscountPopup.aspx.cs
+END
+LeasePopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/9203/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/LeasePopup.aspx.cs
+END
+EmployeesPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/9337/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/EmployeesPopup.aspx
+END
+ProductsPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/10017/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/ProductsPopup.aspx
+END
+EmployeesPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9337/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/EmployeesPopup.aspx.cs
+END
+PromotionsPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3108/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/PromotionsPopup.aspx
+END
+OnlyPromotionsPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/9041/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/OnlyPromotionsPopup.aspx
+END
+CostCenterPopup.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/8619/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/CostCenterPopup.aspx.cs
+END
+StoresPopup.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/4366/SourceCode/FET_POS/FET_WEB_POS_v2/VSS/Common/StoresPopup.aspx
+END

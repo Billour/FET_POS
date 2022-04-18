@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LOG04_SysPara_DTO" targetNamespace="http://tempuri.org/LOG04_SysPara_DTO.xsd" xmlns:mstns="http://tempuri.org/LOG04_SysPara_DTO.xsd" xmlns="http://tempuri.org/LOG04_SysPara_DTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LOG04_SysPara_DTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LOG04_SysPara_DTO" msprop:Generator_DataSetName="LOG04_SysPara_DTO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SYS_PARA" msprop:Generator_UserTableName="SYS_PARA" msprop:Generator_RowDeletedName="SYS_PARARowDeleted" msprop:Generator_RowChangedName="SYS_PARARowChanged" msprop:Generator_RowClassName="SYS_PARARow" msprop:Generator_RowChangingName="SYS_PARARowChanging" msprop:Generator_RowEvArgName="SYS_PARARowChangeEvent" msprop:Generator_RowEvHandlerName="SYS_PARARowChangeEventHandler" msprop:Generator_TableClassName="SYS_PARADataTable" msprop:Generator_TableVarName="tableSYS_PARA" msprop:Generator_RowDeletingName="SYS_PARARowDeleting" msprop:Generator_TablePropName="SYS_PARA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PARA_ID" msprop:Generator_UserColumnName="PARA_ID" msprop:Generator_ColumnPropNameInRow="PARA_ID" msprop:Generator_ColumnVarNameInTable="columnPARA_ID" msprop:Generator_ColumnPropNameInTable="PARA_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARA_KEY" msprop:Generator_UserColumnName="PARA_KEY" msprop:Generator_ColumnPropNameInRow="PARA_KEY" msprop:Generator_ColumnVarNameInTable="columnPARA_KEY" msprop:Generator_ColumnPropNameInTable="PARA_KEYColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARA_VALUE" msprop:Generator_UserColumnName="PARA_VALUE" msprop:Generator_ColumnPropNameInRow="PARA_VALUE" msprop:Generator_ColumnVarNameInTable="columnPARA_VALUE" msprop:Generator_ColumnPropNameInTable="PARA_VALUEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARA_NAME" msprop:Generator_UserColumnName="PARA_NAME" msprop:Generator_ColumnPropNameInRow="PARA_NAME" msprop:Generator_ColumnVarNameInTable="columnPARA_NAME" msprop:Generator_ColumnPropNameInTable="PARA_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARA_DESC" msprop:Generator_UserColumnName="PARA_DESC" msprop:Generator_ColumnPropNameInRow="PARA_DESC" msprop:Generator_ColumnVarNameInTable="columnPARA_DESC" msprop:Generator_ColumnPropNameInTable="PARA_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+              <xs:element name="SYS_PARA_TYPE_ID" msprop:Generator_UserColumnName="SYS_PARA_TYPE_ID" msprop:Generator_ColumnPropNameInRow="SYS_PARA_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnSYS_PARA_TYPE_ID" msprop:Generator_ColumnPropNameInTable="SYS_PARA_TYPE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SYS_PARA_TYPE" msprop:Generator_UserTableName="SYS_PARA_TYPE" msprop:Generator_RowDeletedName="SYS_PARA_TYPERowDeleted" msprop:Generator_RowChangedName="SYS_PARA_TYPERowChanged" msprop:Generator_RowClassName="SYS_PARA_TYPERow" msprop:Generator_RowChangingName="SYS_PARA_TYPERowChanging" msprop:Generator_RowEvArgName="SYS_PARA_TYPERowChangeEvent" msprop:Generator_RowEvHandlerName="SYS_PARA_TYPERowChangeEventHandler" msprop:Generator_TableClassName="SYS_PARA_TYPEDataTable" msprop:Generator_TableVarName="tableSYS_PARA_TYPE" msprop:Generator_RowDeletingName="SYS_PARA_TYPERowDeleting" msprop:Generator_TablePropName="SYS_PARA_TYPE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SYS_PARA_TYPE_ID" msprop:Generator_UserColumnName="SYS_PARA_TYPE_ID" msprop:Generator_ColumnPropNameInRow="SYS_PARA_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnSYS_PARA_TYPE_ID" msprop:Generator_ColumnPropNameInTable="SYS_PARA_TYPE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYS_PARA_TYPE_NAME" msprop:Generator_UserColumnName="SYS_PARA_TYPE_NAME" msprop:Generator_ColumnPropNameInRow="SYS_PARA_TYPE_NAME" msprop:Generator_ColumnVarNameInTable="columnSYS_PARA_TYPE_NAME" msprop:Generator_ColumnPropNameInTable="SYS_PARA_TYPE_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SYS_PARA" />
+      <xs:field xpath="mstns:PARA_ID" />
+      <xs:field xpath="mstns:SYS_PARA_TYPE_ID" />
+    </xs:unique>
+    <xs:unique name="SYS_PARA_TYPE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SYS_PARA_TYPE" />
+      <xs:field xpath="mstns:SYS_PARA_TYPE_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,6 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\ClientPrint\ClientPrint\bin\Release\FilePrint.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\ClientPrint\ClientPrint\bin\Release\FilePrint.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\ClientPrint\ClientPrint\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\ClientPrint\ClientPrint\obj\Release\FilePrint.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\ClientPrint\ClientPrint\obj\Release\FilePrint.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\ClientPrint\ClientPrint\bin\Release\FilePrint.tlb

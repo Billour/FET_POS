@@ -1,0 +1,1361 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/FET_POS_2010/!svn/ver/10289/SourceCode/FET_POS/FET_ePOS_Model/DTO
+END
+OPT11_HgConvertible_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3194/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT11_HgConvertible_DTO.xsc
+END
+OPT11_HgConvertible_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT11_HgConvertible_DTO.xsd
+END
+INV05_RTNM_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3659/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV05_RTNM_DTO.xss
+END
+DIS01_DiscountMasterDataSet_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FET_POS_2010/!svn/ver/9830/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS01_DiscountMasterDataSet_DTO.Designer.cs
+END
+INV03_INVONHANDCURRENTSet_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/3564/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV03_INVONHANDCURRENTSet_DTO.xsc
+END
+CHK02_SALE_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/7777/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK02_SALE_DTO.Designer.cs
+END
+INV03_INVONHANDCURRENTSet_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/3564/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV03_INVONHANDCURRENTSet_DTO.xsd
+END
+CHK05_BigMoney_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3737/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK05_BigMoney_DTO.xss
+END
+INV27_TakeOff_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/6375/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV27_TakeOff_DTO.xss
+END
+DIS08_PROD_TRANS_VALUE_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS08_PROD_TRANS_VALUE_DTO.Designer.cs
+END
+ORD14_SIM_GROUP.xss
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3975/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD14_SIM_GROUP.xss
+END
+LEA01_LEASE_M.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/8123/SourceCode/FET_POS/FET_ePOS_Model/DTO/LEA01_LEASE_M.Designer.cs
+END
+OPT05_HqInvoiceAssign_DTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/3406/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT05_HqInvoiceAssign_DTO.cs
+END
+OPT12_HgAccumulate_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT12_HgAccumulate_DTO.Designer.cs
+END
+OPT18_StoreSpecialDis_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT18_StoreSpecialDis_DTO.Designer.cs
+END
+OPT11_HgConvertible_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/5026/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT11_HgConvertible_DTO.xss
+END
+INV03_INVONHANDCURRENTSet_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/3564/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV03_INVONHANDCURRENTSet_DTO.xss
+END
+INV05_RTNM_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/3659/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV05_RTNM_DTO.Designer.cs
+END
+CONS16_CSM_STOCKCHK_M.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/7626/SourceCode/FET_POS/FET_ePOS_Model/DTO/CONS16_CSM_STOCKCHK_M.xsc
+END
+CHK05_BigMoney_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK05_BigMoney_DTO.Designer.cs
+END
+CONS16_CSM_STOCKCHK_M.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/7785/SourceCode/FET_POS/FET_ePOS_Model/DTO/CONS16_CSM_STOCKCHK_M.xsd
+END
+INV27_TakeOff_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/6375/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV27_TakeOff_DTO.Designer.cs
+END
+OPT01_PaymentMethodSet_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT01_PaymentMethodSet_DTO.xsc
+END
+ORD14_SIM_GROUP.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3975/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD14_SIM_GROUP.Designer.cs
+END
+OPT01_PaymentMethodSet_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3185/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT01_PaymentMethodSet_DTO.xsd
+END
+ORD09_DropShipment.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/4058/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DropShipment.xsc
+END
+SAL01_SALE_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/4045/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL01_SALE_DTO.xsc
+END
+ORD09_DropShipment.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/4058/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DropShipment.xsd
+END
+INV17_CUTOFFDATESet_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3392/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV17_CUTOFFDATESet_DTO.xsc
+END
+SAL01_SALE_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/10047/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL01_SALE_DTO.xsd
+END
+INV17_CUTOFFDATESet_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3392/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV17_CUTOFFDATESet_DTO.xsd
+END
+OPT11_HgConvertible_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT11_HgConvertible_DTO.Designer.cs
+END
+INV08_InventoryApproval_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/4062/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV08_InventoryApproval_DTO.xsc
+END
+INV08_InventoryApproval_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/7331/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV08_InventoryApproval_DTO.xsd
+END
+INV03_INVONHANDCURRENTSet_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/FET_POS_2010/!svn/ver/3564/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV03_INVONHANDCURRENTSet_DTO.Designer.cs
+END
+ORD12_PreOrder_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3616/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD12_PreOrder_DTO.xsc
+END
+ORD12_PreOrder_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3853/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD12_PreOrder_DTO.xsd
+END
+CONS16_CSM_STOCKCHK_M.xss
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/7785/SourceCode/FET_POS/FET_ePOS_Model/DTO/CONS16_CSM_STOCKCHK_M.xss
+END
+ORD10_WeightDistribute_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/5932/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD10_WeightDistribute_DTO.xsc
+END
+ORD10_WeightDistribute_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/5932/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD10_WeightDistribute_DTO.xsd
+END
+OPT01_PaymentMethodSet_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3185/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT01_PaymentMethodSet_DTO.xss
+END
+ORD09_DropShipment.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/4058/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DropShipment.xss
+END
+CON04_CSM_PROD.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/7404/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON04_CSM_PROD.xsc
+END
+INV17_CUTOFFDATESet_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3392/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV17_CUTOFFDATESet_DTO.xss
+END
+SAL01_SALE_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/10047/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL01_SALE_DTO.xss
+END
+CON04_CSM_PROD.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/7404/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON04_CSM_PROD.xsd
+END
+INV08_InventoryApproval_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/7331/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV08_InventoryApproval_DTO.xss
+END
+ORD12_PreOrder_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3674/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD12_PreOrder_DTO.xss
+END
+INV23_LOCSet_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/3448/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV23_LOCSet_DTO.xsc
+END
+OPT15_HgConvertibleGiftM_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT15_HgConvertibleGiftM_DTO.xsc
+END
+INV23_LOCSet_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/3491/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV23_LOCSet_DTO.xsd
+END
+OPT15_HgConvertibleGiftM_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT15_HgConvertibleGiftM_DTO.xsd
+END
+ORD10_WeightDistribute_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/5932/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD10_WeightDistribute_DTO.xss
+END
+OPT16_HgConvertMemberList_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT16_HgConvertMemberList_DTO.xsc
+END
+OPT16_HgConvertMemberList_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT16_HgConvertMemberList_DTO.xsd
+END
+OPT04_CouponsD_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT04_CouponsD_DTO.xsc
+END
+OPT05_HqInvoiceAssign_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT05_HqInvoiceAssign_DTO.xsc
+END
+OPT04_CouponsD_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT04_CouponsD_DTO.xsd
+END
+CONS16_CSM_STOCKCHK_M.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/7785/SourceCode/FET_POS/FET_ePOS_Model/DTO/CONS16_CSM_STOCKCHK_M.Designer.cs
+END
+OPT05_HqInvoiceAssign_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8262/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT05_HqInvoiceAssign_DTO.xsd
+END
+CON04_CSM_PROD.xss
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/7404/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON04_CSM_PROD.xss
+END
+OPT01_PaymentMethodSet_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/3185/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT01_PaymentMethodSet_DTO.Designer.cs
+END
+INV25_StoreTransfer_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3622/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV25_StoreTransfer_DTO.xsc
+END
+INV25_StoreTransfer_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV25_StoreTransfer_DTO.xsd
+END
+LOG04_SysPara_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3212/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG04_SysPara_DTO.xsc
+END
+LOG04_SysPara_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3473/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG04_SysPara_DTO.xsd
+END
+ORD09_DropShipment.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/4058/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DropShipment.Designer.cs
+END
+OPT15_HgConvertibleGiftM_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/3559/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT15_HgConvertibleGiftM_DTO.xss
+END
+INV23_LOCSet_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/3448/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV23_LOCSet_DTO.xss
+END
+INV17_CUTOFFDATESet_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/3392/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV17_CUTOFFDATESet_DTO.Designer.cs
+END
+SAL01_SALE_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/10047/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL01_SALE_DTO.Designer.cs
+END
+OPT16_HgConvertMemberList_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/4453/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT16_HgConvertMemberList_DTO.xss
+END
+INV08_InventoryApproval_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FET_POS_2010/!svn/ver/7331/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV08_InventoryApproval_DTO.Designer.cs
+END
+ORD12_PreOrder_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3853/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD12_PreOrder_DTO.Designer.cs
+END
+OPT04_CouponsD_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT04_CouponsD_DTO.xss
+END
+OPT05_HqInvoiceAssign_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8262/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT05_HqInvoiceAssign_DTO.xss
+END
+ORD10_WeightDistribute_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/5932/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD10_WeightDistribute_DTO.Designer.cs
+END
+INV25_StoreTransfer_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/5570/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV25_StoreTransfer_DTO.xss
+END
+CHK06_BankCash_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/4082/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK06_BankCash_DTO.xsc
+END
+CHK06_BankCash_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK06_BankCash_DTO.xsd
+END
+LOG04_SysPara_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3212/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG04_SysPara_DTO.xss
+END
+CON04_CSM_PROD.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/7404/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON04_CSM_PROD.Designer.cs
+END
+SAL05_TO_CLOSE_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/5141/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL05_TO_CLOSE_DTO.xsc
+END
+SAL05_TO_CLOSE_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/5141/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL05_TO_CLOSE_DTO.xsd
+END
+INV27_TakeOff_DTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/3863/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV27_TakeOff_DTO.cs
+END
+INV23_LOCSet_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/3448/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV23_LOCSet_DTO.Designer.cs
+END
+OPT15_HgConvertibleGiftM_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT15_HgConvertibleGiftM_DTO.Designer.cs
+END
+OPT16_HgConvertMemberList_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT16_HgConvertMemberList_DTO.Designer.cs
+END
+CHK06_BankCash_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/4100/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK06_BankCash_DTO.xss
+END
+OPT04_CouponsD_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT04_CouponsD_DTO.Designer.cs
+END
+OPT05_HqInvoiceAssign_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/8262/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT05_HqInvoiceAssign_DTO.Designer.cs
+END
+LOG06_StoreHeaderDiscountPWD.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/3540/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG06_StoreHeaderDiscountPWD.xsc
+END
+SAL05_TO_CLOSE_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/5141/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL05_TO_CLOSE_DTO.xss
+END
+INV25_StoreTransfer_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV25_StoreTransfer_DTO.Designer.cs
+END
+LOG06_StoreHeaderDiscountPWD.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/3540/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG06_StoreHeaderDiscountPWD.xsd
+END
+LOG04_SysPara_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/3540/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG04_SysPara_DTO.Designer.cs
+END
+OPT03_CreditCardInstallment_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/3029/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT03_CreditCardInstallment_DTO.xsc
+END
+OPT03_CreditCardInstallment_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/3504/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT03_CreditCardInstallment_DTO.xsd
+END
+PROD_IMEI_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/3834/SourceCode/FET_POS/FET_ePOS_Model/DTO/PROD_IMEI_DTO.xsc
+END
+INV28_SEAL_OFF_IMEI_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3911/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV28_SEAL_OFF_IMEI_DTO.xsc
+END
+CON02_CSM_SUPPLIER.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/7413/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON02_CSM_SUPPLIER.cs
+END
+PROD_IMEI_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/6497/SourceCode/FET_POS/FET_ePOS_Model/DTO/PROD_IMEI_DTO.xsd
+END
+INV28_SEAL_OFF_IMEI_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV28_SEAL_OFF_IMEI_DTO.xsd
+END
+LOG06_StoreHeaderDiscountPWD.xss
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/3540/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG06_StoreHeaderDiscountPWD.xss
+END
+OPT13_HgConvertibleRestricted_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/3650/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT13_HgConvertibleRestricted_DTO.xsc
+END
+SAL015_HG_GIFT_EXCH_TRANS_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/9525/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL015_HG_GIFT_EXCH_TRANS_DTO.xsc
+END
+OPT13_HgConvertibleRestricted_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT13_HgConvertibleRestricted_DTO.xsd
+END
+SAL015_HG_GIFT_EXCH_TRANS_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/9564/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL015_HG_GIFT_EXCH_TRANS_DTO.xsd
+END
+CHK06_BankCash_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK06_BankCash_DTO.Designer.cs
+END
+SAL05_TO_CLOSE_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/5141/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL05_TO_CLOSE_DTO.Designer.cs
+END
+CON10_CSM_RTNM_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/7967/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON10_CSM_RTNM_DTO.xsc
+END
+CON10_CSM_RTNM_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/7967/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON10_CSM_RTNM_DTO.xsd
+END
+OPT03_CreditCardInstallment_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/3504/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT03_CreditCardInstallment_DTO.xss
+END
+PROD_IMEI_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/6497/SourceCode/FET_POS/FET_ePOS_Model/DTO/PROD_IMEI_DTO.xss
+END
+INV18_StockADJ_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3813/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV18_StockADJ_DTO.xsc
+END
+INV28_SEAL_OFF_IMEI_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3911/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV28_SEAL_OFF_IMEI_DTO.xss
+END
+INV18_StockADJ_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/7084/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV18_StockADJ_DTO.xsd
+END
+OPT13_HgConvertibleRestricted_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/5649/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT13_HgConvertibleRestricted_DTO.xss
+END
+SAL015_HG_GIFT_EXCH_TRANS_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/9564/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL015_HG_GIFT_EXCH_TRANS_DTO.xss
+END
+CON02_CSM_SUPPLIER.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/7395/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON02_CSM_SUPPLIER.xsc
+END
+CON02_CSM_SUPPLIER.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/8520/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON02_CSM_SUPPLIER.xsd
+END
+LOG06_StoreHeaderDiscountPWD.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FET_POS_2010/!svn/ver/3566/SourceCode/FET_POS/FET_ePOS_Model/DTO/LOG06_StoreHeaderDiscountPWD.Designer.cs
+END
+ORD01_OrderMD_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/10277/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD01_OrderMD_DTO.xsc
+END
+CON10_CSM_RTNM_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/7967/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON10_CSM_RTNM_DTO.xss
+END
+ORD01_OrderMD_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/10289/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD01_OrderMD_DTO.xsd
+END
+ORD09_DISTRIBUTES_ORDER.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/3704/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DISTRIBUTES_ORDER.xsc
+END
+ORD09_DISTRIBUTES_ORDER.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/6100/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DISTRIBUTES_ORDER.xsd
+END
+CON20_CSM_StoreTransfer_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/7760/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON20_CSM_StoreTransfer_DTO.xsc
+END
+CON20_CSM_StoreTransfer_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/7760/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON20_CSM_StoreTransfer_DTO.xsd
+END
+INV18_StockADJ_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/7084/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV18_StockADJ_DTO.xss
+END
+OPT03_CreditCardInstallment_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/FET_POS_2010/!svn/ver/3504/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT03_CreditCardInstallment_DTO.Designer.cs
+END
+PROD_IMEI_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/6497/SourceCode/FET_POS/FET_ePOS_Model/DTO/PROD_IMEI_DTO.Designer.cs
+END
+INV28_SEAL_OFF_IMEI_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV28_SEAL_OFF_IMEI_DTO.Designer.cs
+END
+CON02_CSM_SUPPLIER.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/8520/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON02_CSM_SUPPLIER.xss
+END
+OPT13_HgConvertibleRestricted_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT13_HgConvertibleRestricted_DTO.Designer.cs
+END
+SAL015_HG_GIFT_EXCH_TRANS_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/FET_POS_2010/!svn/ver/9564/SourceCode/FET_POS/FET_ePOS_Model/DTO/SAL015_HG_GIFT_EXCH_TRANS_DTO.Designer.cs
+END
+ORD01_OrderMD_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/10289/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD01_OrderMD_DTO.xss
+END
+ORD09_DISTRIBUTES_ORDER.xss
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/6100/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DISTRIBUTES_ORDER.xss
+END
+CON20_CSM_StoreTransfer_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/7760/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON20_CSM_StoreTransfer_DTO.xss
+END
+INV11_StockCHK_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3876/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV11_StockCHK_DTO.xsc
+END
+ORD11_PORQ_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3169/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD11_PORQ_DTO.xsc
+END
+ORD11_PORQ_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD11_PORQ_DTO.xsd
+END
+INV12_NPOrder_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3953/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV12_NPOrder_DTO.xsc
+END
+INV11_StockCHK_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV11_StockCHK_DTO.xsd
+END
+INV12_NPOrder_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3953/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV12_NPOrder_DTO.xsd
+END
+CON10_CSM_RTNM_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/7967/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON10_CSM_RTNM_DTO.Designer.cs
+END
+INV06_RTNM.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/4152/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV06_RTNM.xsc
+END
+OPT02_CreditCardProceRate_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/3502/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT02_CreditCardProceRate_DTO.xsc
+END
+INV06_RTNM.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/9516/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV06_RTNM.xsd
+END
+OPT02_CreditCardProceRate_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/3502/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT02_CreditCardProceRate_DTO.xsd
+END
+INV18_StockADJ_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/7084/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV18_StockADJ_DTO.Designer.cs
+END
+ORD06_OneToOne_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3279/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD06_OneToOne_DTO.xsc
+END
+ORD06_OneToOne_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD06_OneToOne_DTO.xsd
+END
+OPT10_Product_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/4910/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT10_Product_DTO.xsc
+END
+ORD10_WeightDistribute_DTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/5932/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD10_WeightDistribute_DTO.cs
+END
+OPT10_Product_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/9550/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT10_Product_DTO.xsd
+END
+CHK04_SmallChange_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/3775/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK04_SmallChange_DTO.xsc
+END
+INV11_StockCHK_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3882/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV11_StockCHK_DTO.xss
+END
+ORD11_PORQ_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/4603/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD11_PORQ_DTO.xss
+END
+CON02_CSM_SUPPLIER.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/8520/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON02_CSM_SUPPLIER.Designer.cs
+END
+CHK04_SmallChange_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK04_SmallChange_DTO.xsd
+END
+INV12_NPOrder_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3953/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV12_NPOrder_DTO.xss
+END
+ORD01_OrderMD_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10289/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD01_OrderMD_DTO.Designer.cs
+END
+ORD09_DISTRIBUTES_ORDER.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/6100/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD09_DISTRIBUTES_ORDER.Designer.cs
+END
+CON20_CSM_StoreTransfer_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FET_POS_2010/!svn/ver/7760/SourceCode/FET_POS/FET_ePOS_Model/DTO/CON20_CSM_StoreTransfer_DTO.Designer.cs
+END
+INV06_RTNM.xss
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/9516/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV06_RTNM.xss
+END
+OPT02_CreditCardProceRate_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/3502/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT02_CreditCardProceRate_DTO.xss
+END
+ORD08_HQNDSORDERMSet_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/4089/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD08_HQNDSORDERMSet_DTO.xsc
+END
+INV29_IMEIUpload_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/4120/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV29_IMEIUpload_DTO.xsc
+END
+ORD08_HQNDSORDERMSet_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD08_HQNDSORDERMSet_DTO.xsd
+END
+INV29_IMEIUpload_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV29_IMEIUpload_DTO.xsd
+END
+ORD06_OneToOne_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/5111/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD06_OneToOne_DTO.xss
+END
+OPT10_Product_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/9550/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT10_Product_DTO.xss
+END
+CHK04_SmallChange_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/3775/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK04_SmallChange_DTO.xss
+END
+CHK01_DAY_CLOSE_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/4093/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK01_DAY_CLOSE_DTO.xsc
+END
+CHK01_DAY_CLOSE_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/7792/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK01_DAY_CLOSE_DTO.xsd
+END
+ORD04_ORDERM.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/4377/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD04_ORDERM.xsc
+END
+ORD04_ORDERM.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/4377/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD04_ORDERM.xsd
+END
+INV11_StockCHK_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV11_StockCHK_DTO.Designer.cs
+END
+ORD08_HQNDSORDERMSet_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/5063/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD08_HQNDSORDERMSet_DTO.xss
+END
+ORD11_PORQ_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD11_PORQ_DTO.Designer.cs
+END
+INV29_IMEIUpload_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/4120/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV29_IMEIUpload_DTO.xss
+END
+INV12_NPOrder_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/3953/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV12_NPOrder_DTO.Designer.cs
+END
+OPT18_StoreSpecialDis_DTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/3262/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT18_StoreSpecialDis_DTO.cs
+END
+ORD13_SCQC_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/4018/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD13_SCQC_DTO.xsc
+END
+ORD13_SCQC_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/8808/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD13_SCQC_DTO.xsd
+END
+INV06_RTNM.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/9516/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV06_RTNM.Designer.cs
+END
+OPT02_CreditCardProceRate_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/FET_POS_2010/!svn/ver/3502/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT02_CreditCardProceRate_DTO.Designer.cs
+END
+ORD06_OneToOne_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD06_OneToOne_DTO.Designer.cs
+END
+CHK01_DAY_CLOSE_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/7792/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK01_DAY_CLOSE_DTO.xss
+END
+OPT10_Product_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9550/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT10_Product_DTO.Designer.cs
+END
+ORD04_ORDERM.xss
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/4377/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD04_ORDERM.xss
+END
+DIS01_DiscountMasterDataSet_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/9830/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS01_DiscountMasterDataSet_DTO.xsc
+END
+CHK02_SALE_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/4048/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK02_SALE_DTO.xsc
+END
+DIS01_DiscountMasterDataSet_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/9830/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS01_DiscountMasterDataSet_DTO.xsd
+END
+CHK02_SALE_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/7777/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK02_SALE_DTO.xsd
+END
+DIS08_PROD_TRANS_VALUE_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3916/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS08_PROD_TRANS_VALUE_DTO.xsc
+END
+CHK04_SmallChange_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK04_SmallChange_DTO.Designer.cs
+END
+DIS08_PROD_TRANS_VALUE_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS08_PROD_TRANS_VALUE_DTO.xsd
+END
+ORD13_SCQC_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/4018/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD13_SCQC_DTO.xss
+END
+LEA01_LEASE_M.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/7969/SourceCode/FET_POS/FET_ePOS_Model/DTO/LEA01_LEASE_M.xsc
+END
+OPT15_HgConvertibleGiftM_DTO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/3559/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT15_HgConvertibleGiftM_DTO.cs
+END
+LEA01_LEASE_M.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/8123/SourceCode/FET_POS/FET_ePOS_Model/DTO/LEA01_LEASE_M.xsd
+END
+ORD08_HQNDSORDERMSet_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD08_HQNDSORDERMSet_DTO.Designer.cs
+END
+INV29_IMEIUpload_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV29_IMEIUpload_DTO.Designer.cs
+END
+OPT12_HgAccumulate_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/3098/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT12_HgAccumulate_DTO.xsc
+END
+OPT12_HgAccumulate_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT12_HgAccumulate_DTO.xsd
+END
+OPT18_StoreSpecialDis_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/3254/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT18_StoreSpecialDis_DTO.xsc
+END
+OPT18_StoreSpecialDis_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT18_StoreSpecialDis_DTO.xsd
+END
+DIS01_DiscountMasterDataSet_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/9830/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS01_DiscountMasterDataSet_DTO.xss
+END
+CHK02_SALE_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/7777/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK02_SALE_DTO.xss
+END
+DIS08_PROD_TRANS_VALUE_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3916/SourceCode/FET_POS/FET_ePOS_Model/DTO/DIS08_PROD_TRANS_VALUE_DTO.xss
+END
+CHK01_DAY_CLOSE_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/7792/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK01_DAY_CLOSE_DTO.Designer.cs
+END
+INV05_RTNM_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3591/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV05_RTNM_DTO.xsc
+END
+ORD04_ORDERM.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/4377/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD04_ORDERM.Designer.cs
+END
+LEA01_LEASE_M.xss
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/8025/SourceCode/FET_POS/FET_ePOS_Model/DTO/LEA01_LEASE_M.xss
+END
+INV05_RTNM_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3659/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV05_RTNM_DTO.xsd
+END
+CHK05_BigMoney_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/3737/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK05_BigMoney_DTO.xsc
+END
+INV27_TakeOff_DTO.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3522/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV27_TakeOff_DTO.xsc
+END
+CHK05_BigMoney_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/6718/SourceCode/FET_POS/FET_ePOS_Model/DTO/CHK05_BigMoney_DTO.xsd
+END
+INV27_TakeOff_DTO.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/6375/SourceCode/FET_POS/FET_ePOS_Model/DTO/INV27_TakeOff_DTO.xsd
+END
+OPT12_HgAccumulate_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/3695/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT12_HgAccumulate_DTO.xss
+END
+ORD14_SIM_GROUP.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3975/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD14_SIM_GROUP.xsc
+END
+OPT18_StoreSpecialDis_DTO.xss
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/4549/SourceCode/FET_POS/FET_ePOS_Model/DTO/OPT18_StoreSpecialDis_DTO.xss
+END
+ORD13_SCQC_DTO.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/8808/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD13_SCQC_DTO.Designer.cs
+END
+ORD14_SIM_GROUP.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3975/SourceCode/FET_POS/FET_ePOS_Model/DTO/ORD14_SIM_GROUP.xsd
+END

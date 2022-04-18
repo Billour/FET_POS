@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="INV17_CUTOFFDATESet_DTO" targetNamespace="http://tempuri.org/INV17_CUTOFFDATESet_DTO.xsd" xmlns:mstns="http://tempuri.org/INV17_CUTOFFDATESet_DTO.xsd" xmlns="http://tempuri.org/INV17_CUTOFFDATESet_DTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="INV17_CUTOFFDATESet_DTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="INV17_CUTOFFDATESet_DTO" msprop:Generator_UserDSName="INV17_CUTOFFDATESet_DTO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CUT_OFF_DATE" msprop:Generator_UserTableName="CUT_OFF_DATE" msprop:Generator_RowDeletedName="CUT_OFF_DATERowDeleted" msprop:Generator_TableClassName="CUT_OFF_DATEDataTable" msprop:Generator_RowChangedName="CUT_OFF_DATERowChanged" msprop:Generator_RowClassName="CUT_OFF_DATERow" msprop:Generator_RowChangingName="CUT_OFF_DATERowChanging" msprop:Generator_RowEvArgName="CUT_OFF_DATERowChangeEvent" msprop:Generator_RowEvHandlerName="CUT_OFF_DATERowChangeEventHandler" msprop:Generator_TablePropName="CUT_OFF_DATE" msprop:Generator_TableVarName="tableCUT_OFF_DATE" msprop:Generator_RowDeletingName="CUT_OFF_DATERowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUT_YYMM" msprop:Generator_UserColumnName="CUT_YYMM" msprop:Generator_ColumnPropNameInRow="CUT_YYMM" msprop:Generator_ColumnVarNameInTable="columnCUT_YYMM" msprop:Generator_ColumnPropNameInTable="CUT_YYMMColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUT_YEAR" msprop:Generator_UserColumnName="CUT_YEAR" msprop:Generator_ColumnPropNameInRow="CUT_YEAR" msprop:Generator_ColumnVarNameInTable="columnCUT_YEAR" msprop:Generator_ColumnPropNameInTable="CUT_YEARColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUT_OFF_MM" msprop:Generator_UserColumnName="CUT_OFF_MM" msprop:Generator_ColumnPropNameInRow="CUT_OFF_MM" msprop:Generator_ColumnVarNameInTable="columnCUT_OFF_MM" msprop:Generator_ColumnPropNameInTable="CUT_OFF_MMColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUT_OFF_DATE" msprop:Generator_UserColumnName="CUT_OFF_DATE" msprop:Generator_ColumnPropNameInRow="CUT_OFF_DATE" msprop:Generator_ColumnVarNameInTable="columnCUT_OFF_DATE" msprop:Generator_ColumnPropNameInTable="CUT_OFF_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" />
+              <xs:element name="CUT_OFF_DATE_ID" msprop:Generator_UserColumnName="CUT_OFF_DATE_ID" msprop:Generator_ColumnPropNameInRow="CUT_OFF_DATE_ID" msprop:Generator_ColumnVarNameInTable="columnCUT_OFF_DATE_ID" msprop:Generator_ColumnPropNameInTable="CUT_OFF_DATE_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CUT_OFF_DATE" />
+      <xs:field xpath="mstns:CUT_OFF_DATE_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

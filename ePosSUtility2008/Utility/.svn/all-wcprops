@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FET_POS_2010/!svn/ver/10625/SourceCode/FET_POS/ePosSUtility2008/Utility
+END
+ProcessPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/ProcessPage.cs
+END
+DateUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/9094/SourceCode/FET_POS/ePosSUtility2008/Utility/DateUtil.cs
+END
+SerialNo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/9445/SourceCode/FET_POS/ePosSUtility2008/Utility/SerialNo.cs
+END
+ClientCommand.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/ClientCommand.cs
+END
+FileUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/FileUtil.cs
+END
+DebitNote.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/8518/SourceCode/FET_POS/ePosSUtility2008/Utility/DebitNote.cs
+END
+ConvertUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/2434/SourceCode/FET_POS/ePosSUtility2008/Utility/ConvertUtil.cs
+END
+LogUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/3095/SourceCode/FET_POS/ePosSUtility2008/Utility/LogUtil.cs
+END
+MyLogManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/3095/SourceCode/FET_POS/ePosSUtility2008/Utility/MyLogManager.cs
+END
+ADUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/2434/SourceCode/FET_POS/ePosSUtility2008/Utility/ADUtil.cs
+END
+ConvertLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/9520/SourceCode/FET_POS/ePosSUtility2008/Utility/ConvertLog.cs
+END
+DBSerialNo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/DBSerialNo.cs
+END
+Check_Internet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/Check_Internet.cs
+END
+GuidNo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/6052/SourceCode/FET_POS/ePosSUtility2008/Utility/GuidNo.cs
+END
+NumberUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/9094/SourceCode/FET_POS/ePosSUtility2008/Utility/NumberUtil.cs
+END
+LogMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/3952/SourceCode/FET_POS/ePosSUtility2008/Utility/LogMessage.cs
+END
+DESCryptography.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/2434/SourceCode/FET_POS/ePosSUtility2008/Utility/DESCryptography.cs
+END
+Check_ID.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/Check_ID.cs
+END
+Receipt.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/10625/SourceCode/FET_POS/ePosSUtility2008/Utility/Receipt.cs
+END
+ChineseFontFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/5907/SourceCode/FET_POS/ePosSUtility2008/Utility/ChineseFontFactory.cs
+END
+IMyLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/3644/SourceCode/FET_POS/ePosSUtility2008/Utility/IMyLog.cs
+END
+BaseClass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/19/SourceCode/FET_POS/ePosSUtility2008/Utility/BaseClass.cs
+END
+StringUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/9094/SourceCode/FET_POS/ePosSUtility2008/Utility/StringUtil.cs
+END
+OracleHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/5294/SourceCode/FET_POS/ePosSUtility2008/Utility/OracleHelper.cs
+END
+BasePage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/197/SourceCode/FET_POS/ePosSUtility2008/Utility/BasePage.cs
+END
+MyLogImpl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/7467/SourceCode/FET_POS/ePosSUtility2008/Utility/MyLogImpl.cs
+END
+OracleDBUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/9230/SourceCode/FET_POS/ePosSUtility2008/Utility/OracleDBUtil.cs
+END

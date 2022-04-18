@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\FilePrint\FilePrint\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\FilePrint\FilePrint\bin\Debug\FilePrint.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\FilePrint\FilePrint\bin\Debug\FilePrint.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\FilePrint\FilePrint\obj\Debug\FilePrint.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\FilePrint\FilePrint\obj\Debug\FilePrint.pdb

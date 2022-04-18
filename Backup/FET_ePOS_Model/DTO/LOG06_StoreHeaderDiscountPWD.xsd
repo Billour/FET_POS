@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LOG06_StoreHeaderDiscountPWD" targetNamespace="http://tempuri.org/LOG06_StoreHeaderDiscountPWD.xsd" xmlns:mstns="http://tempuri.org/LOG06_StoreHeaderDiscountPWD.xsd" xmlns="http://tempuri.org/LOG06_StoreHeaderDiscountPWD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LOG06_StoreHeaderDiscountPWD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LOG06_StoreHeaderDiscountPWD" msprop:Generator_DataSetName="LOG06_StoreHeaderDiscountPWD" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="STORE_HEADER_DISCOUNT_PWD" msprop:Generator_UserTableName="STORE_HEADER_DISCOUNT_PWD" msprop:Generator_RowDeletedName="STORE_HEADER_DISCOUNT_PWDRowDeleted" msprop:Generator_RowChangedName="STORE_HEADER_DISCOUNT_PWDRowChanged" msprop:Generator_RowClassName="STORE_HEADER_DISCOUNT_PWDRow" msprop:Generator_RowChangingName="STORE_HEADER_DISCOUNT_PWDRowChanging" msprop:Generator_RowEvArgName="STORE_HEADER_DISCOUNT_PWDRowChangeEvent" msprop:Generator_RowEvHandlerName="STORE_HEADER_DISCOUNT_PWDRowChangeEventHandler" msprop:Generator_TableClassName="STORE_HEADER_DISCOUNT_PWDDataTable" msprop:Generator_TableVarName="tableSTORE_HEADER_DISCOUNT_PWD" msprop:Generator_RowDeletingName="STORE_HEADER_DISCOUNT_PWDRowDeleting" msprop:Generator_TablePropName="STORE_HEADER_DISCOUNT_PWD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SID" msprop:Generator_UserColumnName="SID" msprop:Generator_ColumnPropNameInRow="SID" msprop:Generator_ColumnVarNameInTable="columnSID" msprop:Generator_ColumnPropNameInTable="SIDColumn" type="xs:string" />
+              <xs:element name="VALID_START_DATE" msprop:Generator_UserColumnName="VALID_START_DATE" msprop:Generator_ColumnPropNameInRow="VALID_START_DATE" msprop:Generator_ColumnVarNameInTable="columnVALID_START_DATE" msprop:Generator_ColumnPropNameInTable="VALID_START_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VALID_END_DATE" msprop:Generator_UserColumnName="VALID_END_DATE" msprop:Generator_ColumnPropNameInRow="VALID_END_DATE" msprop:Generator_ColumnVarNameInTable="columnVALID_END_DATE" msprop:Generator_ColumnPropNameInTable="VALID_END_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ENCRYPT_PASSWORD" msprop:Generator_UserColumnName="ENCRYPT_PASSWORD" msprop:Generator_ColumnPropNameInRow="ENCRYPT_PASSWORD" msprop:Generator_ColumnVarNameInTable="columnENCRYPT_PASSWORD" msprop:Generator_ColumnPropNameInTable="ENCRYPT_PASSWORDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EMPNO" msprop:Generator_UserColumnName="EMPNO" msprop:Generator_ColumnPropNameInRow="EMPNO" msprop:Generator_ColumnVarNameInTable="columnEMPNO" msprop:Generator_ColumnPropNameInTable="EMPNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USERID" msprop:Generator_UserColumnName="USERID" msprop:Generator_ColumnPropNameInRow="USERID" msprop:Generator_ColumnVarNameInTable="columnUSERID" msprop:Generator_ColumnPropNameInTable="USERIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:STORE_HEADER_DISCOUNT_PWD" />
+      <xs:field xpath="mstns:SID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

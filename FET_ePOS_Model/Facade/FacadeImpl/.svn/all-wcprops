@@ -1,0 +1,605 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/10660/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl
+END
+PRE02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8362/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/PRE02_Facade.cs
+END
+ORD09_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9929/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD09_Facade.cs
+END
+INV01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7688/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV01_Facade.cs
+END
+INV03_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9540/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV03_Facade.cs
+END
+OSAL02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/10636/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OSAL02_Facade.cs
+END
+INV05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9342/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV05_Facade.cs
+END
+OSAL04_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/10636/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OSAL04_Facade.cs
+END
+LEA01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9122/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LEA01_Facade.cs
+END
+Supplier_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/10526/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/Supplier_Facade.cs
+END
+CreditCard_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/10478/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CreditCard_Facade.cs
+END
+SAL041_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/10270/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL041_Facade.cs
+END
+OPT02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10128/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT02_Facade.cs
+END
+LEA03_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9193/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LEA03_Facade.cs
+END
+LEA05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8244/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LEA05_Facade.cs
+END
+INV28_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8492/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV28_Facade.cs
+END
+RPL_Facade_File1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/10633/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/RPL_Facade_File1.cs
+END
+DIS01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10200/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/DIS01_Facade.cs
+END
+SAL02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10386/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL02_Facade.cs
+END
+CON20_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8961/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON20_Facade.cs
+END
+CON05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7423/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON05_Facade.cs
+END
+DIS05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7132/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/DIS05_Facade.cs
+END
+INV18_1_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/10457/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV18_1_Facade.cs
+END
+LOG04_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7262/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LOG04_Facade.cs
+END
+ORD10_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9917/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD10_Facade.cs
+END
+Promontions_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/9605/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/Promontions_Facade.cs
+END
+ORD12_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7120/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD12_Facade.cs
+END
+LOG06_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9901/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LOG06_Facade.cs
+END
+CON09_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8604/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON09_Facade.cs
+END
+ORD14_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9797/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD14_Facade.cs
+END
+INVENTORY_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/8402/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INVENTORY_Facade.cs
+END
+INV12_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9386/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV12_Facade.cs
+END
+TSAL01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/10549/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/TSAL01_Facade.cs
+END
+OPT11_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7122/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT11_Facade.cs
+END
+OPT13_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8562/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT13_Facade.cs
+END
+CHK01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10569/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CHK01_Facade.cs
+END
+OPT15_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8918/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT15_Facade.cs
+END
+TSAL05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/10620/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/TSAL05_Facade.cs
+END
+CostCenter_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/FET_POS_2010/!svn/ver/10200/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CostCenter_Facade.cs
+END
+CHK05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7663/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CHK05_Facade.cs
+END
+Category_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/7132/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/Category_Facade.cs
+END
+OddNumber_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/8351/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OddNumber_Facade.cs
+END
+DIS10_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7132/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/DIS10_Facade.cs
+END
+CON10_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8604/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON10_Facade.cs
+END
+CON12_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8154/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON12_Facade.cs
+END
+SAL13_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7140/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL13_Facade.cs
+END
+CON14_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7932/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON14_Facade.cs
+END
+SAL15_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10526/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL15_Facade.cs
+END
+ORD02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10526/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD02_Facade.cs
+END
+CON16_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7786/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON16_Facade.cs
+END
+PRE01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9094/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/PRE01_Facade.cs
+END
+ORD04_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9949/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD04_Facade.cs
+END
+Discount_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/FET_POS_2010/!svn/ver/10650/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/Discount_Facade.cs
+END
+ORD06_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10526/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD06_Facade.cs
+END
+ORD08_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9976/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD08_Facade.cs
+END
+Store_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9948/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/Store_Facade.cs
+END
+INV23_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7134/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV23_Facade.cs
+END
+INV06_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8731/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV06_Facade.cs
+END
+OPT01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9793/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT01_Facade.cs
+END
+INV25_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8487/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV25_Facade.cs
+END
+LEA02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8100/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LEA02_Facade.cs
+END
+INV08_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10523/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV08_Facade.cs
+END
+OPT03_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10526/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT03_Facade.cs
+END
+INV27_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7134/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV27_Facade.cs
+END
+PriReceipt_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/8738/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/PriReceipt_Facade.cs
+END
+INV29_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9628/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV29_Facade.cs
+END
+LEA06_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8244/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LEA06_Facade.cs
+END
+OPT05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9240/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT05_Facade.cs
+END
+RPL_Facade_File3.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/10585/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/RPL_Facade_File3.cs
+END
+Employee_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/9879/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/Employee_Facade.cs
+END
+SAL01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10604/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL01_Facade.cs
+END
+DIS02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10565/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/DIS02_Facade.cs
+END
+CON02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8688/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON02_Facade.cs
+END
+SAL03_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10660/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL03_Facade.cs
+END
+CON04_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8348/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON04_Facade.cs
+END
+IMEI_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/10353/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/IMEI_Facade.cs
+END
+DIS04_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7144/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/DIS04_Facade.cs
+END
+SAL05_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9828/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL05_Facade.cs
+END
+CON06_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8175/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON06_Facade.cs
+END
+ORD11_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9680/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD11_Facade.cs
+END
+SAL07_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10526/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL07_Facade.cs
+END
+CON08_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7426/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON08_Facade.cs
+END
+DIS08_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7135/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/DIS08_Facade.cs
+END
+ORD13_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10594/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD13_Facade.cs
+END
+LOG07_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9866/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/LOG07_Facade.cs
+END
+INV11_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10452/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV11_Facade.cs
+END
+INV13_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7134/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV13_Facade.cs
+END
+OPT10_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10527/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT10_Facade.cs
+END
+INV17_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7573/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/INV17_Facade.cs
+END
+OPT12_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7122/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT12_Facade.cs
+END
+CHK02_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10564/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CHK02_Facade.cs
+END
+HappyGo_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/FET_POS_2010/!svn/ver/8827/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/HappyGo_Facade.cs
+END
+CHK04_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7663/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CHK04_Facade.cs
+END
+OPT16_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/7122/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT16_Facade.cs
+END
+OPT18_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/9171/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/OPT18_Facade.cs
+END
+CHK06_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8157/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CHK06_Facade.cs
+END
+RPL_Facade_File2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/10541/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/RPL_Facade_File2.cs
+END
+Product_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/FET_POS_2010/!svn/ver/10658/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/Product_Facade.cs
+END
+CON11_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/8637/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/CON11_Facade.cs
+END
+SAL12_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10448/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/SAL12_Facade.cs
+END
+ORD01_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/10334/SourceCode/FET_POS/FET_ePOS_Model/Facade/FacadeImpl/ORD01_Facade.cs
+END

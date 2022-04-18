@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!-- ======WEBPOS STRING ===========-->
+    <add key="Connection_String" value="956617994D0DF3258E107F8E0B6DF6BDFEAD42A850402E9DF997DA9E120F4634284C227ABD8022B87C304D8DE2AC379E6DF0500DB175A7CFD7CF158C8E2E439A"/>
+    <!--===========JACKEY LOCAL Conn =========-->
+    <!--<add key="Connection_String" value="956617994D0DF32524909EF8FC6BFE27FC3A02926A117C4F2F86FA81C7EE9383D0C95AD2AA60834698DD69A030CB16CAF9A77761DAA83FEFA04C261B807937BC"/>-->
+    <add key="ConnStrKey" value="qwertyui"/>
+    <add key="ConnStrIV" value="qwertyui"/>
+	  <!--======= Time Out 時間設定 ========-->
+	  <add key="SecondTimeOut" value="300000" />
+  </appSettings>
+</configuration>

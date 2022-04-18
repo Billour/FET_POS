@@ -1,0 +1,6 @@
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\ePosSUtility2008\bin\AdvTekUtility.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\ePosSUtility2008\bin\AdvTekUtility.pdb
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\ePosSUtility2008\bin\log4net.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\ePosSUtility2008\obj\Debug\ResolveAssemblyReference.cache
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\ePosSUtility2008\obj\Debug\AdvTekUtility.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\ePosSUtility2008\obj\Debug\AdvTekUtility.pdb

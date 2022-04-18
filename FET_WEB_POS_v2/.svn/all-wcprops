@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/FET_POS_2010/!svn/ver/10659/SourceCode/FET_POS/FET_WEB_POS_v2
+END
+Default2.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/10248/SourceCode/FET_POS/FET_WEB_POS_v2/Default2.aspx
+END
+web.config
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/10504/SourceCode/FET_POS/FET_WEB_POS_v2/web.config
+END
+Default2.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/10248/SourceCode/FET_POS/FET_WEB_POS_v2/Default2.aspx.cs
+END
+EntryPoint.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/8385/SourceCode/FET_POS/FET_WEB_POS_v2/EntryPoint.aspx
+END
+EncryptPage.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/10252/SourceCode/FET_POS/FET_WEB_POS_v2/EncryptPage.aspx
+END
+menu.htm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FET_POS_2010/!svn/ver/10494/SourceCode/FET_POS/FET_WEB_POS_v2/menu.htm
+END
+EntryPoint_SP.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/10518/SourceCode/FET_POS/FET_WEB_POS_v2/EntryPoint_SP.aspx.cs
+END
+BarcodePrint.CAB
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/9296/SourceCode/FET_POS/FET_WEB_POS_v2/BarcodePrint.CAB
+END
+content.htm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/4394/SourceCode/FET_POS/FET_WEB_POS_v2/content.htm
+END
+loginErr.htm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/5198/SourceCode/FET_POS/FET_WEB_POS_v2/loginErr.htm
+END
+EntryPoint_SP2.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/8858/SourceCode/FET_POS/FET_WEB_POS_v2/EntryPoint_SP2.aspx
+END
+MasterPage.master
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/6142/SourceCode/FET_POS/FET_WEB_POS_v2/MasterPage.master
+END
+Login.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FET_POS_2010/!svn/ver/3156/SourceCode/FET_POS/FET_WEB_POS_v2/Login.aspx
+END
+Export.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/8269/SourceCode/FET_POS/FET_WEB_POS_v2/Export.ashx
+END
+BarcodePrint.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/9252/SourceCode/FET_POS/FET_WEB_POS_v2/BarcodePrint.dll
+END
+Login.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FET_POS_2010/!svn/ver/9094/SourceCode/FET_POS/FET_WEB_POS_v2/Login.aspx.cs
+END
+MasterPage.master.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/9111/SourceCode/FET_POS/FET_WEB_POS_v2/MasterPage.master.cs
+END
+EntryPoint_SP.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/8858/SourceCode/FET_POS/FET_WEB_POS_v2/EntryPoint_SP.aspx
+END
+EntryPoint.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/10632/SourceCode/FET_POS/FET_WEB_POS_v2/EntryPoint.aspx.cs
+END
+Global.asax
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FET_POS_2010/!svn/ver/3097/SourceCode/FET_POS/FET_WEB_POS_v2/Global.asax
+END
+detctPrinter.CAB
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/9300/SourceCode/FET_POS/FET_WEB_POS_v2/detctPrinter.CAB
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FET_POS_2010/!svn/ver/4394/SourceCode/FET_POS/FET_WEB_POS_v2/index.htm
+END
+Default.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/3027/SourceCode/FET_POS/FET_WEB_POS_v2/Default.aspx
+END
+EncryptPage.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/10254/SourceCode/FET_POS/FET_WEB_POS_v2/EncryptPage.aspx.cs
+END
+job_finish.htm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/8160/SourceCode/FET_POS/FET_WEB_POS_v2/job_finish.htm
+END
+Default.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/3006/SourceCode/FET_POS/FET_WEB_POS_v2/Default.aspx.cs
+END
+PrintTest.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/10624/SourceCode/FET_POS/FET_WEB_POS_v2/PrintTest.aspx
+END
+Download.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FET_POS_2010/!svn/ver/3283/SourceCode/FET_POS/FET_WEB_POS_v2/Download.ashx
+END
+PrintTest.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FET_POS_2010/!svn/ver/10624/SourceCode/FET_POS/FET_WEB_POS_v2/PrintTest.aspx.cs
+END
+EntryPoint_SP2.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/10170/SourceCode/FET_POS/FET_WEB_POS_v2/EntryPoint_SP2.aspx.cs
+END
+ErrorPage.htm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/10028/SourceCode/FET_POS/FET_WEB_POS_v2/ErrorPage.htm
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FET_POS_2010/!svn/ver/9786/SourceCode/FET_POS/FET_ConvertApp/SALES2GL_TEMP
+END
+SALES2GL_TEMP.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/9786/SourceCode/FET_POS/FET_ConvertApp/SALES2GL_TEMP/SALES2GL_TEMP.csproj
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/8610/SourceCode/FET_POS/FET_ConvertApp/SALES2GL_TEMP/App.config
+END
+銷售(SALE_HEAD)產生分錄暫存檔(GL_TEMP).txt
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/FET_POS_2010/!svn/ver/8610/SourceCode/FET_POS/FET_ConvertApp/SALES2GL_TEMP/%E9%8A%B7%E5%94%AE(SALE_HEAD)%E7%94%A2%E7%94%9F%E5%88%86%E9%8C%84%E6%9A%AB%E5%AD%98%E6%AA%94(GL_TEMP).txt
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/8610/SourceCode/FET_POS/FET_ConvertApp/SALES2GL_TEMP/Program.cs
+END

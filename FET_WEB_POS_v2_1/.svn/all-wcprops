@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FET_POS_2010/!svn/ver/3672/SourceCode/FET_POS/FET_WEB_POS_v2_1
+END
+web.config
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/web.config
+END
+MasterPage.master
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/3579/SourceCode/FET_POS/FET_WEB_POS_v2_1/MasterPage.master
+END
+Login.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Login.aspx
+END
+Default.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Default.aspx.cs
+END
+licenses.licx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/3411/SourceCode/FET_POS/FET_WEB_POS_v2_1/licenses.licx
+END
+EntryPoint.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/EntryPoint.aspx
+END
+MasterPage.master.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/MasterPage.master.cs
+END
+Login.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Login.aspx.cs
+END
+EntryPoint.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/EntryPoint.aspx.cs
+END
+Global.asax
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FET_POS_2010/!svn/ver/3170/SourceCode/FET_POS/FET_WEB_POS_v2_1/Global.asax
+END
+Default.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/3168/SourceCode/FET_POS/FET_WEB_POS_v2_1/Default.aspx
+END
+FET_WEB_POS_v2_1.sln
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/3305/SourceCode/FET_POS/FET_WEB_POS_v2_1/FET_WEB_POS_v2_1.sln
+END

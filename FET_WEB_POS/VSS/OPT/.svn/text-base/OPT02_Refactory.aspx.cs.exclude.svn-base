@@ -1,0 +1,245 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+using Advtek.Utility;
+using FET.POS.Model.Facade;
+using FET.POS.Model.DTO;
+
+
+public partial class VSS_OPT_OPT02_Refactory : System.Web.UI.Page
+{
+
+    #region Class Variables
+
+    private OPT02_Facade _OPT02_Facade;
+    private OPT02_CreditCardProceRate_DTO _OPT02_CreditCardProceRate_DTO;
+
+    private EventHandler eh_BtnAddNewOneGvCCPR;
+    private GridViewCommandEventHandler eh_GvCCPR_RowCommand;
+
+
+    #endregion
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            Do_Query_CreditCardProceRate();
+            Do_AddNewOne_CreditCardProceRate();
+            Do_UpdateOne_CreditCardProceRate();
+        }
+        else 
+        { 
+            
+        }
+    }
+
+    protected void Do_Query_CreditCardProceRate()
+    { 
+        
+    }
+
+    protected void Do_AddNewOne_CreditCardProceRate()
+    { 
+        Handon_BtnAddNewOneGvCCPR();
+    }
+
+
+    #region Do_AddNewOne_CreditCardProceRate Area
+
+    private void Handon_BtnAddNewOneGvCCPR()
+    {
+        //force previous event release!
+        if (eh_BtnAddNewOneGvCCPR != null)
+        {
+            btnAddNewOneGvCCPR.Click -= eh_BtnAddNewOneGvCCPR;
+        }
+        
+        //button click logic
+        eh_BtnAddNewOneGvCCPR =
+        delegate(object sender, EventArgs e) 
+        {
+            gvCreditCardProceRate.ShowFooter = true;
+            gvCreditCardProceRate.ShowFooterWhenEmpty = true;
+            System.Web.UI.HtmlControls.HtmlTableRow tr =
+             gvCreditCardProceRate.FindChildControl<System.Web.UI.HtmlControls.HtmlTableRow>("trEmptyData");
+            if (tr != null)
+            {
+                // 隱藏顯示文字訊息的表格列
+                tr.Visible = false;
+            }
+
+            ////very important!
+            //BindgvCreditCardProceRate();
+
+            //load Setting like DropDownList
+            DropDownList ddlCCTN = gvCreditCardProceRate.FooterRow.FindControl("footerCreditCardTypeName") as DropDownList;
+            ddlCCTN.Items.Clear();
+            ddlCCTN.DataSource = OPT01_PageHelper.GetPaymentModeName(true);
+            ddlCCTN.DataValueField = "PayModeId";
+            ddlCCTN.DataTextField = "PayModeName";
+            ddlCCTN.DataBind();
+
+            ddlCCTN.Items.Remove(ddlCCTN.Items.FindByText("ALL"));
+
+
+            //// HandOn footerDdlPayModeName SelectedIndexChanged
+            //((DropDownList)gvPaymentMethodSet.FooterRow.FindControl("footerDdlPayModeName")).SelectedIndexChanged
+            //+= delegate(object o, EventArgs es)
+            //{
+            //    ((Label)gvPaymentMethodSet.FooterRow.FindControl("footerPayModeName")).Text = ((DropDownList)o).SelectedValue;
+            //};       
+        };
+
+        // Hand on event
+        btnAddNewOneGvCCPR.Click += eh_BtnAddNewOneGvCCPR;
+    }
+
+    #endregion
+
+    protected void Do_UpdateOne_CreditCardProceRate()
+    {
+        Handon_GvCCPR_RowCommand();
+    }
+
+    private void Handon_GvCCPR_RowCommand()
+    {
+        //force previous event released!
+        if (eh_GvCCPR_RowCommand != null)
+        {             
+            gvCreditCardProceRate.RowCommand -= eh_GvCCPR_RowCommand;
+        }
+
+        //RowCommand Logic
+        eh_GvCCPR_RowCommand =
+            delegate(object sender, GridViewCommandEventArgs e)
+            {
+                switch (e.CommandName)
+                {
+                    case "Edit":
+
+                        GridViewRow gvEditRow = ((WebControl)e.CommandSource).NamingContainer as GridViewRow;
+                        GridView gvEdit = sender as GridView;
+                        gvEdit.EditIndex = gvEditRow.RowIndex;
+                        //BindGvCCPR;
+
+                        //載入預設值,如DropDownList
+
+                        break;
+
+                    case "Update":
+
+                        GridViewRow gvUpdateRow = ((WebControl)e.CommandSource).NamingContainer as GridViewRow;
+
+                        try
+                        {
+                            _OPT02_Facade = new OPT02_Facade();
+                            _OPT02_CreditCardProceRate_DTO = new OPT02_CreditCardProceRate_DTO();
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_PROCE_RATEDataTable dtCCPR = _OPT02_CreditCardProceRate_DTO.CREDIT_CARD_PROCE_RATE;
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_PROCE_RATERow drCCPR = dtCCPR.NewCREDIT_CARD_PROCE_RATERow();
+
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_TYPEDataTable dtCCT = _OPT02_CreditCardProceRate_DTO.CREDIT_CARD_TYPE;
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_TYPERow drCCT = dtCCT.NewCREDIT_CARD_TYPERow();
+
+                            drCCPR.CCPR_ID = "";
+                            drCCPR.CREDIT_CARD_TYPE_ID = "";
+                            drCCPR.CHARGE_RATE = "";
+                            drCCPR.S_DATE = Convert.ToDateTime();
+                            drCCPR.E_DATE = Convert.ToDateTime();
+                            drCCPR.MODI_DTM = Convert.ToDateTime();
+                            drCCPR.MODI_USER = "";
+                            drCCPR.CREATE_DTM = Convert.ToDateTime();
+                            drCCPR.CREATE_USER = "";
+
+
+                            _OPT02_CreditCardProceRate_DTO.AcceptChanges();
+                            _OPT02_Facade.UpdateOne_CreditCardProceRate(_OPT02_CreditCardProceRate_DTO);
+
+                            drCCPR = null;
+                            dtCCPR = null;
+                            drCCT = null;
+                            dtCCT = null;
+
+                            //reQuery_CreditCardProceRate();
+                        }
+                        catch (Exception ex)
+                        {
+
+                            throw ex;
+                        }
+                        finally
+                        {
+                            _OPT02_CreditCardProceRate_DTO = null;
+                            _OPT02_Facade = null;
+                        }
+
+                        break;
+                    
+                    case "Cancel":
+
+                        GridViewRow gvCancelRow = ((WebControl)e.CommandSource).NamingContainer as GridViewRow;
+
+
+                        break;
+
+                    case "Save":
+
+                        GridViewRow gvSaveRow = ((WebControl)e.CommandSource).NamingContainer as GridViewRow;
+
+                        try
+                        {
+                            _OPT02_Facade = new OPT02_Facade();
+                            _OPT02_CreditCardProceRate_DTO = new OPT02_CreditCardProceRate_DTO();
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_PROCE_RATEDataTable dtCCPR = _OPT02_CreditCardProceRate_DTO.CREDIT_CARD_PROCE_RATE;
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_PROCE_RATERow drCCPR = dtCCPR.NewCREDIT_CARD_PROCE_RATERow();
+
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_TYPEDataTable dtCCT = _OPT02_CreditCardProceRate_DTO.CREDIT_CARD_TYPE;
+                            OPT02_CreditCardProceRate_DTO.CREDIT_CARD_TYPERow drCCT = dtCCT.NewCREDIT_CARD_TYPERow();
+
+                            drCCPR.CCPR_ID = GuidNo.getUUID();
+                            drCCPR.CREDIT_CARD_TYPE_ID = "";
+                            drCCPR.CHARGE_RATE = "";
+                            drCCPR.S_DATE = Convert.ToDateTime();
+                            drCCPR.E_DATE = Convert.ToDateTime();
+                            drCCPR.MODI_DTM = Convert.ToDateTime();
+                            drCCPR.MODI_USER = "";
+                            drCCPR.CREATE_DTM = Convert.ToDateTime();
+                            drCCPR.CREATE_USER = "";
+
+
+                            _OPT02_CreditCardProceRate_DTO.AcceptChanges();
+                            _OPT02_Facade.AddNewOne_CreditCardProceRate(_OPT02_CreditCardProceRate_DTO);
+
+                            drCCPR = null;
+                            dtCCPR = null;
+                            drCCT = null;
+                            dtCCT = null;
+
+                            //reQuery_CreditCardProceRate();
+                        }
+                        catch (Exception ex)
+                        {
+
+                            throw ex;
+                        }
+                        finally
+                        {
+                            _OPT02_CreditCardProceRate_DTO = null;
+                            _OPT02_Facade = null;
+                        }                        
+
+                        break;
+
+                }                
+            };
+
+        gvCreditCardProceRate.RowCommand += eh_GvCCPR_RowCommand;
+        
+    }
+
+
+}

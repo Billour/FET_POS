@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<banks>
+  <bank name="中國信託商業銀行" value="822" />
+  <bank name="遠東國際商業銀行" value="805" />
+  <bank name="國泰世華銀行" value="013" />
+  <bank name="台灣銀行" value="004" />
+  <bank name="中國農民銀行" value="002" />
+  <bank name="交通銀行" value="003" />
+  <bank name="台灣土地銀行" value="005" />
+  <bank name="合作金庫銀行" value="006" />
+  <bank name="第一商業銀行" value="007" />
+  <bank name="華南銀行" value="008" />
+  <bank name="華僑商業銀行" value="010" />
+  <bank name="上海商業儲蓄銀行" value="011" />
+  <bank name="台北富邦銀行" value="012" />
+  <bank name="高雄銀行" value="016" />
+  <bank name="台灣工業銀行" value="048" />
+  <bank name="台灣中小企業銀行" value="050" />
+  <bank name="台中商業銀行" value="053" />
+  <bank name="台南區中小企業銀行" value="053" />
+</banks>

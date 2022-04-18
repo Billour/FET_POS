@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FET_POS_2010/!svn/ver/10509/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable
+END
+RPL046_SUM.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/FET_POS_2010/!svn/ver/8323/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/RPL046_SUM.cs
+END
+PDFExportor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FET_POS_2010/!svn/ver/4147/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PDFExportor.cs
+END
+PriGuaranteeCar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FET_POS_2010/!svn/ver/10447/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriGuaranteeCar.cs
+END
+PrFET.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/10447/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PrFET.cs
+END
+Printer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/4147/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/Printer.cs
+END
+RPL053.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/7052/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/RPL053.cs
+END
+PriGuarantee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FET_POS_2010/!svn/ver/10447/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriGuarantee.cs
+END
+PriETC.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/10447/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriETC.cs
+END
+PRE01.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FET_POS_2010/!svn/ver/8469/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PRE01.cs
+END
+RPL046.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/FET_POS_2010/!svn/ver/9881/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/RPL046.cs
+END
+PriECard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FET_POS_2010/!svn/ver/10447/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriECard.cs
+END
+AbstractXLS.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FET_POS_2010/!svn/ver/4147/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/AbstractXLS.cs
+END
+AbstractPDF.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FET_POS_2010/!svn/ver/6280/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/AbstractPDF.cs
+END
+INV11.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FET_POS_2010/!svn/ver/4147/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/INV11.cs
+END
+PriPRE01.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/FET_POS_2010/!svn/ver/8602/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriPRE01.cs
+END
+PriSEEDNET.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FET_POS_2010/!svn/ver/10447/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriSEEDNET.cs
+END
+PriZeroReceipt.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FET_POS_2010/!svn/ver/9959/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriZeroReceipt.cs
+END
+XLSExportor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FET_POS_2010/!svn/ver/4147/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/XLSExportor.cs
+END
+PriINV11.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FET_POS_2010/!svn/ver/10509/SourceCode/FET_POS/FET_WEB_POS_v2/App_Code/Output/ExportDataTable/PriINV11.cs
+END

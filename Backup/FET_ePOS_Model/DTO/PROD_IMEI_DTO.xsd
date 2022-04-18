@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PROD_IMEI_DTO" targetNamespace="http://tempuri.org/PROD_IMEI_DTO.xsd" xmlns:mstns="http://tempuri.org/PROD_IMEI_DTO.xsd" xmlns="http://tempuri.org/PROD_IMEI_DTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString3 (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString3" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PROD_IMEI_DTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PROD_IMEI_DTO" msprop:Generator_DataSetName="PROD_IMEI_DTO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INV_APPRO_IMEI" msprop:Generator_UserTableName="INV_APPRO_IMEI" msprop:Generator_RowDeletedName="INV_APPRO_IMEIRowDeleted" msprop:Generator_RowChangedName="INV_APPRO_IMEIRowChanged" msprop:Generator_RowClassName="INV_APPRO_IMEIRow" msprop:Generator_RowChangingName="INV_APPRO_IMEIRowChanging" msprop:Generator_RowEvArgName="INV_APPRO_IMEIRowChangeEvent" msprop:Generator_RowEvHandlerName="INV_APPRO_IMEIRowChangeEventHandler" msprop:Generator_TableClassName="INV_APPRO_IMEIDataTable" msprop:Generator_TableVarName="tableINV_APPRO_IMEI" msprop:Generator_RowDeletingName="INV_APPRO_IMEIRowDeleting" msprop:Generator_TablePropName="INV_APPRO_IMEI">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INV_APPRO_IMEI_ID" msprop:Generator_UserColumnName="INV_APPRO_IMEI_ID" msprop:Generator_ColumnPropNameInRow="INV_APPRO_IMEI_ID" msprop:Generator_ColumnVarNameInTable="columnINV_APPRO_IMEI_ID" msprop:Generator_ColumnPropNameInTable="INV_APPRO_IMEI_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IMEI" msprop:Generator_UserColumnName="IMEI" msprop:Generator_ColumnPropNameInRow="IMEI" msprop:Generator_ColumnVarNameInTable="columnIMEI" msprop:Generator_ColumnPropNameInTable="IMEIColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_OE_NO" msprop:Generator_UserColumnName="PO_OE_NO" msprop:Generator_ColumnPropNameInRow="PO_OE_NO" msprop:Generator_ColumnVarNameInTable="columnPO_OE_NO" msprop:Generator_ColumnPropNameInTable="PO_OE_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INV_APPROVAL_D_ID" msprop:Generator_UserColumnName="INV_APPROVAL_D_ID" msprop:Generator_ColumnPropNameInRow="INV_APPROVAL_D_ID" msprop:Generator_ColumnVarNameInTable="columnINV_APPROVAL_D_ID" msprop:Generator_ColumnPropNameInTable="INV_APPROVAL_D_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INV_APPRO_IMEI_TEMP" msprop:Generator_UserTableName="INV_APPRO_IMEI_TEMP" msprop:Generator_RowDeletedName="INV_APPRO_IMEI_TEMPRowDeleted" msprop:Generator_TableClassName="INV_APPRO_IMEI_TEMPDataTable" msprop:Generator_RowChangedName="INV_APPRO_IMEI_TEMPRowChanged" msprop:Generator_RowClassName="INV_APPRO_IMEI_TEMPRow" msprop:Generator_RowChangingName="INV_APPRO_IMEI_TEMPRowChanging" msprop:Generator_RowEvArgName="INV_APPRO_IMEI_TEMPRowChangeEvent" msprop:Generator_RowEvHandlerName="INV_APPRO_IMEI_TEMPRowChangeEventHandler" msprop:Generator_TablePropName="INV_APPRO_IMEI_TEMP" msprop:Generator_TableVarName="tableINV_APPRO_IMEI_TEMP" msprop:Generator_RowDeletingName="INV_APPRO_IMEI_TEMPRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TEMP_ID" msprop:Generator_UserColumnName="TEMP_ID" msprop:Generator_ColumnPropNameInRow="TEMP_ID" msprop:Generator_ColumnVarNameInTable="columnTEMP_ID" msprop:Generator_ColumnPropNameInTable="TEMP_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IMEI" msprop:Generator_UserColumnName="IMEI" msprop:Generator_ColumnPropNameInRow="IMEI" msprop:Generator_ColumnVarNameInTable="columnIMEI" msprop:Generator_ColumnPropNameInTable="IMEIColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_OE_NO" msprop:Generator_UserColumnName="PO_OE_NO" msprop:Generator_ColumnPropNameInRow="PO_OE_NO" msprop:Generator_ColumnVarNameInTable="columnPO_OE_NO" msprop:Generator_ColumnPropNameInTable="PO_OE_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INV_APPROVAL_D_ID" msprop:Generator_UserColumnName="INV_APPROVAL_D_ID" msprop:Generator_ColumnPropNameInRow="INV_APPROVAL_D_ID" msprop:Generator_ColumnVarNameInTable="columnINV_APPROVAL_D_ID" msprop:Generator_ColumnPropNameInTable="INV_APPROVAL_D_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:INV_APPRO_IMEI" />
+      <xs:field xpath="mstns:INV_APPRO_IMEI_ID" />
+    </xs:unique>
+    <xs:unique name="INV_APPRO_IMEI_TEMP_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:INV_APPRO_IMEI_TEMP" />
+      <xs:field xpath="mstns:TEMP_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

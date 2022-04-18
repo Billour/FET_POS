@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException
+END
+FieldListNotSetException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/FieldListNotSetException.cs
+END
+ResetTypeDefineException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/ResetTypeDefineException.cs
+END
+SegmentTypeDefineException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/SegmentTypeDefineException.cs
+END
+FieldNotMatchException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/FieldNotMatchException.cs
+END
+RowIndexOutOfBoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/RowIndexOutOfBoundException.cs
+END
+ConfigurationException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/ConfigurationException.cs
+END
+SheetTypeNotFoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/SheetTypeNotFoundException.cs
+END
+SegUserIndexOutOfBoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/SegUserIndexOutOfBoundException.cs
+END
+SeqNoOutOfBoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/SeqNoOutOfBoundException.cs
+END
+SegmentValueNullPointerException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/UserException/SegmentValueNullPointerException.cs
+END

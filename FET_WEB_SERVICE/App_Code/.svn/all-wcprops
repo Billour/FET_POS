@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FET_POS_2010/!svn/ver/10656/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code
+END
+ProcessPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/ProcessPage.cs
+END
+DateUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/8328/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/DateUtil.cs
+END
+SerialNo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/7319/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/SerialNo.cs
+END
+ClientCommand.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/ClientCommand.cs
+END
+FileUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/FileUtil.cs
+END
+ConvertUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/ConvertUtil.cs
+END
+LogUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/LogUtil.cs
+END
+INVENTORY_Facade.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FET_POS_2010/!svn/ver/7974/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/INVENTORY_Facade.cs
+END
+ADUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/ADUtil.cs
+END
+MyLogManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/MyLogManager.cs
+END
+Check_Internet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/Check_Internet.cs
+END
+GuidNo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/GuidNo.cs
+END
+NumberUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/8328/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/NumberUtil.cs
+END
+LogMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/LogMessage.cs
+END
+DESCryptography.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/DESCryptography.cs
+END
+Check_ID.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/Check_ID.cs
+END
+IMyLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/IMyLog.cs
+END
+BaseClass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/BaseClass.cs
+END
+Service.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/10656/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/Service.cs
+END
+StringUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/FET_POS_2010/!svn/ver/8328/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/StringUtil.cs
+END
+OracleHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/OracleHelper.cs
+END
+BasePage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/BasePage.cs
+END
+MyLogImpl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FET_POS_2010/!svn/ver/4473/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/MyLogImpl.cs
+END
+OracleDBUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/8328/SourceCode/FET_POS/FET_WEB_SERVICE/App_Code/OracleDBUtil.cs
+END

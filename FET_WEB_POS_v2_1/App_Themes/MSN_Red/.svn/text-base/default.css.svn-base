@@ -1,0 +1,322 @@
+/* Common tags                 */
+/*-----------------------------*/		
+
+body 
+{
+    /*font-family:Verdana;
+    font-size:small;*/
+    color:#000000;
+    margin: 0;
+    padding: 0;
+	margin-right: 30;
+	text-align: left;
+ }
+
+.myTreeMenu_0 { color:#691000;text-decoration:none;}
+/*A:link      { color: #8A170F; text-decoration:none; }
+A:visited 	{ color: #8A170F; text-decoration:none; }
+A:active 	{ color: #8A170F;  cursor:hand; text-decoration:none; }*/
+A:hover 	{ color: #DA2D26;  cursor:hand; text-decoration:"underline"; }
+		
+A.bodyLink:link     { color: #8A170F; text-decoration:none; font-weight:bold; }s
+A.bodyLink:visited 	{ color: #8A170F; text-decoration:none; font-weight:bold; }
+A.bodyLink:active 	{ color: #8A170F;  cursor:hand; text-decoration:none; font-weight:bold; }
+A.bodyLink:hover 	{ color: #DA2D26;  cursor:hand; text-decoration:"underline"; font-weight:bold; }
+		
+p
+{
+	line-height: 1.4em;
+}
+
+.titlef
+{
+    text-transform: uppercase;
+    font-family: 新細明體 Verdana, Arial 標楷體  ;
+    height:20px;
+    font-size:16px;
+    font-weight: bold;
+    /*color: #8A170F;*/
+    color:#FFFFFF;
+    background:#AC0A00;
+    vertical-align:middle;
+    padding:2px;
+    width:99%;
+ }
+ 
+
+
+hr {
+	border: 0;
+	border-top: 2px solid #8A170F;
+	height: 2px;
+}
+
+img
+{
+	border-width: 0;
+}
+
+ul
+{
+	list-style-image: url(Images/bullet.jpg);
+	list-style-position: outside;
+	list-style-type: disc;
+	color: #000000;
+	font-family: verdana;
+}
+
+.menutextindent
+{
+    font-size: x-small;
+}
+
+/* Headings                    */
+/*-----------------------------*/
+h1
+{
+	font-size: large;
+	color: #DA2D26
+}
+
+h2
+{
+	font-family: Verdana;
+	font-size: medium;
+	margin-top: 30;
+	color: #DA2D26;
+	margin-bottom: -15;
+}
+	
+h3
+{
+	font-family: Verdana;
+	font-size: small;
+	margin-bottom: -15;
+	color: #DA2D26;
+	padding-left: 15;
+}
+
+h1, h2, h3, h4
+{
+	margin: 0;
+	font-family: Verdana;
+}
+
+/* Tables                      */
+/*-----------------------------*/	
+/*table
+{
+	font-size: 1em;
+}
+*/
+.login {
+	height: auto;	
+	font-size:11px;
+    vertical-align:middle;
+}
+table.header
+{
+	  background-color:#8C170E;
+}
+
+td.logo
+{
+	text-align: left;
+	width: 184px;
+}
+
+td.title 
+	{
+		text-align: center;
+		font-family: verdana;
+		font-size: x-large;
+		font-weight: bolder;
+		color: #FFFFFF;
+	}
+
+td.headerbar 
+{
+	background-image: url(Images/bar.jpg);
+	text-align: right;
+	height: 24px;
+}
+
+td.menu 
+{
+	background-color:#8A170F;
+	width: 184px;
+	height: 500px;
+	vertical-align: top;
+}
+
+td.footer
+{
+	margin-left: 30;
+	font-family: Verdana;
+	font-size:xx-small;
+	font-weight: normal;
+	color: #8A170F;
+	text-align: right;
+}
+
+/*--Extra Add--*/
+td.tdtxt
+{
+    width:13%;
+    /*background-color:Purple;
+    color:White;*/
+    text-align:right;
+}
+
+td.tdval
+{
+    width:20%;
+    /*background-color:Green;
+    color:White;*/
+    text-align:left;
+}
+td.tdEmptyData
+{
+    height: 50px;
+    text-align: center;
+    vertical-align: middle
+}
+input.groovybutton
+{
+   font-size:10pt;
+   width:80px;
+   margin:2px;
+   font-family:新細明體 Verdana;
+   vertical-align:middle;
+   overflow:visible; width:1px !important;/*IE use*/
+}
+
+.groovybutton[class]
+{
+    width: auto !important;
+}
+
+
+gvMaster
+{
+    vertical-align:middle;
+}    
+
+div table
+{
+    font-size:0.9em;
+}
+
+div.txt
+{
+   white-space:nowrap;
+}
+
+.btnPosition
+{
+    width:100%;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.criteria
+{
+    width:100%;
+    text-align:left;
+}
+
+.criteria table
+{
+    width:99%;
+}
+
+.visoft__tab_xpie7  .ajax__tab_header {
+     background:url(tab-line.gif) repeat-x bottom;
+     font-family:新細明體,Arial;
+     font-size:14px; 
+}
+
+.visoft__tab_xpie7 .ajax__tab_outer    {
+      background:url(tab-right.gif) no-repeat right;
+      padding-right:3px;
+      height:21px;
+}
+
+.visoft__tab_xpie7 .ajax__tab_inner    {
+     background:url(tab-left.gif) no-repeat;
+      padding-left:2px;
+}
+
+.visoft__tab_xpie7 .ajax__tab_tab {
+     background:url(tab.gif) repeat-x;
+     padding:2px 20px;
+}
+
+.visoft__tab_xpie7 .ajax__tab_hover .ajax__tab_outer {
+     background:url(tab-hover-right.gif) no-repeat right;
+}
+
+.visoft__tab_xpie7 .ajax__tab_hover .ajax__tab_inner {
+     background:url(tab-hover-left.gif) no-repeat;
+}
+
+.visoft__tab_xpie7 .ajax__tab_hover .ajax__tab_tab {
+     background:url(tab-hover.gif) repeat-x;
+}
+
+.visoft__tab_xpie7 .ajax__tab_active .ajax__tab_outer {
+     background:url(tab-active-right.gif) no-repeat right;
+}
+
+.visoft__tab_xpie7 .ajax__tab_active .ajax__tab_inner {
+     background:url(tab-active-left.gif) no-repeat;
+}
+
+.visoft__tab_xpie7 .ajax__tab_active .ajax__tab_tab {
+     background:url(tab-active.gif) repeat-x;
+}
+
+
+
+/*遮罩的樣式外觀設定*/
+.modalBackground
+{
+	background-color: #fff;
+	filter: alpha(opacity=80);
+	opacity: 0.7px;
+}
+.modalPopup
+{
+	border: solid1px#c0c0c0;
+	background: #f0f0f0;
+}
+
+/*新增/刪除/功能子區塊外觀設定*/
+.SubEditBlock
+{
+	border-width: 2px;
+	border-style: solid;
+	border-color: #3399FF;
+	margin: 10px;
+}
+.SubEditCommand
+{
+	background-color: #3399FF;
+}
+.GridScrollBar
+{
+    height :90px;
+    overflow:auto;
+    border :0px ;
+    border-style :solid;
+}
+
+/*讓查詢/設定頁面的TextBox/DropDownList寬度一致設定*/
+.tbWidthFormat
+{
+	width :180px;
+}
+.ddlWidthFormat
+{
+	width :186px;
+}

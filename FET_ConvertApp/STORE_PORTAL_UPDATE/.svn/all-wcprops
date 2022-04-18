@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/10274/SourceCode/FET_POS/FET_ConvertApp/STORE_PORTAL_UPDATE
+END
+POS系統每日自Store Portal取資POS通路全部店家資訊_並將POS 系統使用的門市資料予以同步.txt
+K 25
+svn:wc:ra_dav:version-url
+V 387
+/svn/FET_POS_2010/!svn/ver/5020/SourceCode/FET_POS/FET_ConvertApp/STORE_PORTAL_UPDATE/POS%E7%B3%BB%E7%B5%B1%E6%AF%8F%E6%97%A5%E8%87%AAStore%20Portal%E5%8F%96%E8%B3%87POS%E9%80%9A%E8%B7%AF%E5%85%A8%E9%83%A8%E5%BA%97%E5%AE%B6%E8%B3%87%E8%A8%8A_%E4%B8%A6%E5%B0%87POS%20%E7%B3%BB%E7%B5%B1%E4%BD%BF%E7%94%A8%E7%9A%84%E9%96%80%E5%B8%82%E8%B3%87%E6%96%99%E4%BA%88%E4%BB%A5%E5%90%8C%E6%AD%A5.txt
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/FET_POS_2010/!svn/ver/5233/SourceCode/FET_POS/FET_ConvertApp/STORE_PORTAL_UPDATE/App.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/10274/SourceCode/FET_POS/FET_ConvertApp/STORE_PORTAL_UPDATE/Program.cs
+END
+STORE_PORTAL_UPDATE.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/FET_POS_2010/!svn/ver/9186/SourceCode/FET_POS/FET_ConvertApp/STORE_PORTAL_UPDATE/STORE_PORTAL_UPDATE.csproj
+END

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvtekUtility", "ePosSUtility2008\AdvtekUtility.csproj", "{627D1167-3E5D-463E-9292-69A7EC25559D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ePOS_Model", "FET_ePOS_Model\ePOS_Model.csproj", "{3CEB6177-44F5-4247-9FAD-86BABCE49E61}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FET_WEB_POS_v2", "FET_WEB_POS_v2\", "{58BCEC9B-FC39-4484-BCB6-C12A46DBD893}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{627D1167-3E5D-463E-9292-69A7EC25559D}|AdvTekUtility.dll;{3CEB6177-44F5-4247-9FAD-86BABCE49E61}|ePOSModel.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/FET_POS"
+		Debug.AspNetCompiler.PhysicalPath = "FET_WEB_POS_v2\"
+		Debug.AspNetCompiler.TargetPath = "..\..\inetpub\wwwroot\FET_POS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FET_POS"
+		Release.AspNetCompiler.PhysicalPath = "FET_WEB_POS_v2\"
+		Release.AspNetCompiler.TargetPath = "..\..\inetpub\wwwroot\FET_POS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51009"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{627D1167-3E5D-463E-9292-69A7EC25559D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627D1167-3E5D-463E-9292-69A7EC25559D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627D1167-3E5D-463E-9292-69A7EC25559D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627D1167-3E5D-463E-9292-69A7EC25559D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CEB6177-44F5-4247-9FAD-86BABCE49E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CEB6177-44F5-4247-9FAD-86BABCE49E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CEB6177-44F5-4247-9FAD-86BABCE49E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CEB6177-44F5-4247-9FAD-86BABCE49E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BCEC9B-FC39-4484-BCB6-C12A46DBD893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BCEC9B-FC39-4484-BCB6-C12A46DBD893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BCEC9B-FC39-4484-BCB6-C12A46DBD893}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BCEC9B-FC39-4484-BCB6-C12A46DBD893}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

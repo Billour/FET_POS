@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FET_POS_2010/!svn/ver/3342/SourceCode/FET_POS/AXControl/ActiveXLib/ActiveXLib
+END
+IObjectSafety.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/3342/SourceCode/FET_POS/AXControl/ActiveXLib/ActiveXLib/IObjectSafety.cs
+END
+ActiveXLib.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/3342/SourceCode/FET_POS/AXControl/ActiveXLib/ActiveXLib/ActiveXLib.csproj
+END
+Advtek.Web.ActiveXLib.snk
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FET_POS_2010/!svn/ver/3342/SourceCode/FET_POS/AXControl/ActiveXLib/ActiveXLib/Advtek.Web.ActiveXLib.snk
+END
+ActiveXObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FET_POS_2010/!svn/ver/3342/SourceCode/FET_POS/AXControl/ActiveXLib/ActiveXLib/ActiveXObject.cs
+END

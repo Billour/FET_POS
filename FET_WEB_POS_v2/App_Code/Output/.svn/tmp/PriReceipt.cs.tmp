@@ -1,0 +1,113 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Advtek.Utility;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+using System.Web;
+using FET.POS.Model.Facade;
+using FET.POS.Model.Facade.FacadeImpl;
+
+/// <summary>
+/// RClass 的摘要描述
+/// </summary>
+public interface IRClass
+{
+    string Print(string Type, List<string> LF, Dictionary<string, List<string>> LR);
+}
+
+public class PrintClass
+{
+    public static IRClass print()
+    {
+        return new PriReceipt();
+    }
+}
+
+public class PriReceipt : IRClass
+{
+
+    #region IRClass 成員
+
+    public string Print(string Type, List<string> LF, List<List<string>> LR)
+    {
+
+        switch (Type)
+        {
+            case "1":
+                PriECard PriECard1 = new PriECard();
+                return PriECard1.generateReceipt(LF);
+            case "2":
+                PriGuarantee PriGuarantee = new PriGuarantee();
+                return PriGuarantee.generateReceipt(LF);
+            case "3":
+                PriETC PriETC = new PriETC();
+                return PriETC.generateReceipt(LF);
+            case "4":
+
+            case "5":
+
+            case "6":
+                PrFET PrFET1 = new PrFET();
+                return PrFET1.generateReceipt(LF, Type);
+            case "7":
+                //PriGuaranteeCar PriGuaranteeCar = new PriGuaranteeCar();
+                //return PriGuaranteeCar.generateReceipt(LF);
+            case "8":
+                //PriSEEDNET PriSEEDNET = new PriSEEDNET();
+                //return PriSEEDNET.generateReceipt(LF);
+            case "M":
+                List<string> LD = new List<string>();
+                string filePath = new PRE01_Facade().getUploadPath("", "");
+                //foreach (KeyValuePair<string, List<List<string>>> item in LR)
+                //{
+                //    foreach (List<string> item1 in item.Value)
+                //    {
+                //        string fileName = Print(item.Key, item1, null);
+                //        LD.Add(HttpContext.Current.Request.ApplicationPath + filePath + "/" + fileName);
+
+                //    }
+                //}
+                foreach (List<string> item in LR)
+                {
+                    string fileName = Print(item[0], item, null);
+                    LD.Add(HttpContext.Current.Request.ApplicationPath + filePath + "/" + fileName);
+                }
+                //for (int i=0; i < LR.Count; i++)
+                //{ 
+                //Print (LD)
+                //}
+                PdfReader reader;
+                Document document = new Document();
+                string filename = Guid.NewGuid().ToString() + ".pdf";
+                FileStream stream = new FileStream(Path.Combine(HttpContext.Current.Server.MapPath("~/Downloads"), filename), FileMode.Create);
+                PdfWriter writer = PdfWriter.GetInstance(document, stream);
+
+                document.Open();
+                // 加入自動列印指令碼
+                writer.AddJavaScript("this.print(false);", true);
+                PdfContentByte cb = writer.DirectContent;
+                PdfImportedPage newPage;
+                for (int i = 0; i < LD.Count(); i++)
+                {
+                    reader = new PdfReader(HttpContext.Current.Server.MapPath(LD[i]));
+                    int iPageNum = reader.NumberOfPages;
+                    for (int j = 1; j <= iPageNum; j++)
+                    {
+                        document.NewPage();
+                        newPage = writer.GetImportedPage(reader, j);
+                        cb.AddTemplate(newPage, 0, 0);
+                    }
+                }
+                document.Close();
+                return filename;
+            default:
+                return "";
+        }
+
+    }
+
+    #endregion
+}

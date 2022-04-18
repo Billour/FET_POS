@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 50
+*.pdb
+AdvTekUtility.dll
+Debug
+Release
+log4net.dll
+
+END

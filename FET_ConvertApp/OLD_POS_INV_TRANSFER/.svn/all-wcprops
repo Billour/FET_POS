@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FET_POS_2010/!svn/ver/9186/SourceCode/FET_POS/FET_ConvertApp/OLD_POS_INV_TRANSFER
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/5301/SourceCode/FET_POS/FET_ConvertApp/OLD_POS_INV_TRANSFER/App.config
+END
+ERP_Stock(當月)EndQty_轉入_WEBPOS_INV_ON_HAND_CURRENT_On_Hand_Qty.txt
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/FET_POS_2010/!svn/ver/5019/SourceCode/FET_POS/FET_ConvertApp/OLD_POS_INV_TRANSFER/ERP_Stock(%E7%95%B6%E6%9C%88)EndQty_%E8%BD%89%E5%85%A5_WEBPOS_INV_ON_HAND_CURRENT_On_Hand_Qty.txt
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FET_POS_2010/!svn/ver/6874/SourceCode/FET_POS/FET_ConvertApp/OLD_POS_INV_TRANSFER/Program.cs
+END
+OLD_POS_INV_TRANSFER.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/FET_POS_2010/!svn/ver/9186/SourceCode/FET_POS/FET_ConvertApp/OLD_POS_INV_TRANSFER/OLD_POS_INV_TRANSFER.csproj
+END

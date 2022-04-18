@@ -1,0 +1,11 @@
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\ePOSModel.dll.config
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\ePOSModel.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\ePOSModel.pdb
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\AdvTekUtility.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\GotDotNet.ApplicationBlocks.Data.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\log4net.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\AdvTekUtility.pdb
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\obj\Debug\ResolveAssemblyReference.cache
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\obj\Debug\ePOSModel.dll
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\obj\Debug\ePOSModel.pdb
+D:\前進公司資料\FET_POS\SourceCode\FET_POS\FET_ePOS_Model\bin\Debug\itextsharp.dll

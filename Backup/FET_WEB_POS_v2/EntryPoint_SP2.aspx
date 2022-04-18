@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="EntryPoint_SP2.aspx.cs" Inherits="EntryPoint_SP2" EnableViewState="false" EnableTheming="false" StylesheetTheme="" Theme ="" %>

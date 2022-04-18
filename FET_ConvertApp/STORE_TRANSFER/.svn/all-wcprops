@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FET_POS_2010/!svn/ver/8104/SourceCode/FET_POS/FET_ConvertApp/STORE_TRANSFER
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/8104/SourceCode/FET_POS/FET_ConvertApp/STORE_TRANSFER/App.config
+END
+(WEB_STORETRANSFERM(舊POS))TO(STORETRANSFER_M(WEB POS)).txt
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/FET_POS_2010/!svn/ver/8104/SourceCode/FET_POS/FET_ConvertApp/STORE_TRANSFER/(WEB_STORETRANSFERM(%E8%88%8APOS))TO(STORETRANSFER_M(WEB%20POS)).txt
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FET_POS_2010/!svn/ver/8104/SourceCode/FET_POS/FET_ConvertApp/STORE_TRANSFER/Program.cs
+END
+WEB_STORE_TRANSFER.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/FET_POS_2010/!svn/ver/8104/SourceCode/FET_POS/FET_ConvertApp/STORE_TRANSFER/WEB_STORE_TRANSFER.csproj
+END

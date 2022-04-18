@@ -1,0 +1,373 @@
+﻿
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:image runat="server" Imageurl="Images/logo.jpg" skinid="logo" />
+<asp:image runat="server" Imageurl="Images/bullet.jpg" skinid="bullet" />
+
+<asp:Calendar runat="server" SkinID="CalendarView" BackColor="White" BorderColor="#EFE6F7"
+    CellPadding="4" DayNameFormat="Shortest" Font-Size="0.8em"
+    ForeColor="Black" Height="180px" Width="200px">
+    <SelectedDayStyle BackColor="#8A170F" Font-Bold="True" ForeColor="White" Font-Size="0.8em"/>
+    <SelectorStyle BackColor="#8A170F" Font-Size="0.8em"/>
+    <WeekendDayStyle BackColor="#E7E7E7" Font-Size="0.8em"/>
+    <OtherMonthDayStyle ForeColor="#8A170F" Font-Size="0.9em"/>
+    <TodayDayStyle BackColor="#F4000A" ForeColor="White" Font-Size="0.8em" Font-Bold="True"/>
+    <NextPrevStyle VerticalAlign="Bottom" Font-Bold="True" ForeColor="White" Font-Size="0.8em"/>
+    <DayHeaderStyle Font-Bold="True" Font-Size="0.8em" BackColor="#F4000A" ForeColor="White"/>
+    <TitleStyle BackColor="#8A170F" BorderColor="Black" Font-Bold="True" ForeColor="White" Font-Size="0.9em"/>
+    <DayStyle Font-Size="0.8em" />
+</asp:Calendar>
+
+<asp:DetailsView SkinID="DetailsView" runat="server" AllowPaging="True" AutoGenerateRows="False"
+    BackColor="White" BorderColor="#EFE6F7" BorderStyle="None" BorderWidth="1px"
+    CellPadding="3" GridLines="Vertical" Height="50px"
+    Width="125px">
+    <FooterStyle BackColor="#F4000A" ForeColor="White" Font-Size="0.8em"/>
+    <RowStyle BackColor="#FFFFFF" ForeColor="Black" Font-Size="0.8em"/>
+    <PagerStyle BackColor="#EFE6F7" ForeColor="Black" HorizontalAlign="Center" Font-Size="0.8em"/>
+    <HeaderStyle BackColor="#8A170F" Font-Bold="True" ForeColor="White" Font-Size="0.9em"/>
+    <EditRowStyle BackColor="#F4000A" Font-Bold="True" ForeColor="White" Font-Size="0.8em"/>
+    <AlternatingRowStyle BackColor="#E7E7E7" Font-Size="0.8em"/>
+</asp:DetailsView>
+
+<asp:FormView SkinID="FormView" runat="server" BackColor="White" BorderColor="#EFE6F7"
+    BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+    <FooterStyle BackColor="#F4000A" ForeColor="White" Font-Size="0.9em"/>
+    <RowStyle BackColor="#E7E7E7" ForeColor="Black" Font-Size="0.8em"/>
+    <PagerStyle BackColor="#EFE6F7" ForeColor="Black" HorizontalAlign="Center" Font-Size="0.9em"/>
+    <HeaderStyle BackColor="#8A170F" Font-Bold="True" ForeColor="White" Font-Size="0.9em"/>
+    <EditRowStyle BackColor="#F4000A" Font-Bold="True" ForeColor="White" Font-Size="0.9em"/>
+</asp:FormView>
+
+<asp:Login runat=server SkinID="LoginView" BackColor="#F4000A" BorderColor="#8A170F" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="White" >
+    <LoginButtonStyle BackColor="White" BorderColor="#8A170F" BorderStyle="Solid" BorderWidth="1px"
+        Font-Size="0.8em" ForeColor="#8A170F" />
+    <TextBoxStyle Font-Size="0.8em" />
+    <TitleTextStyle BackColor="#8A170F" Font-Bold="True" Font-Size="0.8em" ForeColor="White" />
+    <InstructionTextStyle Font-Italic="True" ForeColor="White" />
+</asp:Login>
+
+<asp:SiteMapPath Runat="server" SkinID="SiteMap" PathSeparator=" > " Font-Names="Verdana" Font-Size="x-small">
+	<PathSeparatorStyle Font-Bold="True" ForeColor="#E7E7E7"></PathSeparatorStyle>
+	<CurrentNodeStyle ForeColor="#FFFFFF"></CurrentNodeStyle>
+	<NodeStyle Font-Bold="True" ForeColor="#E7E7E7"></NodeStyle>
+	<RootNodeStyle Font-Bold="True" ForeColor="#000000"></RootNodeStyle>
+</asp:SiteMapPath>
+ 
+ <cc:ASPxPopupControl SkinID="ProductsPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/ProductsPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="480px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇商品料號"
+     ClientInstanceName="productsPopup" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+ 
+ <cc:ASPxPopupControl SkinID="ProductsPopup2" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/ProductsPopup2.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="480px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇商品料號"
+     ClientInstanceName="productsPopup2" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+  <cc:ASPxPopupControl SkinID="ProductsPopup3" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/ProductsPopup3.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="480px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇商品名稱"
+     ClientInstanceName="productsPopup3" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+  <cc:ASPxPopupControl SkinID="OddNumberPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/OddNumberPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="420px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇單號"
+     ClientInstanceName="OddNumberPopup" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+ <cc:ASPxPopupControl SkinID="StoresPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/StoresPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="450px" Height="400px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇門市"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+ </cc:ASPxPopupControl>
+ 
+ <cc:ASPxPopupControl SkinID="PromotionsPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/PromotionsPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="470px" Height="500px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇促銷代號"
+     EnableHierarchyRecreation="True">     
+ </cc:ASPxPopupControl> 
+ 
+ <cc:ASPxPopupControl SkinID="PromotionsPopupOnly" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/OnlyPromotionsPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="470px" Height="500px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="請選擇促銷" ClientInstanceName="PromotionsPopupOnly" 
+     EnableHierarchyRecreation="True">   
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl> 
+  
+<cc:ASPxPopupControl SkinID="DiscountNoPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/SAL/SAL02/SAL02_searchDiscountNo.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="470px" Height="500px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="促銷代碼查詢"
+     EnableHierarchyRecreation="True">   
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+ </cc:ASPxPopupControl> 
+
+ <cc:ASPxPopupControl SkinID="EmployeesPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/EmployeesPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="450px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇員工編號"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+ 
+ <cc:ASPxPopupControl SkinID="ConsignmentVendorsPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/ConsignmentVendorsPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="450px" Height="450px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇寄銷廠商"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+ 
+  <cc:ASPxPopupControl SkinID="CostCenterPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/CostCenterPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="450px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="請選擇成本中心"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+ </cc:ASPxPopupControl>
+
+  <cc:ASPxPopupControl SkinID="ProductCategory" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/ProductCategoryPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="600px" Height="450px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="請選擇商品類別"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+ </cc:ASPxPopupControl>
+ 
+  <cc:ASPxPopupControl SkinID="ProductType" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/ProductTypePopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="600px" Height="450px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="請選擇商品類別"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+ </cc:ASPxPopupControl>
+ 
+ <cc:ASPxPopupControl SkinID="ForAdjustment" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/INV/INV18_1/INV18_2.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="470px" Height="500px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="請選擇庫存調整原因"
+     EnableHierarchyRecreation="True">   
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl> 
+
+  <cc:ASPxPopupControl SkinID="InputIMEIData" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/SAL/SAL01/SAL01_inputIMEIData.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="450px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="IMEI輸入"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+ 
+ <cc:ASPxPopupControl SkinID="DiscountPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/DiscountPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="480px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇折扣料號"
+     ClientInstanceName="discountPopup" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+ 
+ <cc:ASPxPopupControl SkinID="EmployeesPopup2" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/EmployeesPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="420px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇員工編號"
+     ClientInstanceName="discountPopup" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+ 
+  <cc:ASPxPopupControl SkinID="EmployeesDepartmentPopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/EmployeesDepartmentPopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="420px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇員工編號"
+     ClientInstanceName="EmployeesDepartmentPopup" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+
+ <cc:ASPxGridView runat="server" SettingsBehavior-AllowSort="false" SettingsBehavior-AllowDragDrop="false">
+    <SettingsText CommandEdit="編輯" 
+    CommandCancel="取消" 
+    CommandNew="新增" 
+    CommandSelect="選取" 
+    CommandUpdate="儲存" 
+    CommandDelete="刪除" />
+    <Images >
+        <DetailCollapsedButton Url="~/Icon/toggle_expand.png"></DetailCollapsedButton>
+        <DetailExpandedButton Url="~/Icon/toggle_collapse.png"></DetailExpandedButton>               
+     </Images>  
+     <Styles>
+        <TitlePanel HorizontalAlign="Left"  BackColor="#FFFBDD" ForeColor="Black">
+          <Border  BorderColor="#ffcc99"/>
+        </TitlePanel>
+            <Header BackColor="#FFCC99">
+               <Border  BorderColor ="#FFCC99"/>
+            </Header>
+            <Cell>                
+                <Border BorderColor="#FFCC99" BorderWidth="1px" />
+                
+            </Cell>
+             <PagerBottomPanel BackColor="#FFCC99"></PagerBottomPanel>
+             <PagerTopPanel  BackColor="#FFCC99"></PagerTopPanel>
+              <CommandColumn >           
+                <Border BorderColor="#FFCC99" BorderWidth="1px" />
+              </CommandColumn>
+</Styles>         
+<Border BorderColor="#FFCC99" BorderWidth="2px" />
+ </cc:ASPxGridView>
+  
+ <dx:ASPxButton SkinID="PopupButton" runat="server" Text="選" AutoPostBack="false">                                   
+    <Paddings PaddingTop="2px" PaddingBottom="0px" PaddingLeft="2px" PaddingRight="2px" />    
+    <FocusRectPaddings Padding="0px" />   
+    <FocusRectBorder BorderStyle="None" />  
+</dx:ASPxButton>
+
+<dx:ASPxButton runat="server">                                   
+    <Paddings PaddingTop="0px" PaddingBottom="0px" />            
+</dx:ASPxButton>
+
+<dx:ASPxButton runat="server" SkinID="ResetButton" AutoPostBack="false" UseSubmitBehavior="false" CausesValidation="false">                                   
+    <ClientSideEvents Click="function(s, e) { window.location.href = window.location.href; }" />                                
+</dx:ASPxButton>
+
+<dx:ASPxRadioButtonList runat="server" Border-BorderStyle="None" />
+ 
+ <cc:ASPxPopupControl runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" 
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     FooterText="Try to resize the control using the resize grip or the control's edges"
+     EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="4px"></Paddings>
+     </ContentStyle>
+ </cc:ASPxPopupControl>
+ 
+ <dx:ASPxDateEdit runat="server" Width="100" ButtonStyle-BackgroundImage-ImageUrl="~/Icon/calendar.jpg">   
+    <ValidationSettings CausesValidation="false" Display="Dynamic" ErrorDisplayMode="ImageWithText" ErrorTextPosition="Bottom">   
+        <ErrorFrameStyle Paddings-Padding="0" ImageSpacing="0">
+            <ErrorTextPaddings Padding="0" />                                
+        </ErrorFrameStyle>                         
+    </ValidationSettings>   
+    <ClientSideEvents ParseDate="function(s,e) { ASPxDateEditParseDate(s, e); }" />
+ </dx:ASPxDateEdit>
+
+ <dx:ASPxTextBox runat="server">
+    <DisabledStyle BackColor="#cccccc"></DisabledStyle>    
+     <ValidationSettings CausesValidation="false" Display="Dynamic" ErrorDisplayMode="ImageWithText" ErrorTextPosition="Bottom">   
+        <ErrorFrameStyle Paddings-Padding="0" ImageSpacing="0">
+            <ErrorTextPaddings Padding="0" />                                
+        </ErrorFrameStyle>                         
+    </ValidationSettings>                                      
+</dx:ASPxTextBox>
+  
+<dx:ASPxComboBox runat="server">        
+    <ValidationSettings CausesValidation="false" Display="Dynamic" ErrorDisplayMode="ImageWithText" ErrorTextPosition="Bottom">   
+        <ErrorFrameStyle Paddings-Padding="0" ImageSpacing="0">
+            <ErrorTextPaddings Padding="0" />                                
+        </ErrorFrameStyle>                         
+    </ValidationSettings>                                                
+</dx:ASPxComboBox>  
+
+ <dx:ASPxButton SkinID="DeleteBtn" runat="server" Text="刪除">
+ <ClientSideEvents Click= "function (s, e) {e.processOnServer = confirm('確定刪除所選的項目?');}" />
+</dx:ASPxButton>
+
+ <cc:ASPxPopupControl SkinID="LeasePopup" runat="server" AllowDragging="True"
+     AllowResize="True" CloseAction="CloseButton" ContentUrl="~/VSS/Common/LeasePopup.aspx"    
+     PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter" ShowFooter="false"
+     Width="500px" Height="480px" FooterText="Try to resize the control using the resize grip or the control's edges"
+     HeaderText="選擇折扣料號"
+     ClientInstanceName="LeasePopup" EnableHierarchyRecreation="True">
+     <ContentStyle>
+         <Paddings Padding="2px"></Paddings>
+     </ContentStyle>
+     <ClientSideEvents CloseUp="function(s, e) {s.SetContentUrl(s.GetContentUrl()); }"  />
+ </cc:ASPxPopupControl>
+
+

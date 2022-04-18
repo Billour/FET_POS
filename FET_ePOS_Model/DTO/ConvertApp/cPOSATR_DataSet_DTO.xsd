@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cPOSATR_DataSet_DTO" targetNamespace="http://tempuri.org/cPOSATR_DataSet_DTO.xsd" xmlns:mstns="http://tempuri.org/cPOSATR_DataSet_DTO.xsd" xmlns="http://tempuri.org/cPOSATR_DataSet_DTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.FET.POS.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cPOSATR_DataSet_DTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="cPOSATR_DataSet_DTO" msprop:Generator_DataSetName="cPOSATR_DataSet_DTO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ERP_DS_ATR" msprop:Generator_UserTableName="ERP_DS_ATR" msprop:Generator_RowDeletedName="ERP_DS_ATRRowDeleted" msprop:Generator_RowChangedName="ERP_DS_ATRRowChanged" msprop:Generator_RowClassName="ERP_DS_ATRRow" msprop:Generator_RowChangingName="ERP_DS_ATRRowChanging" msprop:Generator_RowEvArgName="ERP_DS_ATRRowChangeEvent" msprop:Generator_RowEvHandlerName="ERP_DS_ATRRowChangeEventHandler" msprop:Generator_TableClassName="ERP_DS_ATRDataTable" msprop:Generator_TableVarName="tableERP_DS_ATR" msprop:Generator_RowDeletingName="ERP_DS_ATRRowDeleting" msprop:Generator_TablePropName="ERP_DS_ATR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BRANCHNO" msprop:Generator_UserColumnName="BRANCHNO" msprop:Generator_ColumnVarNameInTable="columnBRANCHNO" msprop:Generator_ColumnPropNameInRow="BRANCHNO" msprop:Generator_ColumnPropNameInTable="BRANCHNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DWNDATE" msprop:Generator_UserColumnName="DWNDATE" msprop:Generator_ColumnVarNameInTable="columnDWNDATE" msprop:Generator_ColumnPropNameInRow="DWNDATE" msprop:Generator_ColumnPropNameInTable="DWNDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ATRQTY" msprop:Generator_UserColumnName="ATRQTY" msprop:Generator_ColumnVarNameInTable="columnATRQTY" msprop:Generator_ColumnPropNameInRow="ATRQTY" msprop:Generator_ColumnPropNameInTable="ATRQTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRICE" msprop:Generator_UserColumnName="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VENDORNAME" msprop:Generator_UserColumnName="VENDORNAME" msprop:Generator_ColumnVarNameInTable="columnVENDORNAME" msprop:Generator_ColumnPropNameInRow="VENDORNAME" msprop:Generator_ColumnPropNameInTable="VENDORNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DWNFLAG" msprop:Generator_UserColumnName="DWNFLAG" msprop:Generator_ColumnVarNameInTable="columnDWNFLAG" msprop:Generator_ColumnPropNameInRow="DWNFLAG" msprop:Generator_ColumnPropNameInTable="DWNFLAGColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANSDATE" msprop:Generator_UserColumnName="TRANSDATE" msprop:Generator_ColumnVarNameInTable="columnTRANSDATE" msprop:Generator_ColumnPropNameInRow="TRANSDATE" msprop:Generator_ColumnPropNameInTable="TRANSDATEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POS_ATR" msprop:Generator_UserTableName="POS_ATR" msprop:Generator_RowDeletedName="POS_ATRRowDeleted" msprop:Generator_RowChangedName="POS_ATRRowChanged" msprop:Generator_RowClassName="POS_ATRRow" msprop:Generator_RowChangingName="POS_ATRRowChanging" msprop:Generator_RowEvArgName="POS_ATRRowChangeEvent" msprop:Generator_RowEvHandlerName="POS_ATRRowChangeEventHandler" msprop:Generator_TableClassName="POS_ATRDataTable" msprop:Generator_TableVarName="tablePOS_ATR" msprop:Generator_RowDeletingName="POS_ATRRowDeleting" msprop:Generator_TablePropName="POS_ATR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TYPE" msprop:Generator_UserColumnName="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ATRQTY" msprop:Generator_UserColumnName="ATRQTY" msprop:Generator_ColumnVarNameInTable="columnATRQTY" msprop:Generator_ColumnPropNameInRow="ATRQTY" msprop:Generator_ColumnPropNameInTable="ATRQTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MAX_ORDER_QTY" msprop:Generator_UserColumnName="MAX_ORDER_QTY" msprop:Generator_ColumnVarNameInTable="columnMAX_ORDER_QTY" msprop:Generator_ColumnPropNameInRow="MAX_ORDER_QTY" msprop:Generator_ColumnPropNameInTable="MAX_ORDER_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REMAINED_ATR" msprop:Generator_UserColumnName="REMAINED_ATR" msprop:Generator_ColumnVarNameInTable="columnREMAINED_ATR" msprop:Generator_ColumnPropNameInRow="REMAINED_ATR" msprop:Generator_ColumnPropNameInTable="REMAINED_ATRColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_UserColumnName="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DTM" msprop:Generator_UserColumnName="CREATE_DTM" msprop:Generator_ColumnVarNameInTable="columnCREATE_DTM" msprop:Generator_ColumnPropNameInRow="CREATE_DTM" msprop:Generator_ColumnPropNameInTable="CREATE_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MODI_USER" msprop:Generator_UserColumnName="MODI_USER" msprop:Generator_ColumnVarNameInTable="columnMODI_USER" msprop:Generator_ColumnPropNameInRow="MODI_USER" msprop:Generator_ColumnPropNameInTable="MODI_USERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODI_DTM" msprop:Generator_UserColumnName="MODI_DTM" msprop:Generator_ColumnVarNameInTable="columnMODI_DTM" msprop:Generator_ColumnPropNameInRow="MODI_DTM" msprop:Generator_ColumnPropNameInTable="MODI_DTMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LOC_ID" msprop:Generator_UserColumnName="LOC_ID" msprop:Generator_ColumnVarNameInTable="columnLOC_ID" msprop:Generator_ColumnPropNameInRow="LOC_ID" msprop:Generator_ColumnPropNameInTable="LOC_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODNO" msprop:Generator_UserColumnName="PRODNO" msprop:Generator_ColumnVarNameInTable="columnPRODNO" msprop:Generator_ColumnPropNameInRow="PRODNO" msprop:Generator_ColumnPropNameInTable="PRODNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DWNDATE" msprop:Generator_UserColumnName="DWNDATE" msprop:Generator_ColumnVarNameInTable="columnDWNDATE" msprop:Generator_ColumnPropNameInRow="DWNDATE" msprop:Generator_ColumnPropNameInTable="DWNDATEColumn" type="xs:dateTime" />
+              <xs:element name="PRICE" msprop:Generator_UserColumnName="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VENDOR_NAME" msprop:Generator_UserColumnName="VENDOR_NAME" msprop:Generator_ColumnVarNameInTable="columnVENDOR_NAME" msprop:Generator_ColumnPropNameInRow="VENDOR_NAME" msprop:Generator_ColumnPropNameInTable="VENDOR_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANS_DATE" msprop:Generator_UserColumnName="TRANS_DATE" msprop:Generator_ColumnVarNameInTable="columnTRANS_DATE" msprop:Generator_ColumnPropNameInRow="TRANS_DATE" msprop:Generator_ColumnPropNameInTable="TRANS_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DS_FLAG" msprop:Generator_UserColumnName="DS_FLAG" msprop:Generator_ColumnVarNameInTable="columnDS_FLAG" msprop:Generator_ColumnPropNameInRow="DS_FLAG" msprop:Generator_ColumnPropNameInTable="DS_FLAGColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ERP_ATR" msprop:Generator_UserTableName="ERP_ATR" msprop:Generator_RowDeletedName="ERP_ATRRowDeleted" msprop:Generator_RowChangedName="ERP_ATRRowChanged" msprop:Generator_RowClassName="ERP_ATRRow" msprop:Generator_RowChangingName="ERP_ATRRowChanging" msprop:Generator_RowEvArgName="ERP_ATRRowChangeEvent" msprop:Generator_RowEvHandlerName="ERP_ATRRowChangeEventHandler" msprop:Generator_TableClassName="ERP_ATRDataTable" msprop:Generator_TableVarName="tableERP_ATR" msprop:Generator_RowDeletingName="ERP_ATRRowDeleting" msprop:Generator_TablePropName="ERP_ATR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BRANCHNO" msprop:Generator_UserColumnName="BRANCHNO" msprop:Generator_ColumnPropNameInRow="BRANCHNO" msprop:Generator_ColumnVarNameInTable="columnBRANCHNO" msprop:Generator_ColumnPropNameInTable="BRANCHNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEMCODE" msprop:Generator_UserColumnName="ITEMCODE" msprop:Generator_ColumnPropNameInRow="ITEMCODE" msprop:Generator_ColumnVarNameInTable="columnITEMCODE" msprop:Generator_ColumnPropNameInTable="ITEMCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOADDATE" msprop:Generator_UserColumnName="LOADDATE" msprop:Generator_ColumnPropNameInRow="LOADDATE" msprop:Generator_ColumnVarNameInTable="columnLOADDATE" msprop:Generator_ColumnPropNameInTable="LOADDATEColumn" type="xs:dateTime" />
+              <xs:element name="COMPANYCODE" msprop:Generator_UserColumnName="COMPANYCODE" msprop:Generator_ColumnPropNameInRow="COMPANYCODE" msprop:Generator_ColumnVarNameInTable="columnCOMPANYCODE" msprop:Generator_ColumnPropNameInTable="COMPANYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ATRQTY" msprop:Generator_UserColumnName="ATRQTY" msprop:Generator_ColumnPropNameInRow="ATRQTY" msprop:Generator_ColumnVarNameInTable="columnATRQTY" msprop:Generator_ColumnPropNameInTable="ATRQTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DWNFLAG" msprop:Generator_UserColumnName="DWNFLAG" msprop:Generator_ColumnPropNameInRow="DWNFLAG" msprop:Generator_ColumnVarNameInTable="columnDWNFLAG" msprop:Generator_ColumnPropNameInTable="DWNFLAGColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DWNDATE" msprop:Generator_UserColumnName="DWNDATE" msprop:Generator_ColumnPropNameInRow="DWNDATE" msprop:Generator_ColumnVarNameInTable="columnDWNDATE" msprop:Generator_ColumnPropNameInTable="DWNDATEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:POS_ATR" />
+      <xs:field xpath="mstns:LOC_ID" />
+      <xs:field xpath="mstns:PRODNO" />
+      <xs:field xpath="mstns:DWNDATE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FET_POS_2010/!svn/ver/9186/SourceCode/FET_POS/FET_ConvertApp/INVOICE_INVALID
+END
+INVOICE_INVALID.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/FET_POS_2010/!svn/ver/9186/SourceCode/FET_POS/FET_ConvertApp/INVOICE_INVALID/INVOICE_INVALID.csproj
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/5426/SourceCode/FET_POS/FET_ConvertApp/INVOICE_INVALID/App.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/FET_POS_2010/!svn/ver/9182/SourceCode/FET_POS/FET_ConvertApp/INVOICE_INVALID/Program.cs
+END
+空白發票上傳ERP.txt
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/FET_POS_2010/!svn/ver/8833/SourceCode/FET_POS/FET_ConvertApp/INVOICE_INVALID/%E7%A9%BA%E7%99%BD%E7%99%BC%E7%A5%A8%E4%B8%8A%E5%82%B3ERP.txt
+END
+發票過期作廢上傳ERP.txt
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/FET_POS_2010/!svn/ver/8875/SourceCode/FET_POS/FET_ConvertApp/INVOICE_INVALID/%E7%99%BC%E7%A5%A8%E9%81%8E%E6%9C%9F%E4%BD%9C%E5%BB%A2%E4%B8%8A%E5%82%B3ERP.txt
+END

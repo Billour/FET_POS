@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FET_POS_2010/!svn/ver/9288/SourceCode/FET_POS/FET_ConvertApp/SYNC_HRS_IMEI
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/7392/SourceCode/FET_POS/FET_ConvertApp/SYNC_HRS_IMEI/App.config
+END
+HRS_同步IMEI資料到IMEI暫存檔.txt
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/FET_POS_2010/!svn/ver/7392/SourceCode/FET_POS/FET_ConvertApp/SYNC_HRS_IMEI/HRS_%E5%90%8C%E6%AD%A5IMEI%E8%B3%87%E6%96%99%E5%88%B0IMEI%E6%9A%AB%E5%AD%98%E6%AA%94.txt
+END
+SYNC_HRS_IMEI.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/FET_POS_2010/!svn/ver/7392/SourceCode/FET_POS/FET_ConvertApp/SYNC_HRS_IMEI/SYNC_HRS_IMEI.csproj
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FET_POS_2010/!svn/ver/9288/SourceCode/FET_POS/FET_ConvertApp/SYNC_HRS_IMEI/Program.cs
+END
